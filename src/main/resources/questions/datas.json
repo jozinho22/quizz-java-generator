@@ -1,0 +1,38 @@
+[
+	{
+		"texte": "Quel sont les trois grands principes de la POO ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "L\\'encapsulation, l\\'héritage et le polymorphisme.",
+				"isTrue": true
+			},
+			{
+				"texte": "L\\'encapsulation, l\\'héritage multiple et le polymorphisme.",
+				"isTrue": false
+			},
+			{
+				"texte": "Le multi-threading, l\\'accès aux données et le polymorphisme.",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel interface implémente la classe ArrayList ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "List",
+				"isTrue": true
+			},
+			{
+				"texte": "Queue",
+				"isTrue": false
+			},
+			{
+				"texte": "Serializable",
+				"isTrue": false
+			}
+		]
+	}
+]
