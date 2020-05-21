@@ -1,4 +1,4 @@
-package main;
+package com.douineau.main;
 
 import java.io.IOException;
 import java.util.ArrayList;
