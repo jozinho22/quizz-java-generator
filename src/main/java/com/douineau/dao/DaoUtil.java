@@ -12,20 +12,20 @@ import com.douineau.utils.PersistenceUtil;
 
 public class DaoUtil {
 
-	public static void trunctateTable(String table) {
-		EntityManager em = PersistenceUtil.getEntityManager();
-		em.getTransaction().begin();
-		
-		StringBuilder sb = new StringBuilder();
-		sb.append("DELETE FROM ");
-		sb.append(table);
-		sb.append(" WHERE id > 0");
-		Query query = em.createNativeQuery(sb.toString());
-		query.executeUpdate();
-		
-		em.getTransaction().commit();
-		em.close();
-	}
+//	public static void truncateTable(String table) {
+//		EntityManager em = PersistenceUtil.getEntityManager();
+//		em.getTransaction().begin();
+//		
+//		StringBuilder sb = new StringBuilder();
+//		sb.append("DELETE FROM ");
+//		sb.append(table);
+//		sb.append(" WHERE id > 0");
+//		Query query = em.createNativeQuery(sb.toString());
+//		query.executeUpdate();
+//		
+//		em.getTransaction().commit();
+//		em.close();
+//	}
 	
 	public static Long insertObject(Question question) {
 		EntityManager em = PersistenceUtil.getEntityManager();

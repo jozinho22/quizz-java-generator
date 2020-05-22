@@ -29,8 +29,8 @@ public class QuestionsInsertor {
 			      .forType(new TypeReference<List<Question>>() {})
 			      .readValue(jsonFile);
 		
-		DaoUtil.trunctateTable("reponse");
-		DaoUtil.trunctateTable("question");
+//		DaoUtil.truncateTable("reponse");
+//		DaoUtil.truncateTable("question");
 		
 		int k = 1;
 		for(Question question : questions) {
