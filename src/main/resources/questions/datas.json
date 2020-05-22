@@ -34,5 +34,203 @@
 				"isTrue": false
 			}
 		]
+	},
+	{
+		"texte": "Que signifie '-u' dans la commande 'git push -u origin master' ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "--unique",
+				"isTrue": false
+			},
+			{
+				"texte": "--set-upstream",
+				"isTrue": true
+			},
+			{
+				"texte": "--utf-8",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel est le principal avantage de l'interface Set par rapport à l'interface List ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Elle permet d'accepter des doublons",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle permet une flexibilité des entrées",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle permet de ne pas accepter de doublons",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que se passe-t-il si vous créez un nouveau dépôt Git en remote avec un commit, et que vous créez son équivalent local et que vous effectuez la commenade 'git push' après avoir commité ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "Git va vous informer que les deux commits n'ont pas de commits en commun.",
+				"isTrue": true
+			},
+			{
+				"texte": "Le push va bien se passer.",
+				"isTrue": false
+			},
+			{
+				"texte": "Git va vous informer que vous n'êtes pas à jour par rapport au dépôt distant.",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel sont les avantages à utiliser la classe Vector plutôt que la classe List ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Elle est plus rapide.",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle est synchronisée et permet d'itérer sur des Enums.",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle a plus de capacité.",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel interfaces implémente la classe LinkedList ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "List et Set",
+				"isTrue": false
+			},
+			{
+				"texte": "List et Queue.",
+				"isTrue": true
+			},
+			{
+				"texte": "Set et Queue.",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est une des utilités de la classe Integer, par rapport à un int primitif ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "C'est Thread-safe.",
+				"isTrue": false
+			},
+			{
+				"texte": "Cela augmente la performance de traitement.",
+				"isTrue": false
+			},
+			{
+				"texte": "Cela permet de créer des listes de nombres entiers.",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quel est la différence entre les commandes 'git rebase' et 'git merge' ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "'git rebase' place le commit souhaité au niveau du commit actuel, tandis que 'git merge' va créer un nouveau commit pour la fusion des deux branches.",
+				"isTrue": true
+			},
+			{
+				"texte": "Ce sont deux façons de faire différentes pour le même résultat.",
+				"isTrue": false
+			},
+			{
+				"texte": "'git rebase' place le commit actuel au niveau du commit souhaité, tandis que 'git merge' va créer un nouveau commit pour la fusion des deux branches.",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Comment démarre-t-on un dépôt Git en local",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "'git init'",
+				"isTrue": true
+			},
+			{
+				"texte": "'git status'",
+				"isTrue": false
+			},
+			{
+				"texte": "'git clone'",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel code permet de conserver un attribut en session avec les JSP",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "request.setAttribute(\"attribute\", attribute);",
+				"isTrue": true
+			},
+			{
+				"texte": "request.setParameter(\"attribute\", attribute);",
+				"isTrue": false
+			},
+			{
+				"texte": "session.setAttribute(\"attribute\", attribute);",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Laquelles de ces deux appels sont des façons d'appeler une Servlet dans une page HTML ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "'<form onaction=\"MyServlet.java\" method=\"GET\">' + '<button type=\"submit\"></button>' et '<a href=\"MyServlet.java\">'",
+				"isTrue": false
+			},
+			{
+				"texte": "'<form action=\"myServlet\" method=\"GET\">' + '<button type=\"submit\"></button>' et '<a href=\"myServlet\">'",
+				"isTrue": true
+			},
+			{
+				"texte": "'<form onaction=\"myServlet\" method=\"GET\">' + '<button type=\"submit\"></button>' et '<a href=\"myServlet\">'",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle syntaxe utiliser pour afficher des données Java dans une page HTML avec la JSTL",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "${object.attribute}",
+				"isTrue": true
+			},
+			{
+				"texte": "#{object.attribute}",
+				"isTrue": false
+			},
+			{
+				"texte": "#{object.getAttribute()}",
+				"isTrue": false
+			}
+		]
 	}
 ]
