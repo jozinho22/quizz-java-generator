@@ -1,0 +1,16 @@
+[
+	"git",
+	"push",
+	"-u",
+	"origin",
+	"master",
+	"branch",
+	"merge",
+	"--set-upstream",
+	"fetch",
+	"pull",
+	"rebase",
+	"init",
+	"status",
+	"clone"
+]

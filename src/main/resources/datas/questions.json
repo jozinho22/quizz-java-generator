@@ -1,0 +1,668 @@
+[
+	{
+		"texte": "Quel sont les trois grands principes de la POO ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "L'encapsulation, l'héritage et le polymorphisme",
+				"isTrue": true
+			},
+			{
+				"texte": "L'encapsulation, l'héritage multiple et le polymorphisme",
+				"isTrue": false
+			},
+			{
+				"texte": "Le multi-threading, l'accès aux données et le polymorphisme",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel interface implémente la classe ArrayList ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "List",
+				"isTrue": true
+			},
+			{
+				"texte": "Queue",
+				"isTrue": false
+			},
+			{
+				"texte": "Serializable",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie -u dans la commande git push -u origin master ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "--unique",
+				"isTrue": false
+			},
+			{
+				"texte": "--set-upstream",
+				"isTrue": true
+			},
+			{
+				"texte": "--utf-8",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel est le principal avantage de l'interface Set par rapport à l'interface List ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Elle permet daccepter des doublons",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle permet une flexibilité des entrées",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle permet de ne pas accepter de doublons",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que se passe-t-il si vous créez un nouveau dépôt Git en remote avec un commit, et que vous créez son équivalent local et que vous effectuez la commande git push après avoir commité ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "Git va vous informer que les deux commits nont pas de commits en commun",
+				"isTrue": true
+			},
+			{
+				"texte": "Le push va bien se passer",
+				"isTrue": false
+			},
+			{
+				"texte": "Git va vous informer que vous n'êtes pas à jour par rapport au dépôt distant",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel sont les avantages à utiliser la classe Vector plutôt que la classe List ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Elle est plus rapide",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle est synchronisée et permet ditérer sur un Enum",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle a plus de capacité",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelles interfaces implémente la classe LinkedList ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "List et Set",
+				"isTrue": false
+			},
+			{
+				"texte": "List et Queue",
+				"isTrue": true
+			},
+			{
+				"texte": "Set et Queue",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est une des utilités de la classe Integer par rapport à un int primitif ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "C'est Thread-safe",
+				"isTrue": false
+			},
+			{
+				"texte": "Cela augmente la performance de traitement",
+				"isTrue": false
+			},
+			{
+				"texte": "Cela permet de créer des listes de nombres entiers",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quel est la différence entre les commandes git rebase et git merge ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "git rebase place le commit souhaité au niveau du commit actuel, tandis que git merge va créer un nouveau commit pour la fusion des deux branches",
+				"isTrue": false
+			},
+			{
+				"texte": "Ce sont deux façons de faire différentes pour le même résultat",
+				"isTrue": false
+			},
+			{
+				"texte": "git rebase place le commit actuel au niveau du commit souhaité, tandis que git merge va créer un nouveau commit pour la fusion des deux branches",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Comment démarre-t-on un dépôt Git en local ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "git init",
+				"isTrue": true
+			},
+			{
+				"texte": "git status",
+				"isTrue": false
+			},
+			{
+				"texte": "git clone",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle syntaxe utilisée pour afficher des données Java dans une page HTML avec la JSTL ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "${object.attribute}",
+				"isTrue": true
+			},
+			{
+				"texte": "#{object.attribute}",
+				"isTrue": false
+			},
+			{
+				"texte": "#{object.getAttribute()}",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la classe mère de toutes les classes ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Class",
+				"isTrue": false
+			},
+			{
+				"texte": "Object",
+				"isTrue": true
+			},
+			{
+				"texte": "Pojo",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la principe d'une Map ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Elle référence un objet grâce à son hashcode()",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle permet de stocker des objets à un autre emplacement mémoire",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle référence un object grâce à une clé",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "A qui correspond lannotation javax.persistence.@Id javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY) ?",
+		"topic": "JPA",
+		"reponses": [
+			{
+				"texte": "Elle référence un objet grâce à son hashcode()",
+				"isTrue": false
+			},
+			{
+				"texte": "L'Id de l'objet sera directement mappé avec la valeur de l'Id quon lui affectera manuellement",
+				"isTrue": false
+			},
+			{
+				"texte": "Une séquence seré générée spécifiquement pour cet objet",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quel est léquivalent de lannotation @javax.inject.Named ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "@org.springframework.stereotype.Component",
+				"isTrue": true
+			},
+			{
+				"texte": "@org.springframework.beans.factory.annotation.Autowired",
+				"isTrue": false
+			},
+			{
+				"texte": "@javax.inject.Inject",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel est léquivalent de l''annotation @javax.inject.Inject ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "@org.springframework.stereotype.Component",
+				"isTrue": false
+			},
+			{
+				"texte": "@org.springframework.beans.factory.annotation.Autowired",
+				"isTrue": true
+			},
+			{
+				"texte": "@javax.inject.Named",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel est la définition d'une classe abstraite ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Une classe qui contient au moins une méthode abstraite",
+				"isTrue": true
+			},
+			{
+				"texte": "Une classe qui hérite d'une classe fille",
+				"isTrue": false
+			},
+			{
+				"texte": "Une classe qui ne contient pas d'attribut",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la définition d'une interface ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Une classe qui masque d'autres classes filles",
+				"isTrue": false
+			},
+			{
+				"texte": "Une classe qui ne contient que des méthodes abstraites",
+				"isTrue": true
+			},
+			{
+				"texte": "Aucune des deux",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie les mots-clefs final static appliqués à un attribut d'une classe ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Que l'attribut ne peut pas être instancié",
+				"isTrue": false
+			},
+			{
+				"texte": "Que l'attribut pourra être appelé uniquement après avoir instancier la classe",
+				"isTrue": false
+			},
+			{
+				"texte": "Que l'attribut sera une constante",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que signifie le mot-clef static appliqué à une méthode d'une classe ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Que la méthode pourra être appelée sans instancier la classe",
+				"isTrue": true
+			},
+			{
+				"texte": "Que la méthode ne pourra pas être modifiée",
+				"isTrue": false
+			},
+			{
+				"texte": "Aucune des deux",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie le mot-clef private pour un attribut de classe ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Que l'attribut ne pourra être visible qu'avec un mot de passe",
+				"isTrue": false
+			},
+			{
+				"texte": "Que l'attribut ne sera visible que depuis la classe",
+				"isTrue": true
+			},
+			{
+				"texte": "Que l'attribut ne sera visible que depuis la classe et les classes du même package",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie le mot-clef 'protected' pour un attribut de classe ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Que l'attribut ne pourra être visible qu'avec un mot de passe",
+				"isTrue": false
+			},
+			{
+				"texte": "Que l'attribut ne sera visible que depuis la classe qui hérite de la classe",
+				"isTrue": true
+			},
+			{
+				"texte": "Que l'attribut ne sera visible que depuis la classe et les classes du même package",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce qu'une méthode récursive ?",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Une méthode avec un retour",
+				"isTrue": false
+			},
+			{
+				"texte": "Une méthode qui s'appelle elle-même",
+				"isTrue": true
+			},
+			{
+				"texte": "Aucune des deux",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie le code public static void devant une méthode",
+		"topic": "",
+		"reponses": [
+			{
+				"texte": "La méthode peut être appelée depuis n'importe quelle classe, seulement avec une instance de la classe et sans retour",
+				"isTrue": false
+			},
+			{
+				"texte": "La méthode ne peut être appelée depuis n'importe quelle classe, sans instancier la classe et sans retour",
+				"isTrue": false
+			},
+			{
+				"texte": "La méthode peut être appelée depuis n'importe quelle classe, sans instancier la classe et sans retour",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quand est-ce que cette condition est vérifiée <code>if( i % 2 == 0 ) { ... } </code> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Si i est divisible par 2",
+				"isTrue": true
+			},
+			{
+				"texte": "Si i = 0",
+				"isTrue": false
+			},
+			{
+				"texte": "Aucune des deux",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel est le moyen le plus simple et le plus connu d'effectuer un tri sur liste de petite taille ?",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le tri par fusion",
+				"isTrue": false
+			},
+			{
+				"texte": "Le tri par sélection",
+				"isTrue": false
+			},
+			{
+				"texte": "Le tri par bulles",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quel est le principe du Memento ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Il est utilisé pour restaurer l'état d'un objet à un moment donné",
+				"isTrue": true
+			},
+			{
+				"texte": "Il est utilsiée pour garder une sauvegarde de la base de données",
+				"isTrue": false
+			},
+			{
+				"texte": "Il est utilisé pour économiser de la mémoire",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel est le principe de l'Observer ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Il est utilisé pour logger avec AspectJ",
+				"isTrue": false
+			},
+			{
+				"texte": "Il est utilisé pour observer le code et y trouver des problèmes de conception",
+				"isTrue": false
+			},
+			{
+				"texte": "Il est utilisé pour notifier les objets qui sont en relation directe avec un objet de ces modifications",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quel est le principe du Singleton ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Il ne sera instancié qu'une seule fois durant l'éxécution",
+				"isTrue": true
+			},
+			{
+				"texte": "Il ne contient qu'une méthode",
+				"isTrue": false
+			},
+			{
+				"texte": "Il ne contient qu'un attribut",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel est le principe du Prototype ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Il est utilisée pour concevoir un objet",
+				"isTrue": false
+			},
+			{
+				"texte": "C'est une application encore en développement",
+				"isTrue": false
+			},
+			{
+				"texte": "Il est utile pour dupliquer (cloner) des objets tout en conservant un niveau de performance",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quel est le principe de la Facade ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Simuler l'existence d'un objet pour effectuer des tests sur une fonctionnalité",
+				"isTrue": false
+			},
+			{
+				"texte": "Créer une interdiction d'entrer sans mot de passe",
+				"isTrue": false
+			},
+			{
+				"texte": "Créer un niveau d'abstraction entre l'ensemble des classes et celles qui souhaitent les utiliser en proposant une interface de plus haut niveau pour utiliser les classes du sous-système",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quel est le principe de la Strategy ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Mettre en place une stratégie pour économiser de la mémoire",
+				"isTrue": false
+			},
+			{
+				"texte": "Adapter un algorithme en fonction du contexte",
+				"isTrue": true
+			},
+			{
+				"texte": "Aucune des deux",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie l'encapsulation ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Que les attributs et méthodes sont contenues dans des classes, eux-mêmes dans des packages",
+				"isTrue": false
+			},
+			{
+				"texte": "Que le Java encapsule toutes ses classes dans le JDK",
+				"isTrue": false
+			},
+			{
+				"texte": "Que les attributs privés d'une classe ne peuvent être accédés que par une méthode de classe",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que signifie <code>class Lion extends Felin</code> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Que la classe <code>Lion</code> va devoir implémenter les méthodes que la classe <code>Felin</code> n'a pas implémenté",
+				"isTrue": false
+			},
+			{
+				"texte": "Que la classe <code>Lion</code> va hériter des champs et méthodes private de la classe <code>Felin</code>",
+				"isTrue": false
+			},
+			{
+				"texte": "Que la classe <code>Lion</code> va hériter des champs et méthodes protected de la classe <code>Felin</code>",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que fait le code <code>System.out.println(\"Hello World\") ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Il va logger \"Hello World\" dans un fichier de logs",
+				"isTrue": false
+			},
+			{
+				"texte": "Il va logger \"Hello World\" dans la console",
+				"isTrue": true
+			},
+			{
+				"texte": "Il va logger \"Hello World\" dans la console dans une nouvelle ligne",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la différence entre throw et throws ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "throw lève une exception ponctuelle tandis que throws se place en déclaration de méthode",
+				"isTrue": false
+			},
+			{
+				"texte": "throw lève une Exception générale tandis que throws lève une exception particulière",
+				"isTrue": false
+			},
+			{
+				"texte": "throws lève une exception ponctuelle tandis que throw se place en déclaration de méthode",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Peut-on écrire directement <code>int i, j, k;</code>",
+		"topic": "",
+		"reponses": [
+			{
+				"texte": "Oui",
+				"isTrue": true
+			},
+			{
+				"texte": "Non",
+				"isTrue": false
+			},
+			{
+				"texte": "Ca dépend",
+				"isTrue": false
+			}
+		]
+	}
+]
