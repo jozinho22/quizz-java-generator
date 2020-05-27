@@ -7,6 +7,7 @@ import java.util.List;
 
 import com.douineau.entity.Question;
 import com.douineau.entity.Reponse;
+import com.douineau.exception.QuestionException;
 import com.douineau.exception.ReponsesException;
 import com.douineau.utils.FileReader;
 import com.fasterxml.jackson.core.JsonParser;
@@ -15,7 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class QuestionsVerificator {
 
-	public static void main(String[] args) throws IOException, ReponsesException {
+	public static void main(String[] args) throws IOException, ReponsesException, QuestionException {
 
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.configure(JsonParser.Feature.ALLOW_BACKSLASH_ESCAPING_ANY_CHARACTER, true);
@@ -45,15 +46,24 @@ public class QuestionsVerificator {
 
 		for (Question q : questions) {
 
-			addItemsToQuestionText(codes, q);
-
+			if(!q.getTexte().contains("<code>")) {
+				addItemsToQuestionText(codes, q);
+			}
+			
+			if(q.getTopic().equals("")) {
+				throw new QuestionException(q);
+			}
 //			addItemsToQuestionText(quotes, q);
 
 			List<Boolean> booleans = new ArrayList<Boolean>();
 			for (Reponse r : q.getReponses()) {
-
+				
 				addBlanksToResponseText(r);
-				addItemsToResponseText(codes, r);
+
+				if(!r.getTexte().contains("<code>")) {
+					addItemsToResponseText(codes, r);
+				}
+				
 				booleans.add(r.getIsTrue());
 
 //				addItemsToResponseText(quotes, r);

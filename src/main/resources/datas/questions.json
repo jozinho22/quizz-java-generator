@@ -378,7 +378,7 @@
 		]
 	},
 	{
-		"texte": "Que signifie le mot-clef 'protected' pour un attribut de classe ?",
+		"texte": "Que signifie le mot-clef protected pour un attribut de classe ?",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -415,7 +415,7 @@
 	},
 	{
 		"texte": "Que signifie le code public static void devant une méthode",
-		"topic": "",
+		"topic": "Java",
 		"reponses": [
 			{
 				"texte": "La méthode peut être appelée depuis n'importe quelle classe, seulement avec une instance de la classe et sans retour",
@@ -612,7 +612,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le code <code>System.out.println(\"Hello World\") ?",
+		"texte": "Que fait le code suivant ? <br> <code>System.out.println(\"Hello World\")</code> ?",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -630,7 +630,7 @@
 		]
 	},
 	{
-		"texte": "Quelle est la différence entre throw et throws ?",
+		"texte": "Quelle est la différence entre throws et throws ?",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -648,8 +648,8 @@
 		]
 	},
 	{
-		"texte": "Peut-on écrire directement <code>int i, j, k;</code>",
-		"topic": "",
+		"texte": "Peut-on écrire directement <br> <code>int i, j, k;</code> ?",
+		"topic": "Java",
 		"reponses": [
 			{
 				"texte": "Oui",
@@ -661,6 +661,386 @@
 			},
 			{
 				"texte": "Ca dépend",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la valeur de Byte.<i>MIN_VALUE</i> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "-128",
+				"isTrue": true
+			},
+			{
+				"texte": "-32 768",
+				"isTrue": false
+			},
+			{
+				"texte": "-9 223 372 036 854 775 808",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la valeur de Byte.<i>MAX_VALUE</i> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "127",
+				"isTrue": true
+			},
+			{
+				"texte": "32 767",
+				"isTrue": false
+			},
+			{
+				"texte": "2 147 483 647",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la valeur de Short.<i>MIN_VALUE</i> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "-128",
+				"isTrue": false
+			},
+			{
+				"texte": "-32 768",
+				"isTrue": true
+			},
+			{
+				"texte": "-2 147 483 648",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la valeur de Short.<i>MAX_VALUE</i> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "127",
+				"isTrue": false
+			},
+			{
+				"texte": "32 767",
+				"isTrue": true
+			},
+			{
+				"texte": "2 147 483 647",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la valeur de Integer.<i>MIN_VALUE</i> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "-128",
+				"isTrue": false
+			},
+			{
+				"texte": "-2 147 483 648",
+				"isTrue": true
+			},
+			{
+				"texte": "-9 223 372 036 854 775 808",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la valeur de Integer.<i>MAX_VALUE</i> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "127",
+				"isTrue": false
+			},
+			{
+				"texte": "2 147 483 647",
+				"isTrue": true
+			},
+			{
+				"texte": "9 223 372 036 854 775 807",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la valeur de Long.<i>MIN_VALUE</i> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "-32 768",
+				"isTrue": false
+			},
+			{
+				"texte": "-2 147 483 648",
+				"isTrue": false
+			},
+			{
+				"texte": "-9 223 372 036 854 775 808",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la valeur de Integer.<i>MAX_VALUE</i> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "127",
+				"isTrue": false
+			},
+			{
+				"texte": "2 147 483 647",
+				"isTrue": false
+			},
+			{
+				"texte": "9 223 372 036 854 775 807",
+				"isTrue": true
+			}
+		]
+	}
+	,
+	{
+		"texte": "Quelle est la valeur de Float.<i>MIN_VALUE</i> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "-9 223 372 036 854 775 808",
+				"isTrue": false
+			},
+			{
+				"texte": "1.40238946E-45",
+				"isTrue": true
+			},
+			{
+				"texte": "4.9406564584124654E-324",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la valeur de Float.<i>MAX_VALUE</i> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "9 223 372 036 854 775 807",
+				"isTrue": false
+			},
+			{
+				"texte": "3.4028247E38",
+				"isTrue": true
+			},
+			{
+				"texte": "1.797693134862316E308",
+				"isTrue": false
+			}
+		]
+	}
+	,
+	{
+		"texte": "Quelle est la valeur de Double.<i>MIN_VALUE</i> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "-9 223 372 036 854 775 808",
+				"isTrue": false
+			},
+			{
+				"texte": "1.40238946E-45",
+				"isTrue": false
+			},
+			{
+				"texte": "4.9406564584124654E-324",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la valeur de Double.<i>MAX_VALUE</i> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "9 223 372 036 854 775 807",
+				"isTrue": false
+			},
+			{
+				"texte": "3.4028247E38",
+				"isTrue": false
+			},
+			{
+				"texte": "1.797693134862316E308",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quelle est le type de l'opération suivante ? <br> <code>int i = 4, long j = 5; int k = i * j;</code> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "int",
+				"isTrue": false
+			},
+			{
+				"texte": "long",
+				"isTrue": true
+			},
+			{
+				"texte": "Il y aura une erreur de compilation",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie l'annotation @org.springframework.stereotype.Service ?",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "Que la classe sera un Singleton dédié à des traitements métiers",
+				"isTrue": true
+			},
+			{
+				"texte": "Que la classe héritera de la classe Service de Spring",
+				"isTrue": false
+			},
+			{
+				"texte": "Que la classe sera dédiée à des traitements métiers",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle autre annotation peut remplacer l'annotation @org.springframework.stereotype.Service ?",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "@org.springframework.stereotype.Repository",
+				"isTrue": false
+			},
+			{
+				"texte": "@org.springframework.stereotype.Component",
+				"isTrue": true
+			},
+			{
+				"texte": "@org.springframework.stereotype.Controller",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que fait le code suivant : <code>@After(\"execution(* maMethode(..))\")</code> au dessus d'une méthode ?",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "La méthode sera exécutée à chaque fois avant que maMethode() ne soit appelée",
+				"isTrue": false
+			},
+			{
+				"texte": "La méthode sera exécutée à chaque fois après que maMethode() ne soit appelée",
+				"isTrue": true
+			},
+			{
+				"texte": "La méthode sera exécutée après avoir récupérer le retour de maMethode()",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'affiche le code suivant : <br> <code>String s = \"HelloWorld\";</code> <br> <code>s.replace(s, \"HelloLand\");</code> <br> <code>System.out.println(s)</code> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "HelloWorld",
+				"isTrue": true
+			},
+			{
+				"texte": "HelloLand",
+				"isTrue": false
+			},
+			{
+				"texte": "null",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'a pour but le code suivant : <code>public static void main(String args[]) {...}</code> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Ne pas avoir à se soucier du retour de la méthode",
+				"isTrue": false
+			},
+			{
+				"texte": "Exécuter une simple méthode sans avoir à instancier la classe",
+				"isTrue": false
+			},
+			{
+				"texte": "Démarrer un programme Java avec un nombre d'arguments indéfinis",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que fait le mot-clef <code>break</code> dans la boucle suivante ? <br> <code>for(int k = 0; k < 10 ; k++) { </code> <br> <code> if([conditions]) { </code> <br> <code>  [instructions]; </code> <br> <code>  break;</code> <br> <code> }</code> <br> <code>}</code>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Il annule l'instruction faite à l'élément k",
+				"isTrue": false
+			},
+			{
+				"texte": "Il passe directement à l'élément (k + 1)",
+				"isTrue": false
+			},
+			{
+				"texte": "Il interromp le déroulement de la boucle en passant à l'instruction (k + 1)",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que fait le mot-clef <code>continue</code> dans la boucle suivante ? <br> <code>for(int k = 0; k < 10 ; k++) {</code> <br> <code> if([conditions]) {</code> <br> <code>  [instructions];</code> <br> <code>  continue;</code> <br> <code> }</code> <br> <code>}</code>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Il annule l'instruction faite à l'élément k et passe à l'élément (k + 1) ",
+				"isTrue": false
+			},
+			{
+				"texte": "Il passe à l'élément (k + 1)",
+				"isTrue": true
+			},
+			{
+				"texte": "Il interromp le déroulement de la boucle en passant à l'instruction (k + 1)",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Ces deux boucles sont elles équivalentes ? <br> <code>int[] tab = new int[3];</code> <br> <code>for(int k = 0; k < tab.length ; k++) {</code> <br> <code> System.out.println(tab[k];</code> <br> <code>}</code> <br> <code>for(int i : tab) {</code> <br> <code> System.out.println(i);</code> <br> <code>}</code>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Il annule l'instruction faite à l'élément k et passe à l'élément (k + 1) ",
+				"isTrue": false
+			},
+			{
+				"texte": "Il passe à l'élément (k + 1)",
+				"isTrue": true
+			},
+			{
+				"texte": "Il interromp le déroulement de la boucle en passant à l'instruction (k + 1)",
 				"isTrue": false
 			}
 		]
