@@ -41,6 +41,7 @@
 	"[]",
 	"javax.persistence.@Id",
 	"javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY)",
+	"OneToMany",
 	"@javax.inject.Inject",
 	"@org.springframework.stereotype.Component",
 	"@org.springframework.stereotype.Repository",
@@ -70,6 +71,8 @@
 	"--utf-8",
 	"commit",
 	"push",
-	"%"
-	
+	"add",
+	"remote",
+	"git@github.com/mon-depot.git",
+	"%"	
 ]

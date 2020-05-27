@@ -316,10 +316,6 @@
 			{
 				"texte": "Une classe qui ne contient que des méthodes abstraites",
 				"isTrue": true
-			},
-			{
-				"texte": "Aucune des deux",
-				"isTrue": false
 			}
 		]
 	},
@@ -351,10 +347,6 @@
 			},
 			{
 				"texte": "Que la méthode ne pourra pas être modifiée",
-				"isTrue": false
-			},
-			{
-				"texte": "Aucune des deux",
 				"isTrue": false
 			}
 		]
@@ -406,10 +398,6 @@
 			{
 				"texte": "Une méthode qui s'appelle elle-même",
 				"isTrue": true
-			},
-			{
-				"texte": "Aucune des deux",
-				"isTrue": false
 			}
 		]
 	},
@@ -441,10 +429,6 @@
 			},
 			{
 				"texte": "Si i = 0",
-				"isTrue": false
-			},
-			{
-				"texte": "Aucune des deux",
 				"isTrue": false
 			}
 		]
@@ -568,10 +552,6 @@
 			{
 				"texte": "Adapter un algorithme en fonction du contexte",
 				"isTrue": true
-			},
-			{
-				"texte": "Aucune des deux",
-				"isTrue": false
 			}
 		]
 	},
@@ -630,15 +610,15 @@
 		]
 	},
 	{
-		"texte": "Quelle est la différence entre throws et throws ?",
+		"texte": "Quelle est la différence entre throws et throw ?",
 		"topic": "Java",
 		"reponses": [
 			{
-				"texte": "throw lève une exception ponctuelle tandis que throws se place en déclaration de méthode",
+				"texte": "throws se place en déclaration de méthode tandis que throw lève une exception ponctuelle",
 				"isTrue": false
 			},
 			{
-				"texte": "throw lève une Exception générale tandis que throws lève une exception particulière",
+				"texte": "throws lève une exception ponctuelle tandis que throw lève une Exception générale",
 				"isTrue": false
 			},
 			{
@@ -819,11 +799,11 @@
 				"isTrue": false
 			},
 			{
-				"texte": "1.40238946E-45",
+				"texte": "1.402 389 460 E- 45",
 				"isTrue": true
 			},
 			{
-				"texte": "4.9406564584124654E-324",
+				"texte": "4.940 656 458 412 465 400 E -324",
 				"isTrue": false
 			}
 		]
@@ -837,11 +817,11 @@
 				"isTrue": false
 			},
 			{
-				"texte": "3.4028247E38",
+				"texte": "3.402 824 700 E 38",
 				"isTrue": true
 			},
 			{
-				"texte": "1.797693134862316E308",
+				"texte": "1.797 693 134 862 316 E 308",
 				"isTrue": false
 			}
 		]
@@ -856,11 +836,11 @@
 				"isTrue": false
 			},
 			{
-				"texte": "1.40238946E-45",
+				"texte": "1.402 389 460 E- 45",
 				"isTrue": false
 			},
 			{
-				"texte": "4.9406564584124654E-324",
+				"texte": "4.940 656 458 412 4654 E -324",
 				"isTrue": true
 			}
 		]
@@ -874,17 +854,17 @@
 				"isTrue": false
 			},
 			{
-				"texte": "3.4028247E38",
+				"texte": "3.402 824 700 E 38",
 				"isTrue": false
 			},
 			{
-				"texte": "1.797693134862316E308",
+				"texte": "1.797 693 134 862 316 E 308",
 				"isTrue": true
 			}
 		]
 	},
 	{
-		"texte": "Quelle est le type de l'opération suivante ? <br> <code>int i = 4, long j = 5; int k = i * j;</code> ?",
+		"texte": "Quelle est le type de l'opération suivante ? <br> <code>int i = 4, long j = 5;</code><br><code> int k = i * j;</code>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1041,6 +1021,504 @@
 			},
 			{
 				"texte": "Il interromp le déroulement de la boucle en passant à l'instruction (k + 1)",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera le résultat de la variable <code>m</code> à la fin de ce programme ? <br> <code>int k;</code> <br> <code>int l = 5;</code> <br> <code>if(l > 0) { </code> <br> <code>int m = k * l;</code> <br> <code>}</code>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Une erreur de compilation va se produire",
+				"isTrue": true
+			},
+			{
+				"texte": "0",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "De quelle manière se transmet l'information en Java",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Par valeur",
+				"isTrue": true
+			},
+			{
+				"texte": "Par référence",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Peut-on écrire le code suivant ? <br><code>for(int k = 0; k < list.length ; k++) {</code><br><code>[instructions]</code><br><code>}</code>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Oui",
+				"isTrue": true
+			},
+			{
+				"texte": "Non",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce que Cucumber ?",
+		"topic": "Frameworks de Java JEE",
+		"reponses": [
+			{
+				"texte": "Un framework de parsing pour XML",
+				"isTrue": false
+			},
+			{
+				"texte": "Un framework de tests automatisés",
+				"isTrue": true
+			},
+			{
+				"texte": "Un framework pour générer automatiquement les getters/setters",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie JPA ?",
+		"topic": "JPA",
+		"reponses": [
+			{
+				"texte": "Java Programming A",
+				"isTrue": false
+			},
+			{
+				"texte": "Java Performance A",
+				"isTrue": false
+			},
+			{
+				"texte": "Java Persistence A",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que signifie Pojo ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Plain Old Java Object",
+				"isTrue": true
+			},
+			{
+				"texte": "Programmation Orientée Jar Objet",
+				"isTrue": false
+			},
+			{
+				"texte": "Programming Object by Java Organization",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie l'extension *.war ?",
+		"topic": "Divers",
+		"reponses": [
+			{
+				"texte": "Web Archive",
+				"isTrue": true
+			},
+			{
+				"texte": "Web Rar",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce que Tomcat ?",
+		"topic": "Divers",
+		"reponses": [
+			{
+				"texte": "Un framework de bases de données",
+				"isTrue": false
+			},
+			{
+				"texte": "Un serveur d'application Java",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce que Junit ?",
+		"topic": "Frameworks de Java JEE",
+		"reponses": [
+			{
+				"texte": "Un framework de tests",
+				"isTrue": true
+			},
+			{
+				"texte": "Un framework de bases de données",
+				"isTrue": false
+			},
+			{
+				"texte": "Un framework de Web Services",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce que Lombok Project ?",
+		"topic": "Frameworks de Java JEE",
+		"reponses": [
+			{
+				"texte": "Un framework de Web Services",
+				"isTrue": false
+			},
+			{
+				"texte": "Un framework qui génère automatiquement les getters/setters",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce que Jax-RS ?",
+		"topic": "Frameworks de Java JEE",
+		"reponses": [
+			{
+				"texte": "Un framework de Web Services",
+				"isTrue": true
+			},
+			{
+				"texte": "Un framework de bases de données",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce que Restlet ?",
+		"topic": "Frameworks de Java JEE",
+		"reponses": [
+			{
+				"texte": "Un framework de Web Services",
+				"isTrue": true
+			},
+			{
+				"texte": "Un framework de parsing XML",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie REST ?",
+		"topic": "Web Services",
+		"reponses": [
+			{
+				"texte": "Representational Element Stateful Transfert",
+				"isTrue": true
+			},
+			{
+				"texte": "Representational Element Stateless Transfert",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce que Servlet ?",
+		"topic": "JSP",
+		"reponses": [
+			{
+				"texte": "Une classe Java qui va intercepter les méthodes POST, GET ou PUT",
+				"isTrue": true
+			},
+			{
+				"texte": "Un serveur local qui va faire tourner un programme",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "A quoi correspond la ligne suivante dans le fichier de configuration persistence.xml <code>hibernate.hbm2ddl.auto</code> ?",
+		"topic": "JPA",
+		"reponses": [
+			{
+				"texte": "A la manière dont Hibernate va exécuter le programme (update, drop-create)",
+				"isTrue": true
+			},
+			{
+				"texte": "Au fait qu'Hibernate se lance automatiquement au lancement de l'application",
+				"isTrue": false
+			},
+			{
+				"texte": "Au fait qu'Hibernate télécharger automatiquement les dll manquantes sur internet",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "En quoi consiste la compilation du code ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Au fait de compresser toutes les classes afin de réduire la taille du projet",
+				"isTrue": false
+			},
+			{
+				"texte": "A la transformation du code Java en byte code interprétable par la JVM",
+				"isTrue": true
+			},
+			{
+				"texte": "Au fait de réaligner toutes les lignes de chaque classe afin de rendre le code lisible",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce que Jackson ?",
+		"topic": "Frameworks de Java JEE",
+		"reponses": [
+			{
+				"texte": "Un framework pour parser des fichiers XML",
+				"isTrue": false
+			},
+			{
+				"texte": "Un framework de test",
+				"isTrue": false
+			},
+			{
+				"texte": "Un framework pour serialiser/déserialiser des objets",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce que SAXParser ?",
+		"topic": "Frameworks de Java JEE",
+		"reponses": [
+			{
+				"texte": "Un framework pour parser des fichiers JSON",
+				"isTrue": false
+			},
+			{
+				"texte": "Un framework pour parser des fichiers XML",
+				"isTrue": true
+			},
+			{
+				"texte": "Un framework pour parser des fichiers YML",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce que Stack Over Flow ?",
+		"topic": "Divers",
+		"reponses": [
+			{
+				"texte": "La pile d'appel d'un programme Java",
+				"isTrue": false
+			},
+			{
+				"texte": "Une plate-forme d'entraide pour les développeurs",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce que GitHub ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "Le site officiel de téléchargement de Git",
+				"isTrue": false
+			},
+			{
+				"texte": "Un site de dépôt distant utilisant le moteur de Git",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que fait la commande git add remote origin git@github.com/mon-depot.git ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "Cela va récupérer un dépôt distant pour créer un dépôt en local",
+				"isTrue": false
+			},
+			{
+				"texte": "Cela va affecter un dépôt distant appelé origin pour le dépôt local Git sur lequel vous travaillez",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que fait la commande <code>git add .</code> ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "Cela va ajouter à l'index de votre dépôt tous les fichiers contenus dans le dossier où vous pointez",
+				"isTrue": true
+			},
+			{
+				"texte": "Cela va initialiser un dépôt Git dans le dossier où vous pointez",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est que Gradle ?",
+		"topic": "Divers",
+		"reponses": [
+			{
+				"texte": "Un équivalent de Maven",
+				"isTrue": true
+			},
+			{
+				"texte": "Un équivalent de Git",
+				"isTrue": false
+			},
+			{
+				"texte": "Un équivalent de Tomcat",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie JSP ?",
+		"topic": "Frameworks de Java JEE",
+		"reponses": [
+			{
+				"texte": "Java Server Programming",
+				"isTrue": false
+			},
+			{
+				"texte": "Java Server Pages",
+				"isTrue": true
+			},
+			{
+				"texte": "Java Server Processing",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie JSF ?",
+		"topic": "Frameworks de Java JEE",
+		"reponses": [
+			{
+				"texte": "Java Server Forms",
+				"isTrue": false
+			},
+			{
+				"texte": "Java Server Facets",
+				"isTrue": false
+			},
+			{
+				"texte": "Java Server Faces",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que signifie PL/SQL ?",
+		"topic": "Frameworks de Java JEE",
+		"reponses": [
+			{
+				"texte": "Procedure Language / Structured Query Language",
+				"isTrue": true
+			},
+			{
+				"texte": "Programming Language / Structured Query Language",
+				"isTrue": false
+			},
+			{
+				"texte": "Professionnal Language / Structured Query Language",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "A qui servent les fichiers CSS ?",
+		"topic": "Divers",
+		"reponses": [
+			{
+				"texte": "A faire tourner du code javascript",
+				"isTrue": false
+			},
+			{
+				"texte": "A conserver les cookies du navigateur",
+				"isTrue": false
+			},
+			{
+				"texte": "A customiser les éléments du front",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que signifie CSS ?",
+		"topic": "Divers",
+		"reponses": [
+			{
+				"texte": "Custom Serialized Server",
+				"isTrue": false
+			},
+			{
+				"texte": "Custom Style Service",
+				"isTrue": false
+			},
+			{
+				"texte": "Customed Style Sheets",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce qu'Heroku ?",
+		"topic": "Divers",
+		"reponses": [
+			{
+				"texte": "Une version d'Eclipse",
+				"isTrue": false
+			},
+			{
+				"texte": "Un framework de gestion de bases de données",
+				"isTrue": false
+			},
+			{
+				"texte": "Une plate-forme de déploiement",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce qu'une relation OneToMany ?",
+		"topic": "JPA",
+		"reponses": [
+			{
+				"texte": "Un ensemble d'objets pointant vers un objet unique",
+				"isTrue": false
+			},
+			{
+				"texte": "Un objet pointant vers un ensemble d'objets",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Dans quel framework rencontre-t-on les annotations @Given, @When, @And, @Then ?",
+		"topic": "Frameworks de Java JEE",
+		"reponses": [
+			{
+				"texte": "JUnit",
+				"isTrue": false
+			},
+			{
+				"texte": "Cucumber",
+				"isTrue": true
+			},
+			{
+				"texte": "AspectJ",
 				"isTrue": false
 			}
 		]

@@ -46,32 +46,31 @@ public class QuestionsVerificator {
 
 		for (Question q : questions) {
 
-			if(!q.getTexte().contains("<code>")) {
+			if (!q.getTexte().contains("<code>")) {
 				addItemsToQuestionText(codes, q);
 			}
-			
-			if(q.getTopic().equals("")) {
+
+			if (q.getTopic().equals("")) {
 				throw new QuestionException(q);
 			}
 //			addItemsToQuestionText(quotes, q);
 
 			List<Boolean> booleans = new ArrayList<Boolean>();
 			for (Reponse r : q.getReponses()) {
-				
+
 				addBlanksToResponseText(r);
 
-				if(!r.getTexte().contains("<code>")) {
+				if (!r.getTexte().contains("<code>")) {
 					addItemsToResponseText(codes, r);
 				}
-				
+
 				booleans.add(r.getIsTrue());
 
 //				addItemsToResponseText(quotes, r);
 
 			}
 
-			boolean ok = false;
-			checkNbReponses(q, booleans, ok);
+			checkNbReponses(q, booleans);
 
 		}
 
@@ -87,29 +86,35 @@ public class QuestionsVerificator {
 
 	}
 
-	private static void checkNbReponses(Question q, List<Boolean> booleans, boolean ok) throws ReponsesException {
-		for (int k = 0; k < booleans.size() - 1; k++) {
+	private static void checkNbReponses(Question q, List<Boolean> booleans) throws ReponsesException {
+		boolean ok = false;
+		int nb = q.getReponses().size();
+		int k = 0;
+
+		if (nb == 2) {
+			if (booleans.get(k) && !booleans.get(k + 1) || !booleans.get(k) && booleans.get(k + 1)) {
+				ok = true;
+			} else {
+				ok = false;
+			}
+		} else if (nb == 3) {
 			if (booleans.get(k)) {
 				if (!booleans.get(k + 1) && !booleans.get(k + 2)) {
 					ok = true;
-					break;
 				} else {
 					ok = false;
-					break;
 				}
 			} else if (!booleans.get(k)) {
 				if (!booleans.get(k + 1) && booleans.get(k + 2)) {
 					ok = true;
-					break;
 				} else if (booleans.get(k + 1) && !booleans.get(k + 2)) {
 					ok = true;
-					break;
 				} else {
 					ok = false;
-					break;
 				}
 			}
 		}
+
 		if (!ok) {
 			throw new ReponsesException(q);
 		}
