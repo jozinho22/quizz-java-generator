@@ -18,7 +18,7 @@ public class QuestionsInsertor {
 	public static void main(String[] args) throws IOException {
 		
 		FileReader reader = new FileReader();
-		File jsonFile = reader.getFile("questions/datas.json");
+		File jsonFile = reader.getFile("datas/questionswithcodes.json");
 		System.out.println(jsonFile);
 
 		ObjectMapper mapper = new ObjectMapper();
@@ -32,7 +32,6 @@ public class QuestionsInsertor {
 //		DaoUtil.truncateTable("reponse");
 //		DaoUtil.truncateTable("question");
 		
-		int k = 1;
 		for(Question question : questions) {
 			question.setCreatedAt(new Date());
 			DaoUtil.insertObject(question);
@@ -41,7 +40,6 @@ public class QuestionsInsertor {
 				reponse.setQuestion(question);
 				DaoUtil.insertObject(reponse);
 			}
-			k += 1;
 		}
 		
 	}

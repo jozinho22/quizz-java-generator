@@ -356,7 +356,7 @@
 		"topic": "Java",
 		"reponses": [
 			{
-				"texte": "Que l'attribut ne pourra être visible qu'avec un mot de passe",
+				"texte": "Que l'attribut ne sera visible que depuis les classes du même package",
 				"isTrue": false
 			},
 			{
@@ -374,11 +374,11 @@
 		"topic": "Java",
 		"reponses": [
 			{
-				"texte": "Que l'attribut ne pourra être visible qu'avec un mot de passe",
+				"texte": "Que l'attribut ne sera visible que depuis les classes qui héritent de la classe",
 				"isTrue": false
 			},
 			{
-				"texte": "Que l'attribut ne sera visible que depuis la classe qui hérite de la classe",
+				"texte": "Que l'attribut ne sera visible que depuis les classes qui héritent de la classe et les classes du même package",
 				"isTrue": true
 			},
 			{
@@ -465,6 +465,60 @@
 			},
 			{
 				"texte": "Il est utilisé pour économiser de la mémoire",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel sont les trois grands types de Design Patterns ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Les patterns de construction, de structure et de comportement",
+				"isTrue": true
+			},
+			{
+				"texte": "Les patterns de construction, de structure et de stratégie",
+				"isTrue": false
+			},
+			{
+				"texte": "Les patterns de construction, de décoration et de stratégie",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel sont les trois grands types de la Factory ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Elle va nous permettre de dissocier la création des objets concrets de leur utilisation",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle permet de fournir un ensemble de classes à un client qui n'a pas à connaître la classe concrète des objets instanciés",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle va permettre de fournir des objets en masse",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel sont les trois grands types de l'Abstract Factory ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Elle va nous permettre de dissocier la création des objets concrets de leur utilisation",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle permet de fournir un ensemble de classes à un client qui n'a pas à connaître la classe concrète des objets instanciés",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle va permettre de fournir des objets en masse",
 				"isTrue": false
 			}
 		]
@@ -1519,6 +1573,216 @@
 			},
 			{
 				"texte": "AspectJ",
+				"isTrue": false
+			}
+		]
+	}
+	,
+	{
+		"texte": "Quelle est la différence entre un JDK et une JRE ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Un JDK est un kit de développement et une JRE est une plate-forme d'exécution",
+				"isTrue": false
+			},
+			{
+				"texte": "Un JDK est un kit de développement contenant une JRE et une JRE est une plate-forme d'exécution",
+				"isTrue": true
+			},
+			{
+				"texte": "Un JDK est un kit de développement et une JRE est une plate-forme d'exécution contenant une JDK",
+				"isTrue": false
+			}
+		]
+	}
+	,
+	{
+		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><code>Felin c = new Chat();</code>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Oui",
+				"isTrue": true
+			},
+			{
+				"texte": "Non",
+				"isTrue": false
+			},
+			{
+				"texte": "Ca dépend",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><code>Chat c = new Felin();</code>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Oui",
+				"isTrue": false
+			},
+			{
+				"texte": "Non",
+				"isTrue": true
+			},
+			{
+				"texte": "Ca dépend",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><code>Chat c = (Chat) new Felin();</code>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Oui",
+				"isTrue": false
+			},
+			{
+				"texte": "Non",
+				"isTrue": true
+			},
+			{
+				"texte": "Ca dépend",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Peut-on utiliser une variable de type interface ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Non",
+				"isTrue": false
+			},
+			{
+				"texte": "Oui",
+				"isTrue": true
+			},
+			{
+				"texte": "Ca dépend",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que se passe-t-il lorsqu'on oublie de mentionner les mots-clefs public et abstract dans lé déclaration des méthodes d'une interface ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Il y aura une erreur de compilation",
+				"isTrue": false
+			},
+			{
+				"texte": "Il y aura une erreur d'exécution",
+				"isTrue": false
+			},
+			{
+				"texte": "Rien",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quel est le contrat passé entre une interface et une classe qui l'implémente ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Elle doit obligatoirement redéfinir les méthodes de l'interface",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle doit obligatoirement redéfinir les méthodes et constantes de l'interface",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle doit au moins utiliser une des méthodes de l'interface",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "I est une interface implémentée par les classes A et B, peut-on écrire <code>I[] tab;</code><br><code>tab = new I[2];</code>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Oui",
+				"isTrue": true
+			},
+			{
+				"texte": "Non",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Peut-on définir des méthodes dans une interface ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Oui",
+				"isTrue": true
+			},
+			{
+				"texte": "Non",
+				"isTrue": false
+			},
+			{
+				"texte": "Ca dépend",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie le mot-clef default dans la signature d'une méthode d'une interface ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "C'est un mot-clef facultatif",
+				"isTrue": false
+			},
+			{
+				"texte": "Que la méthode sera implémentée par défaut",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Peut-on redéclarer une méthode implémentée par défaut dans une interface dans la classe qui l'implémente ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Oui",
+				"isTrue": true
+			},
+			{
+				"texte": "Non",
+				"isTrue": false
+			},
+			{
+				"texte": "Ca dépend",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie l'annotation @javax.persistence.Transient mise sur un champ ?",
+		"topic": "JPA",
+		"reponses": [
+			{
+				"texte": "Que le champ est transitif",
+				"isTrue": false
+			},
+			{
+				"texte": "Que le champ ne sera pas dans le contexte de persistence",
+				"isTrue": true
+			},
+			{
+				"texte": "Que le champ sera automatiquement commité même s'il n'est pas dans une transaction",
 				"isTrue": false
 			}
 		]

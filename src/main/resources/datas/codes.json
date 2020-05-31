@@ -41,6 +41,7 @@
 	"[]",
 	"javax.persistence.@Id",
 	"javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY)",
+	"@javax.persistence.Transient",
 	"OneToMany",
 	"@javax.inject.Inject",
 	"@org.springframework.stereotype.Component",
