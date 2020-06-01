@@ -10,6 +10,7 @@ import com.douineau.entity.Reponse;
 import com.douineau.exception.QuestionException;
 import com.douineau.exception.ReponsesException;
 import com.douineau.utils.FileReader;
+import com.douineau.utils.TopicEnum;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -27,13 +28,6 @@ public class QuestionsVerificator {
 
 		List<String> codes = mapper.reader().forType(new TypeReference<List<String>>() {
 		}).readValue(jsonFile2);
-
-		// quotes
-		FileReader reader3 = new FileReader();
-		File jsonFile3 = reader3.getFile("datas/quotes.json");
-
-		List<String> quotes = mapper.reader().forType(new TypeReference<List<String>>() {
-		}).readValue(jsonFile3);
 
 		// datas
 		FileReader reader = new FileReader();
@@ -53,7 +47,6 @@ public class QuestionsVerificator {
 			if (q.getTopic().equals("")) {
 				throw new QuestionException(q);
 			}
-//			addItemsToQuestionText(quotes, q);
 
 			List<Boolean> booleans = new ArrayList<Boolean>();
 			for (Reponse r : q.getReponses()) {
@@ -66,13 +59,16 @@ public class QuestionsVerificator {
 
 				booleans.add(r.getIsTrue());
 
-//				addItemsToResponseText(quotes, r);
-
 			}
 
 			checkNbReponses(q, booleans);
 
 		}
+		
+//		questions.forEach(q -> System.out.print(q));
+//		questions.forEach(System.out::println);
+		
+		printCountByTopic(questions);
 
 		try {
 			// get Oraganisation object as a json string
@@ -83,6 +79,40 @@ public class QuestionsVerificator {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+	}
+
+	private static void printCountByTopic(List<Question> questions) {
+		System.out.println("count Java : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.JAVA.getTopic()))
+				.count());
+		
+		System.out.println("count Git : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.GIT.getTopic()))
+				.count());
+		
+		System.out.println("count Design Patterns : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.DESIGN_PATTERNS.getTopic()))
+				.count());
+		
+		System.out.println("count Frameworks de Java Jee : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.FRAMEWORKS.getTopic()))
+				.count());
+		
+		System.out.println("count Divers : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.DIVERS.getTopic()))
+				.count());
+		
+		System.out.println("count Algorithmie : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.ALGO.getTopic()))
+				.count());
+		
 
 	}
 
