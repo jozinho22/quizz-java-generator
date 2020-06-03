@@ -98,7 +98,7 @@ public class QuestionsVerificator {
 				.filter(q -> q.getTopic().equals(TopicEnum.DESIGN_PATTERNS.getTopic()))
 				.count());
 		
-		System.out.println("count Frameworks de Java Jee : " + 
+		System.out.println("count Frameworks de Java JEE : " + 
 				questions.stream()
 				.filter(q -> q.getTopic().equals(TopicEnum.FRAMEWORKS.getTopic()))
 				.count());

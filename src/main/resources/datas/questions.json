@@ -508,6 +508,66 @@
 		]
 	},
 	{
+		"texte": "Que se passe-t-il au niveau mémoire avec le code suivant <code>String s = \"Hello\"; <br>String s2 = \"World\"; <br>String s3 = s1 + s1;</code> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Un nouvel objet sera créée avec une référence à la chaîne de caractère \"HelloWorld\"",
+				"isTrue": true
+			},
+			{
+				"texte": "Aucun nouvel objet sera créé pour s3 car les deux objets existent déjà",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Peut-on modifier une chaîne de caractère ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Oui",
+				"isTrue": false
+			},
+			{
+				"texte": "Non",
+				"isTrue": true
+			},
+			{
+				"texte": "Ca dépend du compilateur",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que renvoie l'expression suivante <code>String s = \"Hello\"; <br> String s2 = \"Hello\"; <br>return (s1 == s2);</code> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "true",
+				"isTrue": false
+			},
+			{
+				"texte": "false",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que renvoie l'expression suivante <code>String s = \"Hello\"; <br>String s2 = \"Hello\"; <br>return (s1.equals(s2))</code> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "true",
+				"isTrue": true
+			},
+			{
+				"texte": "false",
+				"isTrue": false
+			}
+		]
+	},
+	{
 		"texte": "Que fait le méthode <code>a.equals(b)</code> pour <code>a</code> et <code>b</code> non nuls ?",
 		"topic": "Java",
 		"reponses": [
@@ -834,6 +894,70 @@
 		]
 	},
 	{
+		"texte": "Que signifie l'annotation @Override sur une méthode ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Que la méthode est une méthode surchargée",
+				"isTrue": false
+			},
+			{
+				"texte": "Que la méthode est une rédéfinition",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quelle est l'avantage du polymorphisme ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Il permet de transformer les objets en d'autres objets",
+				"isTrue": false
+			},
+			{
+				"texte": "Il permet de manipuler des objets sans en connaître (tout à fait) le type",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Qu'affiche la méthode toString(Object o) si l'on oublie de la rédéfinir ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Elle affiche le type de l'objet ainsi qu'un nombre aléatoire",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle affiche le type de l'objet ainsi que son hashcode()",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle affiche le type de l'objet ainsi que son id",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce qu'une méthode finale ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Une classe qui ne sera instanciée qu'une seule fois",
+				"isTrue": false
+			},
+			{
+				"texte": "Une classe non dérivable",
+				"isTrue": true
+			},
+			{
+				"texte": "Une classe qui ne pourra pas être instanciée",
+				"isTrue": false
+			}
+		]
+	},
+	{
 		"texte": "Quelle est la valeur de Integer.<i>MIN_VALUE</i> ?",
 		"topic": "Java",
 		"reponses": [
@@ -1112,7 +1236,6 @@
 			}
 		]
 	},
-	
 	{
 		"texte": "Comment démarre-t-on un dépôt Git en local ?",
 		"topic": "Git",
@@ -1127,6 +1250,24 @@
 			},
 			{
 				"texte": "git clone",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'effectue la commande git commit ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "Elle déplace les fichiers présents dans l'index et les place dans un nouveau checkpoint appelé commit",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle enregistre les modifications effectuées en local",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle envoie les dernières modifications vers les dépôt distant",
 				"isTrue": false
 			}
 		]
@@ -1228,7 +1369,7 @@
 		]
 	},
 	{
-		"texte": "Quel sont les trois grands types de Design Patterns ?",
+		"texte": "Quels sont les trois grands types de Design Patterns ?",
 		"topic": "Design Patterns",
 		"reponses": [
 			{
@@ -1246,7 +1387,7 @@
 		]
 	},
 	{
-		"texte": "Quel sont les trois grands types de la Factory ?",
+		"texte": "Quel est le principe de la Factory ?",
 		"topic": "Design Patterns",
 		"reponses": [
 			{
@@ -1369,7 +1510,7 @@
 	},
 	{
 		"texte": "Que signifie l'annotation @org.springframework.stereotype.Service ?",
-		"topic": "Frameworks de Java Jee",
+		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
 				"texte": "Que la classe sera un Singleton dédié à des traitements métiers",
@@ -1387,7 +1528,7 @@
 	},
 	{
 		"texte": "Quelle autre annotation peut remplacer l'annotation @org.springframework.stereotype.Service ?",
-		"topic": "Frameworks de Java Jee",
+		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
 				"texte": "@org.springframework.stereotype.Repository",
@@ -1405,7 +1546,7 @@
 	},
 	{
 		"texte": "Que fait le code suivant : <code>@After(\"execution(* maMethode(..))\")</code> au dessus d'une méthode ?",
-		"topic": "Frameworks de Java Jee",
+		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
 				"texte": "La méthode sera exécutée à chaque fois avant que maMethode() ne soit appelée",
@@ -1442,18 +1583,18 @@
 	},
 	{
 		"texte": "Que signifie JPA ?",
-		"topic": "Frameworks de Java Jee",
+		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
-				"texte": "Java Programming A",
+				"texte": "Java Programming API",
 				"isTrue": false
 			},
 			{
-				"texte": "Java Performance A",
+				"texte": "Java Performance API",
 				"isTrue": false
 			},
 			{
-				"texte": "Java Persistence A",
+				"texte": "Java Persistence API",
 				"isTrue": true
 			}
 		]
@@ -1658,7 +1799,7 @@
 		]
 	},
 	{
-		"texte": "Qu'est-ce qu'une relation OneToMany ?",
+		"texte": "Qu'est-ce qu'une relation javax.persistence.OneToMany ?",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
@@ -1709,7 +1850,7 @@
 	},
 	{
 		"texte": "A qui correspond lannotation javax.persistence.@Id javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY) ?",
-		"topic": "Frameworks de Java Jee",
+		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
 				"texte": "Elle référence un objet grâce à son hashcode()",
@@ -1727,7 +1868,7 @@
 	},
 	{
 		"texte": "Quel est léquivalent de lannotation @javax.inject.Named ?",
-		"topic": "Frameworks de Java Jee",
+		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
 				"texte": "@org.springframework.stereotype.Component",
@@ -1745,7 +1886,7 @@
 	},
 	{
 		"texte": "Quel est léquivalent de l''annotation @javax.inject.Inject ?",
-		"topic": "Frameworks de Java Jee",
+		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
 				"texte": "@org.springframework.stereotype.Component",
@@ -1758,6 +1899,19 @@
 			{
 				"texte": "@javax.inject.Named",
 				"isTrue": false
+			}
+		]
+	},{
+		"texte": "Quelle est l'implémentation officielle de JPA ?",
+		"topic": "Frameworks de Java JEE",
+		"reponses": [
+			{
+				"texte": "Hibernate",
+				"isTrue": false
+			},
+			{
+				"texte": "EclipseLink",
+				"isTrue": true
 			}
 		]
 	},
@@ -1894,15 +2048,15 @@
 		"topic": "Divers",
 		"reponses": [
 			{
-				"texte": "Object-Relational Mapping",
+				"texte": "Object Relational Mapping",
 				"isTrue": true
 			},
 			{
-				"texte": "Object-Related Mapping",
+				"texte": "Object Related Mapping",
 				"isTrue": false
 			},
 			{
-				"texte": "Object-Representational Model",
+				"texte": "Object Representational Model",
 				"isTrue": false
 			}
 		]
