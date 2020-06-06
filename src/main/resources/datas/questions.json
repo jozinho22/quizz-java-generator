@@ -126,7 +126,7 @@
 		]
 	},
 	{
-		"texte": "A quoi sert la méthode <code>list.stream.map(x -> x + x)</code> d'un stream ?",
+		"texte": "À quoi sert la méthode <code>list.stream.map(x -> x + x)</code> d'un stream ?",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -654,7 +654,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le mot-clef <code>break</code> dans la boucle suivante ? <br> <code>for(int k = 0; k < 10 ; k++) { </code> <br> <code> if([conditions]) { </code> <br> <code>  [instructions]; </code> <br> <code>  break;</code> <br> <code> }</code> <br> <code>}</code>",
+		"texte": "Que fait le mot-clef <code>break</code> dans la boucle suivante ? <br> <code>for(int k = 0; k < 10 ; k++) { </code> <br> <code style=\"padding-left : 15px;\"> if([conditions]) { </code> <br> <code <code style=\"padding-left : 30px;\">  [instructions]; </code> <br> <code style=\"padding-left : 30px;\">  break;</code> <br> <code style=\"padding-left : 15px;\"> }</code> <br> <code>}</code>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -672,7 +672,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le mot-clef <code>continue</code> dans la boucle suivante ? <br> <code>for(int k = 0; k < 10 ; k++) {</code> <br> <code> if([conditions]) {</code> <br> <code>  [instructions];</code> <br> <code>  continue;</code> <br> <code> }</code> <br> <code>}</code>",
+		"texte": "Que fait le mot-clef <code>continue</code> dans la boucle suivante ? <br> <code>for(int k = 0; k < 10 ; k++) {</code> <br> <code style=\"padding-left : 15px;\"> if([conditions]) {</code> <br> <code style=\"padding-left : 30px;\"> [instructions];</code> <br> <code style=\"padding-left : 30px;\">  continue;</code> <br> <code style=\"padding-left : 15px;\"> }</code> <br> <code>}</code>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1219,6 +1219,52 @@
 		]
 	},
 	{
+		"texte": "Qu'est-ce l'index de votre dépôt Git local ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "C'est le hash correspondant à un commit",
+				"isTrue": false
+			},
+			{
+				"texte": "C'est l'emplacement de votre dépôt Git local'",
+				"isTrue": false
+			},
+			{
+				"texte": "C'est l'emplacement où sont placés les fichiers que l'on souhaite commiter'",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que fait git checkout -b mabranche ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "Cela permet de créer une nouvelle branche et pointer dessus",
+				"isTrue": true
+			},
+			{
+				"texte": "Cela permet de pointer vers une branche existante",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "À quoi sert la commande git cherry-pick <commit-hash> ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "À choisir un commit et de la placer à la place du commit actuel",
+				"isTrue": true
+			},
+			{
+				"texte": "À ajouter les différences d'un commit choisi par rapport au commit actuel",
+				"isTrue": false
+			}
+		]
+	},
+	{
 		"texte": "Quel est la différence entre les commandes git rebase et git merge ?",
 		"topic": "Git",
 		"reponses": [
@@ -1323,7 +1369,7 @@
 		]
 	},
 	{
-		"texte": "Que fait la commande git add remote origin git@github.com/mon-depot.git ?",
+		"texte": "Que fait la commande <code>git add remote origin git@github.com/mon-depot.git</code> ?",
 		"topic": "Git",
 		"reponses": [
 			{
@@ -1346,6 +1392,20 @@
 			},
 			{
 				"texte": "Cela va initialiser un dépôt Git dans le dossier où vous pointez",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que fait la commande git clone git@github.com/mon-depot.git ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "Cela va rapatrier un dépôt distant vers un dépôt local qui sera créé à l'emplacement où vous pointez",
+				"isTrue": true
+			},
+			{
+				"texte": "Cela va cloner un dépôt local existant à l'emplacement où vous pointez",
 				"isTrue": false
 			}
 		]
@@ -1813,11 +1873,11 @@
 		]
 	},
 	{
-		"texte": "A quoi correspond la ligne suivante dans le fichier de configuration persistence.xml <code>hibernate.hbm2ddl.auto</code> ?",
+		"texte": "À quoi correspond la ligne suivante dans le fichier de configuration persistence.xml <code>hibernate.hbm2ddl.auto</code> ?",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
-				"texte": "A la manière dont Hibernate va exécuter le programme (update, drop-create)",
+				"texte": "À la manière dont Hibernate va exécuter le programme (update, drop-create)",
 				"isTrue": true
 			},
 			{
