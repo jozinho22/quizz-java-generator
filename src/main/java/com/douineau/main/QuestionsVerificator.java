@@ -93,6 +93,11 @@ public class QuestionsVerificator {
 				.filter(q -> q.getTopic().equals(TopicEnum.GIT.getTopic()))
 				.count());
 		
+		System.out.println("count Maven : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.GIT.getTopic()))
+				.count());
+		
 		System.out.println("count Design Patterns : " + 
 				questions.stream()
 				.filter(q -> q.getTopic().equals(TopicEnum.DESIGN_PATTERNS.getTopic()))
