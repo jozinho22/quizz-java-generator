@@ -90,7 +90,6 @@
 	"remote",
 	"git@github.com/mon-depot.git",
 	"%",
-	"mvn",
 	"mvn validate",
 	"mvn compile",
 	"mvn test",

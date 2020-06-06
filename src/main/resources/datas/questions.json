@@ -316,7 +316,7 @@
 				"isTrue": false
 			},
 			{
-				"texte": "Ca dépend",
+				"texte": "Ça dépend",
 				"isTrue": false
 			}
 		]
@@ -334,7 +334,7 @@
 				"isTrue": true
 			},
 			{
-				"texte": "Ca dépend",
+				"texte": "Ça dépend",
 				"isTrue": false
 			}
 		]
@@ -352,7 +352,7 @@
 				"isTrue": true
 			},
 			{
-				"texte": "Ca dépend",
+				"texte": "Ça dépend",
 				"isTrue": false
 			}
 		]
@@ -370,7 +370,7 @@
 				"isTrue": true
 			},
 			{
-				"texte": "Ca dépend",
+				"texte": "Ça dépend",
 				"isTrue": false
 			}
 		]
@@ -466,7 +466,7 @@
 				"isTrue": false
 			},
 			{
-				"texte": "Ca dépend",
+				"texte": "Ça dépend",
 				"isTrue": false
 			}
 		]
@@ -580,13 +580,13 @@
 				"isTrue": true
 			},
 			{
-				"texte": "Ca dépend du compilateur",
+				"texte": "Ça dépend du compilateur",
 				"isTrue": false
 			}
 		]
 	},
 	{
-		"texte": "Que renvoie l'expression suivante ? <br><br><div style=\"padding-left:20px;\"><code>String s = \"Hello\"; <br> String s2 = \"Hello\"; <br><br>return (s1 == s2);</code></div>",
+		"texte": "Que renvoie l'expression suivante ? <br><br><div style=\"padding-left:20px;\"><code>String s = \"Hello\"; <br> String s2 = \"Hello\";</code><br><br><code style=\"padding-left:20px;\">return (s1 == s2);</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -600,7 +600,7 @@
 		]
 	},
 	{
-		"texte": "Que renvoie l'expression suivante ? <br><br><div style=\"padding-left:20px;\"><code>String s = \"Hello\"; <br>String s2 = \"Hello\"; <br>return (s1.equals(s2))</code></div>",
+		"texte": "Que renvoie l'expression suivante ? <br><br><div style=\"padding-left:20px;\"><code>String s = \"Hello\"; <br>String s2 = \"Hello\";</code> <br><br><code style=\"padding-left:20px;\">return (s1.equals(s2));</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -664,7 +664,7 @@
 		]
 	},
 	{
-		"texte": "Qu'affiche le code suivant ? <br><br> <div style=\"padding-left:20px;\"><code>String s = \"HelloWorld\";</code> <br> <code>s.replace(s, \"HelloLand\");</code> <br> <code>System.out.println(s)</code></div>",
+		"texte": "Qu'affiche le code suivant ? <br><br> <div style=\"padding-left:20px;\"><code>String s = \"HelloWorld\";</code> <br> <code>s.replace(s, \"HelloLand\");</code> <br> <code>System.out.println(s);</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -768,7 +768,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le mot-clef <code>break</code> dans la boucle suivante ? <br><br> <div style=\"padding-left:20px;\"><code>for(int k = 0; k < 10 ; k++) { </code> <br> <code style=\"padding-left : 15px;\"> if([conditions]) { </code> <br> <code <code style=\"padding-left : 30px;\">  [instructions]; </code> <br> <code style=\"padding-left : 30px;\">  break;</code> <br> <code style=\"padding-left : 15px;\"> }</code> <br> <code>}</code></div>",
+		"texte": "Que fait le mot-clef <code>break</code> dans la boucle suivante ? <br><br> <div style=\"padding-left:20px;\"><code>for(int k = 0; k < 10 ; k++) { </code> <br> <code style=\"padding-left : 30px;\"> if([conditions]) { </code> <br> <code <code style=\"padding-left : 60px;\">  [instructions]; </code> <br> <code style=\"padding-left : 60px;\">  break;</code> <br> <code style=\"padding-left : 30px;\"> }</code> <br> <code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -786,7 +786,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le mot-clef <code>continue</code> dans la boucle suivante ? <br><br> <div style=\"padding-left:20px;\"><code>for(int k = 0; k < 10 ; k++) {</code> <br> <code style=\"padding-left : 15px;\"> if([conditions]) {</code> <br> <code style=\"padding-left : 30px;\"> [instructions];</code> <br> <code style=\"padding-left : 30px;\">  continue;</code> <br> <code style=\"padding-left : 15px;\"> }</code> <br> <code>}</code></div>",
+		"texte": "Que fait le mot-clef <code>continue</code> dans la boucle suivante ? <br><br> <div style=\"padding-left:20px;\"><code>for(int k = 0; k < 10 ; k++) {</code> <br> <code style=\"padding-left : 30px;\"> if([conditions]) {</code> <br> <code style=\"padding-left : 60px;\"> [instructions];</code> <br> <code style=\"padding-left : 60px;\">  continue;</code> <br> <code style=\"padding-left : 30px;\"> }</code> <br> <code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -804,7 +804,7 @@
 		]
 	},
 	{
-		"texte": "Ces deux boucles sont elles équivalentes ? <br> <code>int[] tab = new int[3];</code> <br> <code>for(int k = 0; k < tab.length ; k++) {</code> <br> <code> System.out.println(tab[k];</code> <br> <code>}</code> <br> <code>for(int i : tab) {</code> <br> <code> System.out.println(i);</code> <br> <code>}</code>",
+		"texte": "Ces deux boucles sont elles équivalentes ? <br><br><div style=\"padding-left:20px;\"> <code>int[] tab = new int[3];</code> <br> <code>for(int k = 0; k < tab.length ; k++) {</code> <br> <code style=\"padding:30px;\"> System.out.println(tab[k];</code> <br> <code>}</code> <br> <code>for(int i : tab) {</code> <br> <code style=\"padding:30px;\"> System.out.println(i);</code> <br> <code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -822,7 +822,7 @@
 		]
 	},
 	{
-		"texte": "Quelle sera le résultat de la variable <code>m</code> à la fin de ce programme ? <br><br> <div style=\"padding-left:20px;\"><code>int k;</code> <br> <code>int l = 5;</code> <br> <code>if(l > 0) { </code> <br> <code style=\"padding-left:15px;\">int m = k * l;</code> <br> <code>}</code></div>",
+		"texte": "Quelle sera le résultat de la variable <code>m</code> à la fin de ce programme ? <br><br> <div style=\"padding-left:20px;\"><code>int k;</code> <br> <code>int l = 5;</code> <br> <code>if(l > 0) { </code> <br> <code style=\"padding-left:30px;\">int m = k * l;</code> <br> <code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -850,7 +850,7 @@
 		]
 	},
 	{
-		"texte": "Peut-on écrire le code suivant ? <br><code>for(int k = 0; k < list.length ; k++) {</code><br><code>[instructions]</code><br><code>}</code>",
+		"texte": "Peut-on écrire le code suivant ? <br><br><div style=\"padding:20px;\"><code>for(int k = 0; k < list.length ; k++) {</code><br><code style=\"padding:30px;\">[instructions]</code><br><code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -930,7 +930,7 @@
 				"isTrue": false
 			},
 			{
-				"texte": "Ca dépend",
+				"texte": "Ça dépend",
 				"isTrue": false
 			}
 		]
@@ -1327,7 +1327,7 @@
 				"isTrue": false
 			},
 			{
-				"texte": "Ca dépend",
+				"texte": "Ça dépend",
 				"isTrue": false
 			}
 		]
@@ -1483,7 +1483,7 @@
 		]
 	},
 	{
-		"texte": "Que fait git checkout -b mabranche ?",
+		"texte": "Que fait <code>git checkout -b mabranche</code> ?",
 		"topic": "Git",
 		"reponses": [
 			{
@@ -1551,7 +1551,7 @@
 		"topic": "Git",
 		"reponses": [
 			{
-				"texte": "Elle déplace les fichiers présents dans l'index et les place dans un nouveau checkpoint appelé commit",
+				"texte": "Elle déplace les fichiers présents dans l'index et les place dans un nouveau noeud appelé commit",
 				"isTrue": true
 			},
 			{
@@ -2137,7 +2137,7 @@
 		]
 	},
 	{
-		"texte": "Qu'est-ce qu'une relation javax.persistence.OneToMany ?",
+		"texte": "Qu'est-ce qu'une relation @javax.persistence.OneToMany ?",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
