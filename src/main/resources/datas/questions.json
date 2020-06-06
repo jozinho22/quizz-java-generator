@@ -586,7 +586,7 @@
 		]
 	},
 	{
-		"texte": "Que renvoie l'expression suivante ? <br><br><div style=\"padding-left:20px;\"><code>String s = \"Hello\"; <br> String s2 = \"Hello\"; <br>return (s1 == s2);</code></div>",
+		"texte": "Que renvoie l'expression suivante ? <br><br><div style=\"padding-left:20px;\"><code>String s = \"Hello\"; <br> String s2 = \"Hello\"; <br><br>return (s1 == s2);</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1815,6 +1815,38 @@
 		]
 	},
 	{
+		"texte": "Quel est le principe du Composite ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Il permet de concevoir une structure arborescente et d'effectuer des actions dessus comme s'il s'agissait d'un seul objet",
+				"isTrue": true
+			},
+			{
+				"texte": "Il permet d'ajouter dynamiquement des fonctionnalités à un programme sans se soucier de la nature de l'objet",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel est le principe de l'Adapter ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Il permet de modifier le comportement d'un sous système sans modifier structurellement le système en place",
+				"isTrue": true
+			},
+			{
+				"texte": "Adapter un algorithme en fonction du contexte",
+				"isTrue": false
+			},
+			{
+				"texte": "Il est utilisé pour notifier les objets qui sont en relation directe avec un objet de ces modifications",
+				"isTrue": false
+			}
+		]
+	},
+	{
 		"texte": "Que signifie l'annotation @org.springframework.stereotype.Service ?",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
@@ -2427,6 +2459,48 @@
 			},
 			{
 				"texte": "Elle est réflexive, symétrique, transitive et consistante",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Qu'appelle t-on par complexité d'un algorithme ?",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le nombre conditions effectuées par un algorithme",
+				"isTrue": false
+			},
+			{
+				"texte": "Le nombre d'opérations élémentaires effectuées par un algorithme",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la complexité pour accéder à un élement n d'un tableau de taille k ?",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Complexité constante : O(1)",
+				"isTrue": true
+			},
+			{
+				"texte": "Complexité linéaire : O(n)",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la complexité pour parcourir une liste de k éléments ?",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Complexité constante : O(1)",
+				"isTrue": false
+			},
+			{
+				"texte": "Complexité linéaire : O(n)",
 				"isTrue": true
 			}
 		]

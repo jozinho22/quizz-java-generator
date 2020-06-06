@@ -26,6 +26,7 @@
 	"Thread",
 	"StringBuffer",
 	"StringBuilder",
+	"toString(Object o)",
 	"Pojo",
 	"Class",
 	"deprecated",

@@ -26,7 +26,7 @@
 				"isTrue": false
 			},
 			{
-				"texte": "A la transformation du code Java en byte code interprétable par la JVM ",
+				"texte": "À la transformation du code Java en byte code interprétable par la JVM ",
 				"isTrue": true
 			},
 			{
@@ -72,7 +72,7 @@
 		]
 	},
 	{
-		"texte": "Comment nomme-t-on une expression de type <code>MonInterface maMethode = x -> x * x;</code> ?",
+		"texte": "Comment nomme-t-on une expression de type <br><code>MonInterface maMethode = x -> x * x;</code> ?",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -98,7 +98,7 @@
 				"isTrue": true
 			},
 			{
-				"texte": "Une interface implémentant l'interface Runnable ",
+				"texte": "Une interface implémentant l'interface <code>Runnable</code> ",
 				"isTrue": false
 			},
 			{
@@ -108,7 +108,25 @@
 		]
 	},
 	{
-		"texte": "Comment nomme-t-on l'expression <code>System.out::println</code> dans le code suivant : <br> <code>list.forEach(System.out::println);</code> ?",
+		"texte": "Quelle est la condition pour lancer un thread ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Implémenter l'interface <code>Runnable</code> ",
+				"isTrue": true
+			},
+			{
+				"texte": "Hériter de la classe <code>Thread</code> ",
+				"isTrue": false
+			},
+			{
+				"texte": "Hériter de la classe <code>Runnable</code> ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Comment nomme-t-on l'expression suivante <code>System.out::println</code> dans le code suivant ? <br><br> <div style=\"padding-left:20px;\"><code>list.forEach(System.out::println);</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -284,7 +302,7 @@
 		]
 	},
 	{
-		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><code>Felin c = new Chat();</code>",
+		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><br><div style=\"padding-left:20px;\"><code>Felin c = new Chat();</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -302,7 +320,7 @@
 		]
 	},
 	{
-		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><code>Chat c = new Felin();</code>",
+		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><br><div style=\"padding-left:20px;\"><code>Chat c = new Felin();</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -320,7 +338,7 @@
 		]
 	},
 	{
-		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><code>Chat c = (Chat) new Felin();</code>",
+		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><br><div style=\"padding-left:20px;\"><code>Chat c = (Chat) new Felin();</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -352,6 +370,34 @@
 			{
 				"texte": "Ca dépend ",
 				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "À quoi sert l'interface <code>Serializable</code> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Elle met à disposition un framework permettant de serialiser/désérialiser avec un fichier *.json en entrée ",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle permet de convertir une instance en un format de manière à pouvoir l'écrire sur le disque ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que doit-on ajouter à une classe implémentant l'interface <code>Serializable</code> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Rien ",
+				"isTrue": false
+			},
+			{
+				"texte": "On va devoir redéfinir les méthodes de l'interface ",
+				"isTrue": true
 			}
 		]
 	},
@@ -392,7 +438,7 @@
 		]
 	},
 	{
-		"texte": "I est une interface implémentée par les classes A et B, peut-on écrire <code>I[] tab;</code><br><code>tab = new I[2];</code>",
+		"texte": "I est une interface implémentée par les classes A et B, peut-on écrire <br><br><code>I[] tab;</code><br><code>tab = new I[2];</code>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -506,7 +552,7 @@
 		]
 	},
 	{
-		"texte": "Que se passe-t-il au niveau mémoire avec le code suivant <code>String s = \"Hello\"; <br>String s2 = \"World\"; <br>String s3 = s1 + s1;</code> ?",
+		"texte": "Que se passe-t-il au niveau mémoire avec le code suivant ? <br><br><div style=\"padding-left:20px;\"> <code>String s = \"Hello\"; <br>String s2 = \"World\"; <br>String s3 = s1 + s1;</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -538,7 +584,7 @@
 		]
 	},
 	{
-		"texte": "Que renvoie l'expression suivante <code>String s = \"Hello\"; <br> String s2 = \"Hello\"; <br>return (s1 == s2);</code> ?",
+		"texte": "Que renvoie l'expression suivante ? <br><br><div style=\"padding-left:20px;\"><code>String s = \"Hello\"; <br> String s2 = \"Hello\"; <br>return (s1 == s2);</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -552,7 +598,7 @@
 		]
 	},
 	{
-		"texte": "Que renvoie l'expression suivante <code>String s = \"Hello\"; <br>String s2 = \"Hello\"; <br>return (s1.equals(s2))</code> ?",
+		"texte": "Que renvoie l'expression suivante ? <br><br><div style=\"padding-left:20px;\"><code>String s = \"Hello\"; <br>String s2 = \"Hello\"; <br>return (s1.equals(s2))</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -616,7 +662,7 @@
 		]
 	},
 	{
-		"texte": "Qu'affiche le code suivant : <br> <code>String s = \"HelloWorld\";</code> <br> <code>s.replace(s, \"HelloLand\");</code> <br> <code>System.out.println(s)</code> ?",
+		"texte": "Qu'affiche le code suivant ? <br><br> <div style=\"padding-left:20px;\"><code>String s = \"HelloWorld\";</code> <br> <code>s.replace(s, \"HelloLand\");</code> <br> <code>System.out.println(s)</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -634,7 +680,7 @@
 		]
 	},
 	{
-		"texte": "Qu'a pour but le code suivant : <code>public static void main(String args[]) {...}</code> ?",
+		"texte": "Qu'a pour but le code suivant ? <br><br><div style=\"padding-left:20px;\"><code>public static void main(String args[]) {...}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -652,7 +698,75 @@
 		]
 	},
 	{
-		"texte": "Que fait le mot-clef <code>break</code> dans la boucle suivante ? <br> <code>for(int k = 0; k < 10 ; k++) { </code> <br> <code> if([conditions]) { </code> <br> <code>  [instructions]; </code> <br> <code>  break;</code> <br> <code> }</code> <br> <code>}</code>",
+		"texte": "Quelle est la différence entre <code>StringBuffer</code> et <code>StringBuilder</code> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "<code>StringBuffer</code> est synchronisée donc plus lente ",
+				"isTrue": true
+			},
+			{
+				"texte": "<code>StringBuffer</code> est <code>deprecated</code> ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la différence entre <code>@org.springframework.context.annotation.Bean</code> et <code>@org.springframework.stereotype.Component</code> ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "<code>@Bean</code> est une déclaration explicite tandis que <code>@Component</code> est une déclaration implicite ",
+				"isTrue": true
+			},
+			{
+				"texte": "<code>@Component</code> est une déclaration explicite tandis que <code>@Bean</code> est une déclaration implicite ",
+				"isTrue": false
+			},
+			{
+				"texte": "<code>@Bean</code> est <code>deprecated</code> depuis Java 1.8 ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que pourrait signifier l'acronyme JAVA ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Just Another Virtual Acknowledgement ",
+				"isTrue": false
+			},
+			{
+				"texte": "Just Another Vague Acronyme ",
+				"isTrue": true
+			},
+			{
+				"texte": "Just Another Virtual Acronyme ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie JSR ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Java System Requests ",
+				"isTrue": false
+			},
+			{
+				"texte": "Java Specification Requests ",
+				"isTrue": true
+			},
+			{
+				"texte": "Java Studio Records ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que fait le mot-clef <code>break</code> dans la boucle suivante ? <br><br> <div style=\"padding-left:20px;\"><code>for(int k = 0; k < 10 ; k++) { </code> <br> <code style=\"padding-left : 30px;\"> if([conditions]) { </code> <br> <code <code style=\"padding-left : 30px;\">  [instructions]; </code> <br> <code style=\"padding-left : 30px;\">  break;</code> <br> <code style=\"padding-left : 30px;\"> }</code> <br> <code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -670,7 +784,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le mot-clef <code>continue</code> dans la boucle suivante ? <br> <code>for(int k = 0; k < 10 ; k++) {</code> <br> <code> if([conditions]) {</code> <br> <code>  [instructions];</code> <br> <code>  continue;</code> <br> <code> }</code> <br> <code>}</code>",
+		"texte": "Que fait le mot-clef <code>continue</code> dans la boucle suivante ? <br><br> <div style=\"padding-left:20px;\"><code>for(int k = 0; k < 10 ; k++) {</code> <br> <code style=\"padding-left : 30px;\"> if([conditions]) {</code> <br> <code style=\"padding-left : 60px;\"> [instructions];</code> <br> <code style=\"padding-left : 60px;\">  continue;</code> <br> <code style=\"padding-left : 30px;\"> }</code> <br> <code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -688,7 +802,7 @@
 		]
 	},
 	{
-		"texte": "Ces deux boucles sont elles équivalentes ? <br> <code>int[] tab = new int[3];</code> <br> <code>for(int k = 0; k < tab.length ; k++) {</code> <br> <code> System.out.println(tab[k];</code> <br> <code>}</code> <br> <code>for(int i : tab) {</code> <br> <code> System.out.println(i);</code> <br> <code>}</code>",
+		"texte": "Ces deux boucles sont elles équivalentes ? <br><br> <div style=\"padding-left:20px;\"><code>int[] tab = new int[3];</code> <br> <code>for(int k = 0; k < tab.length ; k++) {</code> <br> <code style=\"padding-left:30px;\"> System.out.println(tab[k];</code> <br> <code>}</code> <br><br> <code>for(int i : tab) {</code> <br> <code style=\"padding-left:60px;\"> System.out.println(i);</code> <br> <code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -706,7 +820,7 @@
 		]
 	},
 	{
-		"texte": "Quelle sera le résultat de la variable <code>m</code> à la fin de ce programme ? <br> <code>int k;</code> <br> <code>int l = 5;</code> <br> <code>if(l > 0) { </code> <br> <code>int m = k * l;</code> <br> <code>}</code>",
+		"texte": "Quelle sera le résultat de la variable <code>m</code> à la fin de ce programme ? <br><br> <div style=\"padding-left:20px;\"><code>int k;</code> <br> <code>int l = 5;</code> <br> <code>if(l > 0) { </code> <br> <code style=\"padding-left:30px;\">int m = k * l;</code> <br> <code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -739,11 +853,11 @@
 		"reponses": [
 			{
 				"texte": "Oui ",
-				"isTrue": true
+				"isTrue": false
 			},
 			{
 				"texte": "Non ",
-				"isTrue": false
+				"isTrue": true
 			}
 		]
 	},
@@ -766,7 +880,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le code suivant ? <br> <code>System.out.println(\"Hello World\")</code> ?",
+		"texte": "Que fait le code suivant ? <br><br> <div style=\"padding-left:20px;\"><code>System.out.println(\"Hello World\");</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -784,25 +898,25 @@
 		]
 	},
 	{
-		"texte": "Quelle est la différence entre <code><code>throw</code>s</code> et <code>throw</code> ?",
+		"texte": "Quelle est la différence entre <code>throws</code> et <code>throw</code> ?",
 		"topic": "Java",
 		"reponses": [
 			{
-				"texte": "<code><code>throw</code>s</code> se place en déclaration de méthode tandis que <code>throw</code> lève une exception ponctuelle ",
+				"texte": "<code>throws</code> se place en déclaration de méthode tandis que <code>throw</code> lève une exception ponctuelle ",
 				"isTrue": false
 			},
 			{
-				"texte": "<code><code>throw</code>s</code> lève une exception ponctuelle tandis que <code>throw</code> lève une <code>Exception</code> générale ",
+				"texte": "<code>throws</code> lève une exception ponctuelle tandis que <code>throw</code> lève une Exception générale ",
 				"isTrue": false
 			},
 			{
-				"texte": "<code><code>throw</code>s</code> lève une exception ponctuelle tandis que <code>throw</code> se place en déclaration de méthode ",
+				"texte": "<code>throws</code> lève une exception ponctuelle tandis que <code>throw</code> se place en déclaration de méthode ",
 				"isTrue": true
 			}
 		]
 	},
 	{
-		"texte": "Peut-on écrire directement <br> <code>int i, j, k;</code> ?",
+		"texte": "Peut-on écrire directement <code>int i, j, k;</code> ?",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1100,7 +1214,7 @@
 		]
 	},
 	{
-		"texte": "Quelle est le type de l'opération suivante ? <br> <code>int i = 4, long j = 5;</code><br><code> int k = i * j;</code>",
+		"texte": "Quelle est le type de l'opération suivante ? <br><br><div style=\"padding-left:20px;\"> <code>int i = 4, long j = 5;</code><br><code> int k = i * j;</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1172,7 +1286,7 @@
 		]
 	},
 	{
-		"texte": "Quand est-ce que cette condition est vérifiée <code>if( i % 2 == 0 ) { ... } </code> ?",
+		"texte": "Quand est-ce que cette condition est vérifiée ?  <div style=\"padding-left:20px;\"><code>if( i % 2 == 0 ) { ... } </code> ",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1213,6 +1327,138 @@
 			},
 			{
 				"texte": "Ca dépend ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "D'où provient le nom Maven ?",
+		"topic": "Maven",
+		"reponses": [
+			{
+				"texte": "Du latin qui signifie \"moteur\" ",
+				"isTrue": false
+			},
+			{
+				"texte": "De l'indien qui signifie \"construction\" ",
+				"isTrue": false
+			},
+			{
+				"texte": "Du Yiddish qui signifie \"accumulateur\" ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quelle est l'utilité de Maven ?",
+		"topic": "Maven",
+		"reponses": [
+			{
+				"texte": "Partager du code avec d'autres développeurs ",
+				"isTrue": false
+			},
+			{
+				"texte": "Rendre plus simple le processus de build, fournir un environnement uniforme et encourager les bonnes pratiques de développement ",
+				"isTrue": true
+			},
+			{
+				"texte": "Uniquement récolter les dépendances déclarées dynamiquement ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que fait la commande mvn validate ?",
+		"topic": "Maven",
+		"reponses": [
+			{
+				"texte": "Vérifier si toutes les librairies nécessaires sont bien présentes ",
+				"isTrue": false
+			},
+			{
+				"texte": "Vérifier si toutes les informations du projet sont correctes ",
+				"isTrue": true
+			},
+			{
+				"texte": "Vérifier si le build s'est bien passé ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que fait la commande mvn test ?",
+		"topic": "Maven",
+		"reponses": [
+			{
+				"texte": "Il exécute les actions implémentées selon un framework de test déclaré dans le pom.xml ",
+				"isTrue": true
+			},
+			{
+				"texte": "Il teste l'application en vue d'un déploiement ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que fait la commande mvn package ?",
+		"topic": "Maven",
+		"reponses": [
+			{
+				"texte": "Il construit les différents package déclarés dans le projet ",
+				"isTrue": false
+			},
+			{
+				"texte": "Il transforme le code compilé dans un format distribuable, comme un Jar ou un War ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que fait la commande mvn install ?",
+		"topic": "Maven",
+		"reponses": [
+			{
+				"texte": "Il installe le projet dans le dépôt Maven local, dans l'idée d'être utilisé en tant que librairie pour d'autres projets ",
+				"isTrue": true
+			},
+			{
+				"texte": "Il transforme le code compilé dans un format distribuable, comme un Jar ou un War ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que sont les commandes auto-générées par Maven lors de la commande mvn install ?",
+		"topic": "Maven",
+		"reponses": [
+			{
+				"texte": "mvn validate - mvn compile - mvn test - mvn package - mvn verify - mvn install ",
+				"isTrue": true
+			},
+			{
+				"texte": "mvn validate - mvn compile - mvn test - mvn package - mvn install ",
+				"isTrue": false
+			},
+			{
+				"texte": "mvn validate - mvn compile - mvn test - mvn install ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que sont les commandes auto-générées par Maven lors de la commande mvn package ?",
+		"topic": "Maven",
+		"reponses": [
+			{
+				"texte": "mvn compile - mvn test - mvn package ",
+				"isTrue": false
+			},
+			{
+				"texte": "mvn validate - mvn compile - mvn test - mvn package ",
+				"isTrue": true
+			},
+			{
+				"texte": "mvn compile - mvn install ",
 				"isTrue": false
 			}
 		]
@@ -1368,7 +1614,7 @@
 		]
 	},
 	{
-		"texte": "Que fait la commande <code>git</code> <code>add</code> <code>remote</code> <code>origin</code> <code>git</code>@<code>git</code>hub.com/mon-depot.<code>git</code> ?",
+		"texte": "Que fait la commande <code>git add remote origin git@github.com/mon-depot.git</code> ?",
 		"topic": "Git",
 		"reponses": [
 			{
@@ -1396,7 +1642,7 @@
 		]
 	},
 	{
-		"texte": "Que fait la commande <code>git</code> <code>clone</code> <code>git</code>@<code>git</code>hub.com/mon-depot.<code>git</code> ?",
+		"texte": "Que fait la commande <code>git clone git@github.com/mon-depot.git</code> ?",
 		"topic": "Git",
 		"reponses": [
 			{
@@ -1568,6 +1814,38 @@
 		]
 	},
 	{
+		"texte": "Quel est le principe du Composite ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Il permet de concevoir une structure arborescente et d'effectuer des actions dessus comme s'il s'agissait d'un seul objet ",
+				"isTrue": true
+			},
+			{
+				"texte": "Il permet d'ajouter dynamiquement des fonctionnalités à un programme sans se soucier de la nature de l'objet ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel est le principe de l'Adapter ?",
+		"topic": "Design Patterns",
+		"reponses": [
+			{
+				"texte": "Il permet de modifier le comportement d'un sous système sans modifier structurellement le système en place ",
+				"isTrue": true
+			},
+			{
+				"texte": "Adapter un algorithme en fonction du contexte ",
+				"isTrue": false
+			},
+			{
+				"texte": "Il est utilisé pour notifier les objets qui sont en relation directe avec un objet de ces modifications ",
+				"isTrue": false
+			}
+		]
+	},
+	{
 		"texte": "Que signifie l'annotation <code>@org.springframework.stereotype.Service</code> ?",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
@@ -1604,7 +1882,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le code suivant : <code>@After(\"execution(* maMethode(..))\")</code> au dessus d'une méthode ?",
+		"texte": "Que fait le code suivant : <br><br><code>@After(\"execution(* maMethode(..))\")</code> au dessus d'une méthode ?",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
@@ -1904,7 +2182,7 @@
 		]
 	},
 	{
-		"texte": "A qui correspond lannotation <code>javax.persistence.@Id</code> <code>javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY)</code> ?",
+		"texte": "À quoi correspond lannotation <code>javax.persistence.@Id</code> <code>javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY)</code> ?",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
@@ -2018,19 +2296,19 @@
 		]
 	},
 	{
-		"texte": "A qui servent les fichiers CSS ?",
+		"texte": "À quoi servent les fichiers CSS ?",
 		"topic": "Divers",
 		"reponses": [
 			{
-				"texte": "A faire tourner du code javascript ",
+				"texte": "À faire tourner du code javascript ",
 				"isTrue": false
 			},
 			{
-				"texte": "A conserver les cookies du navigateur ",
+				"texte": "À conserver les cookies du navigateur ",
 				"isTrue": false
 			},
 			{
-				"texte": "A customiser les éléments du front ",
+				"texte": "À customiser les éléments du front ",
 				"isTrue": true
 			}
 		]
@@ -2177,6 +2455,48 @@
 			},
 			{
 				"texte": "Elle est réflexive, symétrique, transitive et consistante ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Qu'appelle t-on par complexité d'un algorithme ?",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le nombre conditions effectuées par un algorithme ",
+				"isTrue": false
+			},
+			{
+				"texte": "Le nombre d'opérations élémentaires effectuées par un algorithme ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la complexité pour accéder à un élement n d'un tableau de taille k ?",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Complexité constante : O(1) ",
+				"isTrue": true
+			},
+			{
+				"texte": "Complexité linéaire : O(n) ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la complexité pour parcourir une liste de k éléments ?",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Complexité constante : O(1) ",
+				"isTrue": false
+			},
+			{
+				"texte": "Complexité linéaire : O(n) ",
 				"isTrue": true
 			}
 		]
