@@ -1883,7 +1883,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le code suivant au dessus d'une méthode ? (java)<code>@After(\"execution(* maMethode(..))\")</code><div>",
+		"texte": "Que fait le code suivant au dessus d'une méthode ? <java>@After(\"execution(* maMethode(..))\")</java>",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
@@ -2187,7 +2187,7 @@
 		]
 	},
 	{
-		"texte": "À quoi correspond lannotation suivante ? (java)javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY)(java)",
+		"texte": "À quoi correspond lannotation suivante ? <java>javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY)</java>",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
