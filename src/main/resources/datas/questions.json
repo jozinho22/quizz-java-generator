@@ -72,7 +72,7 @@
 		]
 	},
 	{
-		"texte": "Comment nomme-t-on une expression de type <br><code>MonInterface maMethode = x -> x * x;</code> ?",
+		"texte": "Comment nomme-t-on une expression de ce type <br><br><code>MonInterface maMethode = x -> x * x;</code> ?",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -126,7 +126,7 @@
 		]
 	},
 	{
-		"texte": "Comment nomme-t-on l'expression suivante <code>System.out::println</code> dans le code suivant ? <br><br> <div style=\"padding-left:20px;\"><code>list.forEach(System.out::println);</code></div> ?",
+		"texte": "Comment nomme-t-on l'expression suivante <code>System.out::println</code> dans le code suivant ? <java>list.forEach(System.out::println);</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -304,7 +304,7 @@
 	}
 	,
 	{
-		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><br><div style=\"padding-left:20px;\"><code>Felin c = new Chat();</code></div>",
+		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <java>Felin c = new Chat();</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -322,7 +322,7 @@
 		]
 	},
 	{
-		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><br><div style=\"padding-left:20px;\"><code>Chat c = new Felin();</code></div>",
+		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <java>Chat c = new Felin();</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -340,7 +340,7 @@
 		]
 	},
 	{
-		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><br><div style=\"padding-left:20px;\"><code>Chat c = (Chat) new Felin();</code></div>",
+		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <java>Chat c = (Chat) new Felin();</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -440,7 +440,7 @@
 		]
 	},
 	{
-		"texte": "I est une interface implémentée par les classes A et B, peut-on écrire <code>I[] tab;</code><br><code>tab = new I[2];</code>",
+		"texte": "I est une interface implémentée par les classes A et B, peut-on écrire le code suivant ? <java>I[] tab;</code><code>tab = new I[2];</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -554,7 +554,7 @@
 		]
 	},
 	{
-		"texte": "Que se passe-t-il au niveau mémoire avec le code suivant ? <br><br><div style=\"padding-left:20px;\"> <code>String s = \"Hello\"; <br>String s2 = \"World\"; <br>String s3 = s1 + s1;</code></div>",
+		"texte": "Que se passe-t-il au niveau mémoire avec le code suivant ? <java>String s = \"Hello\"; </java> <java> String s2 = \"World\";</java><java> String s3 = s1 + s1;</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -586,7 +586,7 @@
 		]
 	},
 	{
-		"texte": "Que renvoie l'expression suivante ? <br><br><div style=\"padding-left:20px;\"><code>String s = \"Hello\"; <br> String s2 = \"Hello\";</code><br><br><code style=\"padding-left:20px;\">return (s1 == s2);</code></div>",
+		"texte": "Que renvoie l'expression suivante ? <java> String s = \"Hello\"; </java> <java> String s2 = \"Hello\";</java> <javaReturn>return (s1 == s2);</javaReturn>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -600,7 +600,7 @@
 		]
 	},
 	{
-		"texte": "Que renvoie l'expression suivante ? <br><br><div style=\"padding-left:20px;\"><code>String s = \"Hello\"; <br>String s2 = \"Hello\";</code> <br><br><code style=\"padding-left:20px;\">return (s1.equals(s2));</code></div>",
+		"texte": "Que renvoie l'expression suivante ? <java> String s = \"Hello\"; </java> <java> String s2 = \"Hello\";</java> <javaReturn> return (s1.equals(s2)); </javaReturn>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -664,7 +664,7 @@
 		]
 	},
 	{
-		"texte": "Qu'affiche le code suivant ? <br><br> <div style=\"padding-left:20px;\"><code>String s = \"HelloWorld\";</code> <br> <code>s.replace(s, \"HelloLand\");</code> <br> <code>System.out.println(s);</code></div>",
+		"texte": "Qu'affiche le code suivant ? <java>String s = \"HelloWorld\"; </java> <java> s.replace(s, \"HelloLand\"); </java> <java>System.out.println(s);</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -682,7 +682,7 @@
 		]
 	},
 	{
-		"texte": "Qu'a pour but le code suivant ? <br><br><div style=\"padding-left:20px;\"><code>public static void main(String args[]) {...}</code></div>",
+		"texte": "Qu'a pour but le code suivant ? <java>public static void main(String args[]) {...}</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -708,7 +708,7 @@
 				"isTrue": true
 			},
 			{
-				"texte": "StringBuffer est deprecated",
+				"texte": "StringBuffer est @Deprecated",
 				"isTrue": false
 			}
 		]
@@ -726,7 +726,7 @@
 				"isTrue": false
 			},
 			{
-				"texte": "@Bean est deprecated depuis Java 1.8",
+				"texte": "@Bean est @Deprecated depuis Java 1.8",
 				"isTrue": false
 			}
 		]
@@ -768,7 +768,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le mot-clef <code>break</code> dans la boucle suivante ? <br><br> <div style=\"padding-left:20px;\"><code>for(int k = 0; k < 10 ; k++) { </code> <br> <code style=\"padding-left : 30px;\"> if([conditions]) { </code> <br> <code <code style=\"padding-left : 60px;\">  [instructions]; </code> <br> <code style=\"padding-left : 60px;\">  break;</code> <br> <code style=\"padding-left : 30px;\"> }</code> <br> <code>}</code></div>",
+		"texte": "Que fait le mot-clef break dans la boucle suivante ? <java>for(int k = 0; k < 10 ; k++) { </java> <java1> if([conditions]) { </java1> <java2> [instructions];</java2> <java2>break;</java2> <java1>}</java1><java>}</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -786,7 +786,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le mot-clef <code>continue</code> dans la boucle suivante ? <br><br> <div style=\"padding-left:20px;\"><code>for(int k = 0; k < 10 ; k++) {</code> <br> <code style=\"padding-left : 30px;\"> if([conditions]) {</code> <br> <code style=\"padding-left : 60px;\"> [instructions];</code> <br> <code style=\"padding-left : 60px;\">  continue;</code> <br> <code style=\"padding-left : 30px;\"> }</code> <br> <code>}</code></div>",
+		"texte": "Que fait le mot-clef continue dans la boucle suivante ? <java>for(int k = 0; k < 10 ; k++) {</java><java1> if([conditions]) {</java1> <java2>[instructions];</java2> <java2> continue;</java2><java1>}</java1> <java>}</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -804,7 +804,7 @@
 		]
 	},
 	{
-		"texte": "Ces deux boucles sont elles équivalentes ? <br><br><div style=\"padding-left:20px;\"> <code>int[] tab = new int[3];</code> <br> <code>for(int k = 0; k < tab.length ; k++) {</code> <br> <code style=\"padding:30px;\"> System.out.println(tab[k];</code> <br> <code>}</code> <br> <code>for(int i : tab) {</code> <br> <code style=\"padding:30px;\"> System.out.println(i);</code> <br> <code>}</code></div>",
+		"texte": "Ces deux boucles sont elles équivalentes ? <java>int[] tab = new int[3];</java> <java>for(int k = 0; k < tab.length ; k++) {</java> <java1> System.out.println(tab[k];</java1><java>}</java> <java> for(int i : tab) {</java> <java1> System.out.println(i);</java1><java>}</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -822,7 +822,7 @@
 		]
 	},
 	{
-		"texte": "Quelle sera le résultat de la variable <code>m</code> à la fin de ce programme ? <br><br> <div style=\"padding-left:20px;\"><code>int k;</code> <br> <code>int l = 5;</code> <br> <code>if(l > 0) { </code> <br> <code style=\"padding-left:30px;\">int m = k * l;</code> <br> <code>}</code></div>",
+		"texte": "Quelle sera le résultat de la variable m à la fin de ce programme ? <java>int k;</java> <java> int l = 5;</java> <java>if(l > 0) { </java> <java1>int m = k * l;</java1> <java>}</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -850,7 +850,7 @@
 		]
 	},
 	{
-		"texte": "Peut-on écrire le code suivant ? <br><br><div style=\"padding:20px;\"><code>for(int k = 0; k < list.length ; k++) {</code><br><code style=\"padding:30px;\">[instructions]</code><br><code>}</code></div>",
+		"texte": "Peut-on écrire le code suivant ? <java>for(int k = 0; k < list.length ; k++) {</java> <java1>[instructions]</java1><java>}</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -882,7 +882,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le code suivant ? <br><br> <div style=\"padding-left:20px;\"><code>System.out.println(\"Hello World\")</code></div>",
+		"texte": "Que fait le code suivant ? <java>System.out.println(\"Hello World\");</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -918,7 +918,7 @@
 		]
 	},
 	{
-		"texte": "Peut-on écrire directement <code>int i, j, k;</code> ?",
+		"texte": "Peut-on déclarer directement des variables comme ceci ? <java>int i, j, k;</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1036,7 +1036,7 @@
 		]
 	},
 	{
-		"texte": "Qu'affiche la méthode toString(Object o) si l'on oublie de la rédéfinir ?",
+		"texte": "Qu'affiche la méthode <code>toString(Object o)</code> si l'on oublie de la rédéfinir ?",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1215,7 +1215,7 @@
 		]
 	},
 	{
-		"texte": "Quelle est le type de l'opération suivante ? <br><br><div style=\"padding-left:20px;\"> <code>int i = 4, long j = 5;</code><br><code> int k = i * j;</code></div>",
+		"texte": "Quelle est le type de k lors de l'opération suivante ? <java>int i = 4, long j = 5;</java><java> int k = i * j;</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1287,7 +1287,7 @@
 		]
 	},
 	{
-		"texte": "Quand est-ce que cette condition est vérifiée ?  <div style=\"padding-left:20px;\"><code>if( i % 2 == 0 ) { ... } </code> ",
+		"texte": "Quand est-ce que cette condition est vérifiée ?  <java>if( i % 2 == 0 ) { ... } </java> ",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1459,7 +1459,7 @@
 				"isTrue": true
 			},
 			{
-				"texte": "mvn compile et mvn install",
+				"texte": "mvn compile - mvn install",
 				"isTrue": false
 			}
 		]
@@ -1883,7 +1883,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le code suivant : <br><br><code>@After(\"execution(* maMethode(..))\")</code> au dessus d'une méthode ?",
+		"texte": "Que fait le code suivant au dessus d'une méthode ? (java)<code>@After(\"execution(* maMethode(..))\")</code><div>",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
@@ -2187,7 +2187,7 @@
 		]
 	},
 	{
-		"texte": "À quoi correspond lannotation javax.persistence.@Id javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY) ?",
+		"texte": "À quoi correspond lannotation suivante ? (java)javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY)(java)",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
@@ -2223,7 +2223,7 @@
 		]
 	},
 	{
-		"texte": "Quel est léquivalent de l''annotation @javax.inject.Inject ?",
+		"texte": "Quel est léquivalent de l'annotation @javax.inject.Inject ?",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{

@@ -3,6 +3,7 @@ package com.douineau.main;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import com.douineau.entity.Question;
@@ -40,6 +41,9 @@ public class QuestionsVerificator {
 
 		for (Question q : questions) {
 
+			if (q.getTexte().contains("<java>")) {
+				addJavaStyleQuestionText(q);
+			}
 			if (!q.getTexte().contains("<code>")) {
 				addItemsToQuestionText(codes, q);
 			}
@@ -65,9 +69,6 @@ public class QuestionsVerificator {
 
 		}
 		
-//		questions.forEach(q -> System.out.print(q));
-//		questions.forEach(System.out::println);
-		
 		printCountByTopic(questions);
 
 		try {
@@ -82,45 +83,116 @@ public class QuestionsVerificator {
 
 	}
 
-	private static void printCountByTopic(List<Question> questions) {
-		System.out.println("count Java : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.JAVA.getTopic()))
-				.count());
-		
-		System.out.println("count Git : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.GIT.getTopic()))
-				.count());
-		
-		System.out.println("count Maven : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.GIT.getTopic()))
-				.count());
-		
-		System.out.println("count Design Patterns : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.DESIGN_PATTERNS.getTopic()))
-				.count());
-		
-		System.out.println("count Frameworks de Java JEE : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.FRAMEWORKS.getTopic()))
-				.count());
-		
-		System.out.println("count Divers : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.DIVERS.getTopic()))
-				.count());
-		
-		System.out.println("count Algorithmie : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.ALGO.getTopic()))
-				.count());
-		
-
+	private static String getEndRepere(String s) {		
+		return s.replace("<", "</");
 	}
 
+	
+	private static void addJavaStyleQuestionText(Question q) {
+//		System.out.println(q.getTexte());
+		int debutCode = q.getTexte().indexOf("<java>");
+		String debutQuestion = q.getTexte().substring(0, debutCode);
+		String codeQuestion =  q.getTexte().substring(debutCode);
+
+		List<String> javaCodes = getJavaCodes(codeQuestion, debutCode);
+
+		StringBuilder sb = new StringBuilder();
+		sb.append("<br><br><div style=\"padding-left:30px;\">");
+		
+		for(String s : javaCodes) {
+			sb.append(s);
+		}
+		
+		sb.append("</div>");
+
+		String newJavaCode = sb.toString();
+//		System.out.println("newJavaCode - " + newJavaCode);
+		String newQuestion = debutQuestion + newJavaCode;
+		
+		q.setTexte(newQuestion);
+		
+	}
+	
+	private static List<String> getJavaCodes(String codeQuestion, int debutCode) {
+		boolean endOfLine = false;
+		List<String> javaCodes = new LinkedList<String>();
+		String javaCode = null;
+		String javaLine = null;
+		int repereDebut = 0;
+		int repereFin = 0;
+		
+		String repere = "<java";
+
+		while (!endOfLine) {
+
+			if (codeQuestion.contains(repere)) {
+				repereDebut = codeQuestion.indexOf(repere);
+				repereFin = codeQuestion.indexOf(getEndRepere(repere));
+
+//				System.out.println(codeQuestion);
+				String tag = codeQuestion.substring(repereDebut, codeQuestion.indexOf(">") + 1);
+				javaCode = codeQuestion.substring(repereDebut + tag.length(), repereFin);
+				javaLine = fillWithContext(javaCode, tag);
+				
+				javaCodes.add(javaLine);
+				codeQuestion = codeQuestion.substring(repereFin + getEndRepere(tag).length());
+			} else {
+				endOfLine = true;
+			}
+		}
+
+		return javaCodes;
+	}
+
+	private static String fillWithContext(String javaCode, String tag) {
+		StringBuilder sb = new StringBuilder();
+		
+		if(tag.equals("<java>")) {
+			sb.append("<br><code>");
+			sb.append(javaCode);
+			sb.append("</code>");
+
+		} else if(tag.equals("<java1>")) {
+			
+			sb.append("<br><code style=\"padding-left:60px;\">");
+			sb.append(javaCode);
+			sb.append("</code>");
+			
+		} else if(tag.equals("<java2>")) {
+			
+			sb.append("<br><code style=\"padding-left:90px;\">");
+			sb.append(javaCode);
+			sb.append("</code>");
+			
+		} else if(tag.equals("<javaReturn>")) {
+			
+			sb.append("<br><br><code style=\"padding-left:30px;\">");
+			sb.append(javaCode);
+			sb.append("</code>");
+			
+		}
+		return sb.toString();
+	}
+
+	private static void addItemsToResponseText(List<String> items, Reponse r) {
+
+		for (String s : items) {
+			if (r.getTexte().contains(s + " ")) {
+				String after = "<code>" + s + "</code>";
+				String replace = r.getTexte().replace(s, after);
+				r.setTexte(replace);
+			}
+		}
+	}
+
+	private static void addBlanksToResponseText(Reponse r) {
+
+		String s = r.getTexte();
+		String sNew = s + " ";
+		r.setTexte(sNew);
+
+	}
+	
 	private static void checkNbReponses(Question q, List<Boolean> booleans) throws ReponsesException {
 		boolean ok = false;
 		int nb = q.getReponses().size();
@@ -167,22 +239,42 @@ public class QuestionsVerificator {
 		}
 	}
 
-	private static void addItemsToResponseText(List<String> items, Reponse r) {
-
-		for (String s : items) {
-			if (r.getTexte().contains(s + " ")) {
-				String after = "<code>" + s + "</code>";
-				String replace = r.getTexte().replace(s, after);
-				r.setTexte(replace);
-			}
-		}
-	}
-
-	private static void addBlanksToResponseText(Reponse r) {
-
-		String s = r.getTexte();
-		String sNew = s + " ";
-		r.setTexte(sNew);
+	private static void printCountByTopic(List<Question> questions) {
+		System.out.println("count Java : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.JAVA.getTopic()))
+				.count());
+		
+		System.out.println("count Git : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.GIT.getTopic()))
+				.count());
+		
+		System.out.println("count Maven : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.GIT.getTopic()))
+				.count());
+		
+		System.out.println("count Design Patterns : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.DESIGN_PATTERNS.getTopic()))
+				.count());
+		
+		System.out.println("count Frameworks de Java JEE : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.FRAMEWORKS.getTopic()))
+				.count());
+		
+		System.out.println("count Divers : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.DIVERS.getTopic()))
+				.count());
+		
+		System.out.println("count Algorithmie : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.ALGO.getTopic()))
+				.count());
+		
 
 	}
 
