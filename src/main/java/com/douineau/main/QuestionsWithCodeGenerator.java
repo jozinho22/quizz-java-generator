@@ -16,7 +16,7 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class QuestionsVerificator {
+public class QuestionsWithCodeGenerator {
 
 	public static void main(String[] args) throws IOException, ReponsesException, QuestionException {
 
@@ -97,7 +97,7 @@ public class QuestionsVerificator {
 		List<String> javaCodes = getJavaCodes(codeQuestion, debutCode);
 
 		StringBuilder sb = new StringBuilder();
-		sb.append("<br><br><div style=\"padding-left:40px;\">");
+		sb.append("<br><div style=\"padding-left:40px;\">");
 		
 		for(String s : javaCodes) {
 			sb.append(s);
@@ -122,6 +122,7 @@ public class QuestionsVerificator {
 		int repereFin = 0;
 		
 		String repere = "<java";
+		String cr = "<cr>";
 
 		while (!endOfLine) {
 
@@ -148,6 +149,7 @@ public class QuestionsVerificator {
 		StringBuilder sb = new StringBuilder();
 		
 		if(tag.equals("<java>")) {
+			
 			sb.append("<br><code>");
 			sb.append(javaCode);
 			sb.append("</code>");
@@ -166,11 +168,16 @@ public class QuestionsVerificator {
 			
 		} else if(tag.equals("<javaReturn>")) {
 			
-			sb.append("<br><br><code style=\"padding-left:40px;\">");
+			sb.append("<br><code>");
 			sb.append(javaCode);
 			sb.append("</code>");
 			
+		} else if(tag.equals("<javaCR>")) {
+			
+			sb.append("<br>");
+			
 		}
+		
 		return sb.toString();
 	}
 

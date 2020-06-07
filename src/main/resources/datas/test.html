@@ -1,0 +1,19 @@
+<java>public static int methodeRecursive(int n, int m) {</java> 
+	<java1>if (m == 0) </java1>
+		<java2>return 1; </java2>
+	<java1>return n * methodeRecursive(n, m - 1); </java1>
+<java>}</java> 	
+	
+		<java2>return 1;</java2>
+	<java1>else</java1> 
+		<java2>return methodeRecursive(n - 1) + methodeRecursive(n - 2);</java2>
+<java>}</java> 
+
+
+<javaCR></javaCR> 
+
+<java>public static int methodeRecursive(int n, int m) {</java><java1>if (m == 0) </java1><java2>return 1; </java2><java1>return n * methodeRecursive(n, m - 1); </java1><java>}</java>
+
+<java>public static int methodeRecursive(int n)  {</java> <java1>if(n == 0) </java1><java2>return 0; </java2><java1>else if(n == 1) </java1><java2>return 1;</java2><java1>else</java1> <java2>return methodeRecursive(n - 1) + methodeRecursive(n - 2);</java2><java>}</java> 
+
+<java>public static int methodeRecursive(int nombre) {</java> <java1>int x = 0; </java1><java1>if (nombre == 1) { </java1><java2>x = 1; </java2><java2>return x; </java2><java1>} else { </java1><java2>x = nombre * methodeRecursive(nombre - 1); </java2><java2>return x; </java2><java1>}</java1> <java>}</java> 

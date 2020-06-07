@@ -1,18 +1,14 @@
 [
 	{
-		"texte": "Ces deux boucles sont elles équivalentes ? <java> <code>int[] tab = new int[3];</java> <java>for(int k = 0; k < tab.length ; k++) {</java> <java1> System.out.println(tab[k];</java1><java>}</java> <java> for(int i : tab) {</java> <java1> System.out.println(i);</java1><java>}</java>",
+		"texte": "Quelle sera la valeur affichée dans la console ? <java>String s = \"HelloWorld\";</java><java>s.substring(0, 5);</java> <javaCR></javaCR> <java>System.out.println(s);</java>",
 		"topic": "Java",
 		"reponses": [
 			{
-				"texte": "Il annule l'instruction faite à l'élément k et passe à l'élément (k + 1) ",
-				"isTrue": false
-			},
-			{
-				"texte": "Il passe à l'élément (k + 1)",
+				"texte": "HelloWorld",
 				"isTrue": true
 			},
 			{
-				"texte": "Il interromp le déroulement de la boucle en passant à l'instruction (k + 1)",
+				"texte": "Hello",
 				"isTrue": false
 			}
 		]

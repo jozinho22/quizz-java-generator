@@ -614,6 +614,106 @@
 		]
 	},
 	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <java>String s = \"HelloWorld\";</java><java>s.substring(0, 5);</java> <javaCR></javaCR> <java>System.out.println(s);</java>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "HelloWorld",
+				"isTrue": true
+			},
+			{
+				"texte": "Hello",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <java>String s = \"HelloWorld\";</java><java>s.indexOf(\"World\");</java> <javaCR></javaCR> <java>System.out.println(s);</java>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "HelloWorld",
+				"isTrue": true
+			},
+			{
+				"texte": "Hello",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <java>int k = 12;</java><java>int l = 22;</java><java>float j = k * l;</java><javaCR></javaCR><java>System.out.println(j);</java>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "264",
+				"isTrue": false
+			},
+				{
+				"texte": "264.0",
+				"isTrue": true
+			},
+			{
+				"texte": "Il y aura une erreur de compilation",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <java>float k = 13;</java><java>float l = 25;</java><java>int j = k * l;</java>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "325",
+				"isTrue": false
+			},
+				{
+				"texte": "325.0",
+				"isTrue": false
+			},
+			{
+				"texte": "Il y aura une erreur de compilation",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <java>int[] integers = new int[5];</java> <javaCR></javaCR> <java>for(int k = 0 ; k < integers.length ; k++) {</java><java1>System.out.print(k);</java1><java>}</java>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "01234",
+				"isTrue": true
+			},
+				{
+				"texte": "12345",
+				"isTrue": false
+			},
+			{
+				"texte": "On aura une exception de type ArrayIndexOutOfBoundsException",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <java>int[] integers = new int[3];</java> <java>integers[0] = 1; integers [1] = 3; integers [2] = 5; </java><javaCR></javaCR> <java>for(int k = 0 ; k < integers.length; k++) {</java><java1>System.out.print(integers[k+1]);</java1><java>}</java>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "012",
+				"isTrue": false
+			},
+				{
+				"texte": "135",
+				"isTrue": false
+			},
+			{
+				"texte": "On aura une exception de type ArrayIndexOutOfBoundsException",
+				"isTrue": true
+			}
+		]
+	},
+	{
 		"texte": "Que fait le méthode <code>a.equals(b)</code> pour <code>a</code> et <code>b</code> non nuls ?",
 		"topic": "Java",
 		"reponses": [
@@ -1346,6 +1446,24 @@
 			},
 			{
 				"texte": "Du Yiddish qui signifie \"accumulateur\"",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que fait mvn clean ?",
+		"topic": "Maven",
+		"reponses": [
+			{
+				"texte": "Elle effecture un build léger",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle fait du nettoyage dans les dépendances inutilisées",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle efface tous les fichiers générés par Maven",
 				"isTrue": true
 			}
 		]
@@ -2119,7 +2237,7 @@
 		]
 	},
 	{
-		"texte": "Dans quel framework rencontre-t-on les annotations @Given, @When, @And, @Then ?",
+		"texte": "Dans quel framework rencontre-t-on les annotations <code>@Given</code>, <code>@When</code>, <code>@And</code>, <code>@Then</code> ?",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
@@ -2502,6 +2620,60 @@
 			{
 				"texte": "Complexité linéaire : O(n)",
 				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "À quoi vous fait penser cet algorithme ? <java>public static int methodeRecursive(int nombre) {</java> <java1>int x = 0; </java1><java1>if (nombre == 1) { </java1><java2>x = 1; </java2><java2>return x; </java2><java1>} else { </java1><java2>x = nombre * methodeRecursive(nombre - 1); </java2><java2>return x; </java2><java1>}</java1> <java>}</java> ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "À la suite de Fibonacci",
+				"isTrue": false
+			},
+			{
+				"texte": "Au nombre d'or",
+				"isTrue": false
+			},
+			{
+				"texte": "À un calcul de factorielle",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "À quoi vous fait penser cet algorithme ? <java>public static int methodeRecursive(int n)  {</java> <java1>if(n == 0) </java1><java2>return 0; </java2><java1>else if(n == 1) </java1><java2>return 1;</java2><java1>else</java1> <java2>return methodeRecursive(n - 1) + methodeRecursive(n - 2);</java2><java>}</java> ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "À la suite de Fibonacci",
+				"isTrue": true
+			},
+			{
+				"texte": "À un calcul de puissance",
+				"isTrue": false
+			},
+			{
+				"texte": "À un calcul de factorielle",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "À quoi vous fait penser cet algorithme ? <java>public static int methodeRecursive(int n, int m) {</java><java1>if (m == 0) </java1><java2>return 1; </java2><java1>return n * methodeRecursive(n, m - 1); </java1><java>}</java> ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "À la suite de Fibonacci",
+				"isTrue": false
+			},
+			{
+				"texte": "À un calcul de puissance",
+				"isTrue": true
+			},
+			{
+				"texte": "À un calcul de factorielle",
+				"isTrue": false
 			}
 		]
 	}
