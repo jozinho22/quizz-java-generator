@@ -34,6 +34,8 @@
 	"@When",
 	"@And",
 	"@Then",
+	"true",
+	"false",
 	"int",
 	"long",
 	"byte",
@@ -104,5 +106,6 @@
 	"mvn package",
 	"mvn verify",
 	"mvn install",
-	"mvn deploy"
+	"mvn deploy",
+	"pom.xml"
 ]

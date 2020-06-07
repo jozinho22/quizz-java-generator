@@ -97,7 +97,7 @@ public class QuestionsVerificator {
 		List<String> javaCodes = getJavaCodes(codeQuestion, debutCode);
 
 		StringBuilder sb = new StringBuilder();
-		sb.append("<br><br><div style=\"padding-left:30px;\">");
+		sb.append("<br><br><div style=\"padding-left:40px;\">");
 		
 		for(String s : javaCodes) {
 			sb.append(s);
@@ -154,19 +154,19 @@ public class QuestionsVerificator {
 
 		} else if(tag.equals("<java1>")) {
 			
-			sb.append("<br><code style=\"padding-left:60px;\">");
+			sb.append("<br><code style=\"padding-left:40px;\">");
 			sb.append(javaCode);
 			sb.append("</code>");
 			
 		} else if(tag.equals("<java2>")) {
 			
-			sb.append("<br><code style=\"padding-left:90px;\">");
+			sb.append("<br><code style=\"padding-left:80px;\">");
 			sb.append(javaCode);
 			sb.append("</code>");
 			
 		} else if(tag.equals("<javaReturn>")) {
 			
-			sb.append("<br><br><code style=\"padding-left:30px;\">");
+			sb.append("<br><br><code style=\"padding-left:40px;\">");
 			sb.append(javaCode);
 			sb.append("</code>");
 			
