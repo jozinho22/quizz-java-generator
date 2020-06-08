@@ -904,7 +904,7 @@
 		]
 	},
 	{
-		"texte": "Ces deux boucles sont elles équivalentes ? <java>int[] tab = new int[3];</java> <java>for(int k = 0; k < tab.length ; k++) {</java> <java1> System.out.println(tab[k];</java1><java>}</java> <java> for(int i : tab) {</java> <java1> System.out.println(i);</java1><java>}</java>",
+		"texte": "Ces deux boucles sont elles équivalentes ? <java>int[] tab = new int[3];</java> <javaCR></javaCR> <java>for(int k = 0; k < tab.length ; k++) {</java> <java1> System.out.println(tab[k];</java1><java>}</java> <javaCR></javaCR> <java> for(int i : tab) {</java> <java1> System.out.println(i);</java1><java>}</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -922,7 +922,7 @@
 		]
 	},
 	{
-		"texte": "Quelle sera le résultat de la variable m à la fin de ce programme ? <java>int k;</java> <java> int l = 5;</java> <java>if(l > 0) { </java> <java1>int m = k * l;</java1> <java>}</java>",
+		"texte": "Quelle sera le résultat de la variable <code>m</code> à la fin de ce programme ? <java>int k;</java> <java> int l = 5;</java><javaCR></javaCR> <java>if(l > 0) { </java> <java1>int m = k * l;</java1> <java>}</java>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -2586,7 +2586,7 @@
 		"topic": "Algorithmie",
 		"reponses": [
 			{
-				"texte": "Le nombre conditions effectuées par un algorithme",
+				"texte": "Le nombre conditions vérifiées par un algorithme",
 				"isTrue": false
 			},
 			{
@@ -2596,7 +2596,7 @@
 		]
 	},
 	{
-		"texte": "Quelle est la complexité pour accéder à un élement n d'un tableau de taille k ?",
+		"texte": "Quelle est la complexité pour accéder à un élement k d'un tableau de taille n ?",
 		"topic": "Algorithmie",
 		"reponses": [
 			{
@@ -2610,7 +2610,7 @@
 		]
 	},
 	{
-		"texte": "Quelle est la complexité pour parcourir une liste de k éléments ?",
+		"texte": "Quelle est la complexité pour parcourir une liste de n éléments ?",
 		"topic": "Algorithmie",
 		"reponses": [
 			{
@@ -2624,55 +2624,269 @@
 		]
 	},
 	{
-		"texte": "À quoi vous fait penser cet algorithme ? <java>public static int methodeRecursive(int nombre) {</java> <java1>int x = 0; </java1><java1>if (nombre == 1) { </java1><java2>x = 1; </java2><java2>return x; </java2><java1>} else { </java1><java2>x = nombre * methodeRecursive(nombre - 1); </java2><java2>return x; </java2><java1>}</java1> <java>}</java> ",
+		"texte": "À quoi peut bien servir cet algorithme ? <java>public static int methodeRecursive(int nombre) {</java> <java1>int x = 0; </java1><java1>if (nombre == 1) { </java1><java2>x = 1; </java2><java2>return x; </java2><java1>} else { </java1><java2>x = nombre * methodeRecursive(nombre - 1); </java2><java2>return x; </java2><java1>}</java1> <java>}</java> ",
 		"topic": "Algorithmie",
 		"reponses": [
 			{
-				"texte": "À la suite de Fibonacci",
+				"texte": "À calculer la suite de Fibonacci",
 				"isTrue": false
 			},
 			{
-				"texte": "Au nombre d'or",
+				"texte": "À calculer le nombre d'or",
 				"isTrue": false
 			},
 			{
-				"texte": "À un calcul de factorielle",
+				"texte": "À calculer une factorielle",
 				"isTrue": true
 			}
 		]
 	},
 	{
-		"texte": "À quoi vous fait penser cet algorithme ? <java>public static int methodeRecursive(int n)  {</java> <java1>if(n == 0) </java1><java2>return 0; </java2><java1>else if(n == 1) </java1><java2>return 1;</java2><java1>else</java1> <java2>return methodeRecursive(n - 1) + methodeRecursive(n - 2);</java2><java>}</java> ",
+		"texte": "À quoi peut bien servir cet algorithme ? <java>public static int methodeRecursive(int n)  {</java> <java1>if(n == 0) </java1><java2>return 0; </java2><java1>else if(n == 1) </java1><java2>return 1;</java2><java1>else</java1> <java2>return methodeRecursive(n - 1) + methodeRecursive(n - 2);</java2><java>}</java> ",
 		"topic": "Algorithmie",
 		"reponses": [
 			{
-				"texte": "À la suite de Fibonacci",
+				"texte": "À calculer la suite de Fibonacci",
 				"isTrue": true
 			},
 			{
-				"texte": "À un calcul de puissance",
+				"texte": "À calculer de puissance",
 				"isTrue": false
 			},
 			{
-				"texte": "À un calcul de factorielle",
+				"texte": "À calculer une factorielle",
 				"isTrue": false
 			}
 		]
 	},
 	{
-		"texte": "À quoi vous fait penser cet algorithme ? <java>public static int methodeRecursive(int n, int m) {</java><java1>if (m == 0) </java1><java2>return 1; </java2><java1>return n * methodeRecursive(n, m - 1); </java1><java>}</java> ",
+		"texte": "À quoi peut bien servir cet algorithme ? <java>public static double getXXX(int nombre) {</java> <java1>double X0 = 1; </java1><java1>double Xn = (X0 + nombre / X0) / 2; </java1><java1>double Xn_Plus_1 = 0; </java1><java1>for (int i = 0; i < 10; i++) { </java1><java2>Xn_Plus_1 = (Xn + nombre / Xn) / 2; </java2><java2>Xn = Xn_Plus_1; </java2><java1>}</java1><java1>return Xn_Plus_1;</java1><java>}</java> ",
 		"topic": "Algorithmie",
 		"reponses": [
 			{
-				"texte": "À la suite de Fibonacci",
-				"isTrue": false
-			},
-			{
-				"texte": "À un calcul de puissance",
+				"texte": "À calculer la suite de Fibonacci",
 				"isTrue": true
 			},
 			{
-				"texte": "À un calcul de factorielle",
+				"texte": "À calculer une racine carrée par la méthode de Newron",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "À quoi peut bien servir cet algorithme ? <java>public static int methodeRecursive(int n, int m) {</java><java1>if (m == 0) </java1><java2>return 1; </java2><java1>return n * methodeRecursive(n, m - 1); </java1><java>}</java> ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "À calculer la suite de Fibonacci",
+				"isTrue": false
+			},
+			{
+				"texte": "À calculer une puissance",
+				"isTrue": true
+			},
+			{
+				"texte": "À calculer une factorielle",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "De quel type d'algorithme de tri s'agit-il ? <java>public static int[] getOrderedIntegers(int[] integers) {</java> <java1>boolean trie = false; </java1><java1>int tmp; </java1><java1>while (!trie) {</java1><java2>trie = true; </java2><java2>for (int i = 0; i < integers.length - 1; i++) { </java2><java3>if (integers[i] > integers[i + 1]) {</java3><java4>tmp = integers[i + 1];</java4><java4>integers[i + 1] = integers[i];</java4><java4>integers[i] = tmp;</java4><java4>trie = false;</java4><java3>}</java3><java2>} </java2><java1>}</java1><java1>return integers;</java1><java>}</java>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le tri par bulles",
+				"isTrue": true
+			},
+			{
+				"texte": "Le tri par sélection",
+				"isTrue": false
+			},
+			{
+				"texte": "Le tri par insertion",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "De quel type d'algorithme de tri s'agit-il ? <java>public static int[] getOrderedIntegers(int[] integers) {</java> <java1>int key ; </java1><java1>for (int i = 1; i < integers.length ; i++) { </java1><java2>key = integers[i]; </java2><java2>for (int j = i ; j > 0 ; j--) { </java2><java3>if(key < integers[j -1]) {</java3><java4>integers[j] = integers[j - 1];</java4><java4>integers[j - 1] = key;</java4><java3>}</java3><java2>} </java2><java1>}</java1><java1>return integers;</java1><java>}</java>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le tri par bulles",
+				"isTrue": false
+			},
+			{
+				"texte": "Le tri par fusion",
+				"isTrue": false
+			},
+			{
+				"texte": "Le tri par insertion",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "De quel type d'algorithme de tri s'agit-il ? <java>public static int[] getOrderedIntegers(int[] integers) {</java> <java1>int i, j, min, tmp; </java1><javaCR></javaCR><java1>for (i = 0 ; i < integers.length - 1 ; i++) { </java1><java2>min = i; </java2><javaCR></javaCR><java2>for (j = i + 1; j < integers.length; j++) { </java2><java3>if (integers[j] < integers[min]) {</java3><java4>min = j ;</java4><java3>}</java3><java2>} </java2><javaCR></javaCR><java2>if (min != integers[i]) { </java2><java3>tmp = integers[min];</java3><java3>integers[min] = integers[i];</java3><java3>integers[i] = tmp;</java3><java2>} </java2><java1>}</java1><java1>return integers;</java1><java>}</java>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le tri par bulles",
+				"isTrue": false
+			},
+			{
+				"texte": "Le tri par fusion",
+				"isTrue": false
+			},
+			{
+				"texte": "Le tri par sélection",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "À quoi peut bien servir cet algorithme ? <java>public static int getXXX(int n, int m) {</java> <java1>int accumulator = 1; </java1><java1>for (int i = 0; i < m; i++) { </java1><java2>accumulator *= n; </java2><java1>}</java1><java1>return accumulator;</java1><java>}</java> ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "À calculer la suite de Fibonacci",
+				"isTrue": false
+			},
+			{
+				"texte": "À calculer une puissance",
+				"isTrue": true
+			},
+			{
+				"texte": "À calculer une factorielle",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel fût le premier algorithme moderne ? ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le calcul de la racine carrée par Newton",
+				"isTrue": false
+			},
+			{
+				"texte": "Le calcul du PGCD par Euclide",
+				"isTrue": true
+			},
+			{
+				"texte": "La pascaline en 1 642",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "D'où provient le mot algorithmie ? ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "D'Al Khuwarizmi, un mathématicien perse du XIème siècle",
+				"isTrue": true
+			},
+			{
+				"texte": "Du grec algos (singulier) et rythmos (cadence)",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est ce qu'une équation diphantienne ? ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Une équation polynomiale à une ou plusieurs inconnues  dont les solutions sont cherchées parmi les nombres entiers",
+				"isTrue": true
+			},
+			{
+				"texte": "Une équation différentielle du second dégré",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est ce que la calculabilité d'un algorithme ? ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le temps moyen de résolutio d'un algorithme sans se soucier du support",
+				"isTrue": false
+			},
+			{
+				"texte": "La capacité à résoudre un algorithme sans prendre en compte le temps d'exécution",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que permet de déterminer cet algorithme ? <java>public static boolean isXXX(int n) {</java><java1>boolean isXXX = true; </java1><java1>if (n < 0) { </java1><java2>isXXX = false; </java2><java1>} else if (n != 0 && n != 1) {</java1><java2>for (int i = 2; i <= n / 2; i++) { </java2><java3>if (n != i && n % i == 0) { </java3><java4>isXXX = false; </java4><java4>break; </java4><java3>} </java3><java2>} </java2><java1>} </java1><java1>return isXXX;</java1><java>}</java>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Si un nombre est pair",
+				"isTrue": false
+			},
+			{
+				"texte": "Si un nombre est premier",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que permet de déterminer cet algorithme ? <java>public static boolean isXXX(int n) {</java> <java1>boolean isXXX = true; </java1><javaCR></javaCR><java1>if (n % 2 == 0) { </java1><java2>isXXX = false; </java2><java1>}</java1><java1>return isXXX;</java1><java>}</java>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Si un nombre est pair",
+				"isTrue": false
+			},
+			{
+				"texte": "Si un nombre est impair",
+				"isTrue": true
+			},
+			{
+				"texte": "Si un nombre est premier",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la complexité moyenne d'un algorithme de tri par insertion ?",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Complexité linéaire : O(n)",
+				"isTrue": false
+			},
+			{
+				"texte": "Complexité quadratique : O(n^2)",
+				"isTrue": true
+			},
+			{
+				"texte": "Complexité cubique : O(n^3)",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la complexité dans le meilleur cas d'un algorithme de tri par insertion ?",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Complexité linéaire : O(n)",
+				"isTrue": true
+			},
+			{
+				"texte": "Complexité quadratique : O(n^2)",
+				"isTrue": false
+			},
+			{
+				"texte": "Complexité cubique : O(n^3)",
 				"isTrue": false
 			}
 		]

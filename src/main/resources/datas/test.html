@@ -1,14 +1,48 @@
-<java>public static int methodeRecursive(int n, int m) {</java> 
-	<java1>if (m == 0) </java1>
-		<java2>return 1; </java2>
-	<java1>return n * methodeRecursive(n, m - 1); </java1>
-<java>}</java> 	
+
+
+<java>public static int[] getOrderedIntegers(int[] integers) {</java> 
+	<java1>int i, j, min, tmp; </java1>
+	<javaCR></javaCR>
+	<java1>for (i = 0 ; i < integers.length - 1 ; i++) { </java1>
+		<java2>min = i; </java2>
+		<javaCR></javaCR>
+		<java2>for (j = i + 1; j < integers.length; j++) { </java2>
+			<java3>if (integers[j] < integers[min]) {</java3>
+				<java4>min = j ;</java4>
+			<java3>}</java3>
+		<java2>} </java2>
+		<javaCR></javaCR>
+		<java2>if (min != integers[i]) { </java2>
+			<java3>tmp = integers[min];</java3>
+			<java3>integers[min] = integers[i];</java3>
+			<java3>integers[i] = tmp;</java3>
+		<java2>} </java2>
+	<java1>}</java1>
+	<java1>return integers;</java1>
+<java>}</java> 
+	
+<java>public static int[] getOrderedIntegers(int[] integers) {</java> <java1>int i, j, min, tmp; </java1><javaCR></javaCR><java1>for (i = 0 ; i < integers.length - 1 ; i++) { </java1><java2>min = i; </java2><javaCR></javaCR><java2>for (j = i + 1; j < integers.length; j++) { </java2><java3>if (integers[j] < integers[min]) {</java3><java4>min = j ;</java4><java3>}</java3><java2>} </java2><javaCR></javaCR><java2>if (min != integers[i]) { </java2><java3>tmp = integers[min];</java3><java3>integers[min] = integers[i];</java3><java3>integers[i] = tmp;</java3><java2>} </java2><java1>}</java1><java1>return integers;</java1><java>}</java> 
+
+<java>public static int[] getOrderedIntegers(int[] integers) {</java> <java1>int key ; </java1><java1>for (int i = 1; i < integers.length ; i++) { </java1><java2>key = integers[i]; </java2><java2>for (int j = i ; j > 0 ; j--) { </java2><java3>if(key < integers[j -1]) {</java3><java4>integers[j] = integers[j - 1];</java4><java4>integers[j - 1] = key;</java4><java3>}</java3><java2>} </java2><java1>}</java1><java1>return integers;</java1><java>}</java> 
+
+<java>public static int[] getOrderedIntegers(int[] integers) {</java> <java1>boolean trie = false; </java1><java1>int tmp; </java1><java1>while (!trie) {</java1><java2>trie = true; </java2><java2>for (int i = 0; i < integers.length - 1; i++) { </java2><java3>if (integers[i] > integers[i + 1]) {</java3><java4>tmp = integers[i + 1];</java4><java4>integers[i + 1] = integers[i];</java4><java4>integers[i] = tmp;</java4><java4>trie = false;</java4><java3>}</java3><java2>} </java2><java1>}</java1><java1>return accumulator;</java1><java>}</java> 
+
+<java>public static int getXXX(int n, int m) {</java> <java1>int accumulator = 1; </java1><java1>for (int i = 0; i < m; i++) { </java1><java2>accumulator *= n; </java2><java1>}</java1><java1>return accumulator;</java1><java>}</java> 
+
+
+<java>public static double getXXX(int nombre) {</java> <java1>double X0 = 1; </java1><java1>double Xn = (X0 + nombre / X0) / 2; </java1><java1>double Xn_Plus_1 = 0; </java1><java1>for (int i = 0; i < 10; i++) { </java1><java2>Xn_Plus_1 = (Xn + nombre / Xn) / 2; </java2><java2>Xn = Xn_Plus_1; </java2><java1>}</java1><java1>return Xn_Plus_1;</java1><java>}</java> 
+	
 	
 		<java2>return 1;</java2>
 	<java1>else</java1> 
 		<java2>return methodeRecursive(n - 1) + methodeRecursive(n - 2);</java2>
-<java>}</java> 
+<java>}</java>
 
+
+<java>public static boolean isXXX(int n) {</java><java1>boolean isXXX = true; </java1><java1>if (n < 0) { </java1><java2>isXXX = false; </java2><java1>} else if (n != 0 && n != 1) {</java1><java2>for (int i = 2; i <= n / 2; i++) { </java2><java3>if (n != i && n % i == 0) { </java3><java4>isXXX = false; </java4><java4>break; </java4><java3>} </java3><java2>} </java2><java1>} </java1>	<java1>return isXXX;</java1><java>}</java>  
+
+
+<java>public static boolean isXXX(int n) {</java> <java1>boolean isXXX = true; </java1><java1>if (n % 2 == 0) { </java1><java2>isXXX = false; </java2><java1>}</java1><java1>return isXXX;</java1><java>}</java> 
 
 <javaCR></javaCR> 
 

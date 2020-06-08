@@ -122,7 +122,6 @@ public class QuestionsWithCodeGenerator {
 		int repereFin = 0;
 		
 		String repere = "<java";
-		String cr = "<cr>";
 
 		while (!endOfLine) {
 
@@ -163,6 +162,18 @@ public class QuestionsWithCodeGenerator {
 		} else if(tag.equals("<java2>")) {
 			
 			sb.append("<br><code style=\"padding-left:80px;\">");
+			sb.append(javaCode);
+			sb.append("</code>");
+			
+		} else if(tag.equals("<java3>")) {
+			
+			sb.append("<br><code style=\"padding-left:120px;\">");
+			sb.append(javaCode);
+			sb.append("</code>");
+			
+		} else if(tag.equals("<java4>")) {
+			
+			sb.append("<br><code style=\"padding-left:160px;\">");
 			sb.append(javaCode);
 			sb.append("</code>");
 			
