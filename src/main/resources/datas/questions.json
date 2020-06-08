@@ -628,6 +628,24 @@
 		]
 	},
 	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <java>String s = \"HelloWorld\";</java><javaCR></javaCR><java>if(s.contains(\"World\")) {</java> <java1>s.replace(\"World\", \"Land\");</java1><java>}</java> <javaCR></javaCR><java>System.out.println(s);</java> ",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "HelloWorld",
+				"isTrue": true
+			},
+			{
+				"texte": "HelloLand",
+				"isTrue": false
+			},
+			{
+				"texte": "Il y aura une exception de type NoNewStringDefined",
+				"isTrue": false
+			}
+		]
+	},
+	{
 		"texte": "Quelle sera la valeur affichée dans la console ? <java>String s = \"HelloWorld\";</java><java>s.indexOf(\"World\");</java> <javaCR></javaCR> <java>System.out.println(s);</java>",
 		"topic": "Java",
 		"reponses": [
@@ -2219,24 +2237,6 @@
 		]
 	},
 	{
-		"texte": "Que signifie PL/SQL ?",
-		"topic": "Frameworks de Java JEE",
-		"reponses": [
-			{
-				"texte": "Procedure Language / Structured Query Language",
-				"isTrue": true
-			},
-			{
-				"texte": "Programming Language / Structured Query Language",
-				"isTrue": false
-			},
-			{
-				"texte": "Professionnal Language / Structured Query Language",
-				"isTrue": false
-			}
-		]
-	},
-	{
 		"texte": "Dans quel framework rencontre-t-on les annotations <code>@Given</code>, <code>@When</code>, <code>@And</code>, <code>@Then</code> ?",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
@@ -2367,6 +2367,136 @@
 			},
 			{
 				"texte": "EclipseLink",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que signifie PL/SQL ?",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "Procedure Language / Structured Query Language",
+				"isTrue": true
+			},
+			{
+				"texte": "Programming Language / Structured Query Language",
+				"isTrue": false
+			},
+			{
+				"texte": "Professionnal Language / Structured Query Language",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Comment efface-t-on les données une table ?",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "<code>DROP TABLE [table];</code>",
+				"isTrue": false
+			},
+			{
+				"texte": "<code>TRUNCATE TABLE [table];</code>",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Comment efface-t-on une table ?",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "<code>DROP TABLE [table];</code>",
+				"isTrue": true
+			},
+			{
+				"texte": "<code>TRUNCATE TABLE [table];</code>",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Comment affiche-t-on un titre de colonneau résultat d'une requête ?",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "<code>SELECT colonne1 AS NOM_COLONNE_1, colonne2 AS NOM_COLONNE_2...</code>",
+				"isTrue": true
+			},
+			{
+				"texte": "<code>SELECT colonne1 ALIAS NOM_COLONNE_1, colonne2 ALIAS NOM_COLONNE_2...</code>",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce qu'une <code>NATURAL JOIN</code> ?",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "Une jointure sur un champ commun à deux tables sans restriction",
+				"isTrue": true
+			},
+			{
+				"texte": "Une jointure sur un champ commun à deux tables à condition d'avoir une correspondance exacte sur le champ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce qu'une <code>CROSS JOIN</code> ?",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "Une jointure retournant le produit cartésien de deux tables",
+				"isTrue": false
+			},
+			{
+				"texte": "Une jointure sur un champ commun à deux tables à condition d'avoir une correspondance exacte sur le champ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que fait la requête suivante ? <java>SELECT * FROM table1</java><java>UNION</java><java>SELECT * FROM table2</java>",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "Elle permet de mettre bout-à-bout le résultat de deux requêtes différentes, à condition que les deux tables aient le même nombre de colonnes, qu'elles soient de même type et dans le même ordre",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle permet de mettre bout-à-bout le résultat de deux requêtes différentes sans doublons, à condition que les deux tables aient le même nombre de colonnes, qu'elles soient de même type et dans le même ordre",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que fait la requête suivante ? <java>SELECT * FROM table1</java><java>UNION ALL</java><java>SELECT * FROM table2</java>",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "Elle permet de mettre bout-à-bout le résultat de deux requêtes différentes, à condition que les deux tables aient le même nombre de colonnes, qu'elles soient de même type et dans le même ordre",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle permet de mettre bout-à-bout le résultat de deux requêtes différentes sans doublons, à condition que les deux tables aient le même nombre de colonnes, qu'elles soient de même type et dans le même ordre",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la différence entre <code>RIGHT JOIN</code> et <code>RIGHT OUTER JOIN</code> ? ",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "<code>RIGHT JOIN</code> récupère aussi l'intersection des deux tables",
+				"isTrue": false
+			},
+			{
+				"texte": "Aucune, les deux écritures sont équivalentes",
 				"isTrue": true
 			}
 		]

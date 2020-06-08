@@ -1,4 +1,10 @@
-
+<java>String s = "HelloWorld";</java> 
+<javaCR></javaCR>
+<java>if(s.contains("World")) {</java> 
+	<java1>s.replace("World", "Land");</java1>
+<java>}</java> 
+<javaCR></javaCR>	
+<java>System.out.println(s);</java> 	
 
 <java>public static int[] getOrderedIntegers(int[] integers) {</java> 
 	<java1>int i, j, min, tmp; </java1>
@@ -21,6 +27,9 @@
 	<java1>return integers;</java1>
 <java>}</java> 
 	
+<java>String s = "HelloWorld";</java><javaCR></javaCR><java>if(s.contains("World")) {</java> <java1>s.replace("World", "Land");</java1><java>}</java> <javaCR></javaCR><java>System.out.println(s);</java> 	
+
+
 <java>public static int[] getOrderedIntegers(int[] integers) {</java> <java1>int i, j, min, tmp; </java1><javaCR></javaCR><java1>for (i = 0 ; i < integers.length - 1 ; i++) { </java1><java2>min = i; </java2><javaCR></javaCR><java2>for (j = i + 1; j < integers.length; j++) { </java2><java3>if (integers[j] < integers[min]) {</java3><java4>min = j ;</java4><java3>}</java3><java2>} </java2><javaCR></javaCR><java2>if (min != integers[i]) { </java2><java3>tmp = integers[min];</java3><java3>integers[min] = integers[i];</java3><java3>integers[i] = tmp;</java3><java2>} </java2><java1>}</java1><java1>return integers;</java1><java>}</java> 
 
 <java>public static int[] getOrderedIntegers(int[] integers) {</java> <java1>int key ; </java1><java1>for (int i = 1; i < integers.length ; i++) { </java1><java2>key = integers[i]; </java2><java2>for (int j = i ; j > 0 ; j--) { </java2><java3>if(key < integers[j -1]) {</java3><java4>integers[j] = integers[j - 1];</java4><java4>integers[j - 1] = key;</java4><java3>}</java3><java2>} </java2><java1>}</java1><java1>return integers;</java1><java>}</java> 

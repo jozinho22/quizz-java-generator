@@ -1,64 +1,75 @@
 package com.douineau.test;
 
 public class TestQuestion {
-
-	public static int[] getXXX(int[] integers) {
-
-		int i, j, min, tmp;
-
-		for (i = 0 ; i < integers.length - 1 ; i++) {
-			min = i;
-			for (j = i + 1; j < integers.length; j++) {
-				if (integers[j] < integers[min]) {
-					min = j ;
-				}
-			}
-
-			if (min != integers[i]) {
-				tmp = integers[min];
-				integers[min] = integers[i];
-				integers[i] = tmp;
-
-			}
-		}
-		return integers;
-	}
 	
-	public static int getXXX(int n, int m) {
-		int accumulator = 1;
-
-		for (int i = 0; i < m; i++) {
-			accumulator *= n;
+	public static void main(String[] args) {
+		String s = "HelloWorld";
+		
+		if(s.contains("World")) {
+			s.replace("World", "Land");
 		}
-		return accumulator;
-	}
-	
-	public static double getXXX(int nombre) {
-		double X0 = 1;
-		double Xn = (X0 + nombre / X0) / 2;
-
-		double Xn_Plus_1 = 0;
-		for (int i = 0; i < 10; i++) {
-			Xn_Plus_1 = (Xn + nombre / Xn) / 2;
-			Xn = Xn_Plus_1;
-		}
-		return Xn_Plus_1;
-	}
-	
-	public static int methodeRecursive(int n, int m) {
-		if (m == 0)
-			return 1;
-
-		return n * methodeRecursive(n, m - 1);
+		
+		System.out.println(s);
+		
 	}
 
-	public static boolean isXXX(int n) {
-		boolean isXXX = true;
-		if (n % 2 == 0) {
-			isXXX = false;
-		} 
-		return isXXX;
-	}
+//	public static int[] getXXX(int[] integers) {
+//
+//		int i, j, min, tmp;
+//
+//		for (i = 0 ; i < integers.length - 1 ; i++) {
+//			min = i;
+//			for (j = i + 1; j < integers.length; j++) {
+//				if (integers[j] < integers[min]) {
+//					min = j ;
+//				}
+//			}
+//
+//			if (min != integers[i]) {
+//				tmp = integers[min];
+//				integers[min] = integers[i];
+//				integers[i] = tmp;
+//
+//			}
+//		}
+//		return integers;
+//	}
+//	
+//	public static int getXXX(int n, int m) {
+//		int accumulator = 1;
+//
+//		for (int i = 0; i < m; i++) {
+//			accumulator *= n;
+//		}
+//		return accumulator;
+//	}
+//	
+//	public static double getXXX(int nombre) {
+//		double X0 = 1;
+//		double Xn = (X0 + nombre / X0) / 2;
+//
+//		double Xn_Plus_1 = 0;
+//		for (int i = 0; i < 10; i++) {
+//			Xn_Plus_1 = (Xn + nombre / Xn) / 2;
+//			Xn = Xn_Plus_1;
+//		}
+//		return Xn_Plus_1;
+//	}
+//	
+//	public static int methodeRecursive(int n, int m) {
+//		if (m == 0)
+//			return 1;
+//
+//		return n * methodeRecursive(n, m - 1);
+//	}
+//
+//	public static boolean isXXX(int n) {
+//		boolean isXXX = true;
+//		if (n % 2 == 0) {
+//			isXXX = false;
+//		} 
+//		return isXXX;
+//	}
 	
 //	public static boolean isXXX(int n) {
 //		boolean isXXX = true;
@@ -97,8 +108,6 @@ public class TestQuestion {
 //		}
 //	}
 
-	public static void main(String[] args) {
-		System.out.println(getXXX(64));
-	}
+
 
 }

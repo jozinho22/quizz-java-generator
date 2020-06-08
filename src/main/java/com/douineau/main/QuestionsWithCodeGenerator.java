@@ -283,6 +283,11 @@ public class QuestionsWithCodeGenerator {
 				.filter(q -> q.getTopic().equals(TopicEnum.FRAMEWORKS.getTopic()))
 				.count());
 		
+		System.out.println("count SQL : " + 
+				questions.stream()
+				.filter(q -> q.getTopic().equals(TopicEnum.SQL.getTopic()))
+				.count());
+		
 		System.out.println("count Divers : " + 
 				questions.stream()
 				.filter(q -> q.getTopic().equals(TopicEnum.DIVERS.getTopic()))
