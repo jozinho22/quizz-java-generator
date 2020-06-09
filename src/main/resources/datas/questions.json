@@ -390,6 +390,60 @@
 		]
 	},
 	{
+		"texte": "Quelles sont les deux nouveautés de Java 8 utilisées dans ce code ? <java>List<Personne> listFiltree = personnes</java><java1>.stream()</java1><java1>.filter(Personne::isOver70kg)</java1><java1>.collect(Collectors.toList());</java1><javaReturn>return listFiltree;</javaReturn>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Un stream et un lambda",
+				"isTrue": false
+			},
+			{
+				"texte": "Un stream et une référence de méthode",
+				"isTrue": true
+			},
+			{
+				"texte": "Un lambda et une référence de méthode",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelles sont les deux nouveautés de Java 8 utilisées dans ce code ? <java>List<Personne> listFiltree = personnes</java><java1>.stream()</java1><java1>.filter(p -> p.getAge() > 30)</java1><java1>.collect(Collectors.toList());</java1><javaReturn>return listFiltree;</javaReturn>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Un stream et un lambda",
+				"isTrue": true
+			},
+			{
+				"texte": "Un stream et une référence de méthode",
+				"isTrue": false
+			},
+			{
+				"texte": "Un lambda et une référence de méthode",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "À quoi sert la méthode <code>java.util.stream.Stream.map(Function<? super T,? extends R> mapper)</code> ? ",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "À mapper une liste avec une autre liste",
+				"isTrue": false
+			},
+			{
+				"texte": "À transformer des éléments d'une liste selon une fonction appliquée aux éléments de la liste",
+				"isTrue": true
+			},
+			{
+				"texte": "À filtrer des éléments d'une liste selon un prédicat",
+				"isTrue": false
+			}
+		]
+	},
+	{
 		"texte": "Que doit-on ajouter à une classe implémentant l'interface Serializable ?",
 		"topic": "Java",
 		"reponses": [
@@ -623,6 +677,60 @@
 			},
 			{
 				"texte": "Hello",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <java>int[] arr = {5, 8, 9, 13, 2};</java> <java>arr = Arrays.copyOfRange(arr, 2, arr.length); </java> <java>System.out.println(arr);</java> ",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "I@[hashcode]",
+				"isTrue": true
+			},
+			{
+				"texte": "[9, 13, 2]",
+				"isTrue": false
+			},
+			{
+				"texte": "[8, 9, 13, 2]",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <java>int[] arr = {24, 9, 6, 14, 143, 13};</java> <java>arr = Arrays.copyOfRange(arr, 5, arr.length); </java> <java>for(int k : arr) {</java> <java1>System.out.print(k);</java1><java>}</java> ",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "14313",
+				"isTrue": false
+			},
+			{
+				"texte": "13",
+				"isTrue": true
+			},
+			{
+				"texte": "Une exception de type ArrayIndexOutOfBoundsException sera levée",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <java>int[] arr = {45, 7, 4, 15, 12, 147, 8};</java> <java>Arrays.copyOfRange(arr, 6, arr.length); </java> <java>for(int k : arr) {</java> <java1>System.out.print(k);</java1><java>}</java> ",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "457415121478",
+				"isTrue": true
+			},
+			{
+				"texte": "8",
+				"isTrue": false
+			},
+			{
+				"texte": "Une exception de type ArrayIndexOutOfBoundsException sera levée",
 				"isTrue": false
 			}
 		]
@@ -2772,7 +2880,7 @@
 		]
 	},
 	{
-		"texte": "À quoi peut bien servir cet algorithme ? <java>public static int methodeRecursive(int n)  {</java> <java1>if(n == 0) </java1><java2>return 0; </java2><java1>else if(n == 1) </java1><java2>return 1;</java2><java1>else</java1> <java2>return methodeRecursive(n - 1) + methodeRecursive(n - 2);</java2><java>}</java> ",
+		"texte": "À quoi peut bien servir cet algorithme ? <java>public static int getXXX(int n)  {</java> <java1>if(n == 0) </java1><java2>return 1; </java2><java1>else if(n == 1) </java1><java2>return 1;</java2><java1>else</java1> <java2>return getXXX(n - 1) + getXXX(n - 2);</java2><java>}</java> ",
 		"topic": "Algorithmie",
 		"reponses": [
 			{
@@ -2798,7 +2906,7 @@
 				"isTrue": true
 			},
 			{
-				"texte": "À calculer une racine carrée par la méthode de Newron",
+				"texte": "À calculer une racine carrée par la méthode de Newton",
 				"isTrue": false
 			}
 		]
@@ -3017,6 +3125,52 @@
 			},
 			{
 				"texte": "Complexité cubique : O(n^3)",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que calcule cet algorithme ? <java>public static int getXXX(int m, int n) {</java> <javaCR></javaCR><java1>while(m != n) { </java1><java2>if(m > n) { </java2><java3>m = m - n; </java3><java2>} else { </java2><java3>n = n - m;</java3><java2>} </java2><java1>} </java1><javaReturn>return m; </javaReturn><java>}</java> ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le PGCM",
+				"isTrue": true
+			},
+			{
+				"texte": "Le PGCD",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que calcule cet algorithme ? <java>public static int getXXX(int m, int n) {</java> <javaCR></javaCR><java1>if(m == n) { </java1><java2>return m; </java2><java1>} else { </java1><java2>if (m > n) { </java2><java3>return getXXX(m - n, n);</java3><java2>} else { </java2><java3>return getXXX(m, n - m);</java3><java2>} </java2><java1>} </java1><java>}</java> ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le PGCM",
+				"isTrue": true
+			},
+			{
+				"texte": "Le PGCD",
+				"isTrue": false
+			},
+			{
+				"texte": "Si un nombre est premier",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que retourne cet algorithme récursif ? <java>public static void main(String[] args) {</java> <javaCR></javaCR> <java1>int k = 7;</java1> <java1>int p = k / 2;</java1> <java1>boolean isXXX = isXXX(k, p);</java1> <javaCR></javaCR> <java1>public static boolean isXXX(int k, int p) {</java1> <javaCR></javaCR><java1>if (p == 1) {</java1> <java2>return true;</java2><java1>} else {</java1> <java2>if (k % p == 0) {</java2><java3>return false; </java3><java2>} else {</java2><java3>return isXXX(k, p - 1); </java3><java2>}</java2><java1>}</java1><java>}</java>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "true",
+				"isTrue": true
+			},
+			{
+				"texte": "false",
 				"isTrue": false
 			}
 		]

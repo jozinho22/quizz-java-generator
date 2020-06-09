@@ -26,7 +26,7 @@
 				"isTrue": false
 			},
 			{
-				"texte": "À la transformation du code Java en byte code interprétable par la JVM ",
+				"texte": "À la transformation du code Java en <code>byte</code> code interprétable par la JVM ",
 				"isTrue": true
 			},
 			{
@@ -72,7 +72,7 @@
 		]
 	},
 	{
-		"texte": "Comment nomme-t-on une expression de type <br><code>MonInterface maMethode = x -> x * x;</code> ?",
+		"texte": "Comment nomme-t-on une expression de ce type <br><br><code>MonInterface maMethode = x -> x * x;</code> ?",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -126,7 +126,7 @@
 		]
 	},
 	{
-		"texte": "Comment nomme-t-on l'expression suivante <code>System.out::println</code> dans le code suivant ? <br><br> <div style=\"padding-left:20px;\"><code>list.forEach(System.out::println);</code></div>",
+		"texte": "Comment nomme-t-on l'expression suivante <code>System.out::println</code> dans le code suivant ? <br><div style=\"padding-left:40px;\"><br><code>list.forEach(System.out::println);</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -302,7 +302,7 @@
 		]
 	},
 	{
-		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><br><div style=\"padding-left:20px;\"><code>Felin c = new Chat();</code> </div>",
+		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><div style=\"padding-left:40px;\"><br><code>Felin c = new Chat();</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -320,7 +320,7 @@
 		]
 	},
 	{
-		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><br><div style=\"padding-left:20px;\"><code>Chat c = new Felin();</code></div>",
+		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><div style=\"padding-left:40px;\"><br><code>Chat c = new Felin();</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -338,7 +338,7 @@
 		]
 	},
 	{
-		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><br><div style=\"padding-left:20px;\"><code>Chat c = (Chat) new Felin();</code></div>",
+		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <br><div style=\"padding-left:40px;\"><br><code>Chat c = (Chat) new Felin();</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -438,7 +438,7 @@
 		]
 	},
 	{
-		"texte": "I est une interface implémentée par les classes A et B, peut-on écrire <br><br><div style=\"padding-left : 20px;\"> <code>I[] tab;</code><br><code>tab = new I[2];</code></div>",
+		"texte": "I est une interface implémentée par les classes A et B, peut-on écrire le code suivant ? <br><div style=\"padding-left:40px;\"><br><code>I[] tab;</code><code>tab = new I[2];</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -552,7 +552,7 @@
 		]
 	},
 	{
-		"texte": "Que se passe-t-il au niveau mémoire avec le code suivant ? <br><br><div style=\"padding-left:20px;\"> <code>String s = \"Hello\"; <br>String s2 = \"World\"; <br>String s3 = s1 + s1;</code></div>",
+		"texte": "Que se passe-t-il au niveau mémoire avec le code suivant ? <br><div style=\"padding-left:40px;\"><br><code>String s = \"Hello\"; </code><br><code> String s2 = \"World\";</code><br><code> String s3 = s1 + s1;</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -584,30 +584,148 @@
 		]
 	},
 	{
-		"texte": "Que renvoie l'expression suivante ? <br><br><div style=\"padding-left:20px;\"><code>String s = \"Hello\"; <br> String s2 = \"Hello\";</code><br><br><code style=\"padding-left:20px;\">return (s1 == s2);</code></div>",
+		"texte": "Que renvoie l'expression suivante ? <br><div style=\"padding-left:40px;\"><br><code> String s = \"Hello\"; </code><br><code> String s2 = \"Hello\";</code><br><code>return (s1 == s2);</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
-				"texte": "true ",
+				"texte": "<code>true</code> ",
 				"isTrue": false
 			},
 			{
-				"texte": "false ",
+				"texte": "<code>false</code> ",
 				"isTrue": true
 			}
 		]
 	},
 	{
-		"texte": "Que renvoie l'expression suivante ? <br><br><div style=\"padding-left:20px;\"><code>String s = \"Hello\"; <br>String s2 = \"Hello\";</code> <br><br><code style=\"padding-left:20px;\">return (s1.equals(s2));</code></div>",
+		"texte": "Que renvoie l'expression suivante ? <br><div style=\"padding-left:40px;\"><br><code> String s = \"Hello\"; </code><br><code> String s2 = \"Hello\";</code><br><code> return (s1.equals(s2)); </code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
-				"texte": "true ",
+				"texte": "<code>true</code> ",
 				"isTrue": true
 			},
 			{
-				"texte": "false ",
+				"texte": "<code>false</code> ",
 				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <br><div style=\"padding-left:40px;\"><br><code>String s = \"HelloWorld\";</code><br><code>s.substring(0, 5);</code><br><br><code>System.out.println(s);</code></div>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "HelloWorld ",
+				"isTrue": true
+			},
+			{
+				"texte": "Hello ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <br><div style=\"padding-left:40px;\"><br><code>String s = \"HelloWorld\";</code><br><br><code>if(s.contains(\"World\")) {</code><br><code style=\"padding-left:40px;\">s.replace(\"World\", \"Land\");</code><br><code>}</code><br><br><code>System.out.println(s);</code></div>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "HelloWorld ",
+				"isTrue": true
+			},
+			{
+				"texte": "HelloLand ",
+				"isTrue": false
+			},
+			{
+				"texte": "Il y aura une exception de type NoNewStringDefined ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <br><div style=\"padding-left:40px;\"><br><code>String s = \"HelloWorld\";</code><br><code>s.indexOf(\"World\");</code><br><br><code>System.out.println(s);</code></div>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "HelloWorld ",
+				"isTrue": true
+			},
+			{
+				"texte": "Hello ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <br><div style=\"padding-left:40px;\"><br><code>int k = 12;</code><br><code>int l = 22;</code><br><code>float j = k * l;</code><br><br><code>System.out.println(j);</code></div>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "264 ",
+				"isTrue": false
+			},
+			{
+				"texte": "264.0 ",
+				"isTrue": true
+			},
+			{
+				"texte": "Il y aura une erreur de compilation ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <br><div style=\"padding-left:40px;\"><br><code>float k = 13;</code><br><code>float l = 25;</code><br><code>int j = k * l;</code></div>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "325 ",
+				"isTrue": false
+			},
+			{
+				"texte": "325.0 ",
+				"isTrue": false
+			},
+			{
+				"texte": "Il y aura une erreur de compilation ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <br><div style=\"padding-left:40px;\"><br><code>int[] integers = new int[5];</code><br><br><code>for(int k = 0 ; k < integers.length ; k++) {</code><br><code style=\"padding-left:40px;\">System.out.print(k);</code><br><code>}</code></div>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "01234 ",
+				"isTrue": true
+			},
+			{
+				"texte": "12345 ",
+				"isTrue": false
+			},
+			{
+				"texte": "On aura une exception de type <code>ArrayIndexOutOfBoundsException</code> ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle sera la valeur affichée dans la console ? <br><div style=\"padding-left:40px;\"><br><code>int[] integers = new int[3];</code><br><code>integers[0] = 1; integers [1] = 3; integers [2] = 5; </code><br><br><code>for(int k = 0 ; k < integers.length; k++) {</code><br><code style=\"padding-left:40px;\">System.out.print(integers[k+1]);</code><br><code>}</code></div>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "012 ",
+				"isTrue": false
+			},
+			{
+				"texte": "135 ",
+				"isTrue": false
+			},
+			{
+				"texte": "On aura une exception de type <code>ArrayIndexOutOfBoundsException</code> ",
+				"isTrue": true
 			}
 		]
 	},
@@ -662,7 +780,7 @@
 		]
 	},
 	{
-		"texte": "Qu'affiche le code suivant ? <br><br> <div style=\"padding-left:20px;\"><code>String s = \"HelloWorld\";</code> <br> <code>s.replace(s, \"HelloLand\");</code> <br><br> <code>System.out.println(s);</code></div>",
+		"texte": "Qu'affiche le code suivant ? <br><div style=\"padding-left:40px;\"><br><code>String s = \"HelloWorld\"; </code><br><code> s.replace(s, \"HelloLand\"); </code><br><code>System.out.println(s);</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -680,7 +798,7 @@
 		]
 	},
 	{
-		"texte": "Qu'a pour but le code suivant ? <br><br><div style=\"padding-left:20px;\"><code>public static void main(String args[]) {...}</code></div>",
+		"texte": "Qu'a pour but le code suivant ? <br><div style=\"padding-left:40px;\"><br><code>public static void main(String args[]) {...}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -766,7 +884,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le mot-clef <code>break</code> dans la boucle suivante ? <br><br> <div style=\"padding-left:20px;\"><code>for(int k = 0; k < 10 ; k++) { </code> <br> <code style=\"padding-left : 30px;\"> if([conditions]) { </code> <br> <code <code style=\"padding-left : 60px;\">  [instructions]; </code> <br> <code style=\"padding-left : 60px;\">  break;</code> <br> <code style=\"padding-left : 30px;\"> }</code> <br> <code>}</code></div>",
+		"texte": "Que fait le mot-clef break dans la boucle suivante ? <br><div style=\"padding-left:40px;\"><br><code>for(int k = 0; k < 10 ; k++) { </code><br><code style=\"padding-left:40px;\"> if([conditions]) { </code><br><code style=\"padding-left:80px;\"> [instructions];</code><br><code style=\"padding-left:80px;\">break;</code><br><code style=\"padding-left:40px;\">}</code><br><code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -784,7 +902,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le mot-clef <code>continue</code> dans la boucle suivante ? <br><br> <div style=\"padding-left:20px;\"><code>for(int k = 0; k < 10 ; k++) {</code> <br> <code style=\"padding-left : 30px;\"> if([conditions]) {</code> <br> <code style=\"padding-left : 60px;\"> [instructions];</code> <br> <code style=\"padding-left : 60px;\">  continue;</code> <br> <code style=\"padding-left : 30px;\"> }</code> <br> <code>}</code></div>",
+		"texte": "Que fait le mot-clef continue dans la boucle suivante ? <br><div style=\"padding-left:40px;\"><br><code>for(int k = 0; k < 10 ; k++) {</code><br><code style=\"padding-left:40px;\"> if([conditions]) {</code><br><code style=\"padding-left:80px;\">[instructions];</code><br><code style=\"padding-left:80px;\"> continue;</code><br><code style=\"padding-left:40px;\">}</code><br><code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -802,7 +920,7 @@
 		]
 	},
 	{
-		"texte": "Ces deux boucles sont elles équivalentes ? <br><br><div style=\"padding-left:20px;\"> <code>int[] tab = new int[3];</code> <br> <code>for(int k = 0; k < tab.length ; k++) {</code> <br> <code style=\"padding:30px;\"> System.out.println(tab[k];</code> <br> <code>}</code> <br> <code>for(int i : tab) {</code> <br> <code style=\"padding:30px;\"> System.out.println(i);</code> <br> <code>}</code></div>",
+		"texte": "Ces deux boucles sont elles équivalentes ? <br><div style=\"padding-left:40px;\"><br><code>int[] tab = new int[3];</code><br><br><code>for(int k = 0; k < tab.length ; k++) {</code><br><code style=\"padding-left:40px;\"> System.out.println(tab[k];</code><br><code>}</code><br><br><code> for(int i : tab) {</code><br><code style=\"padding-left:40px;\"> System.out.println(i);</code><br><code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -820,7 +938,7 @@
 		]
 	},
 	{
-		"texte": "Quelle sera le résultat de la variable <code>m</code> à la fin de ce programme ? <br><br> <div style=\"padding-left:20px;\"><code>int k;</code> <br> <code>int l = 5;</code> <br><br> <code>if(l > 0) { </code> <br> <code style=\"padding-left:30px;\">int m = k * l;</code> <br> <code>}</code></div>",
+		"texte": "Quelle sera le résultat de la variable <code>m</code> à la fin de ce programme ? <br><div style=\"padding-left:40px;\"><br><code>int k;</code><br><code> int l = 5;</code><br><br><code>if(l > 0) { </code><br><code style=\"padding-left:40px;\">int m = k * l;</code><br><code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -848,7 +966,7 @@
 		]
 	},
 	{
-		"texte": "Peut-on écrire le code suivant ? <br><br><div style=\"padding:20px;\"><code>for(int k = 0; k < list.length ; k++) {</code><br><code style=\"padding:30px;\">[instructions]</code><br><code>}</code></div>",
+		"texte": "Peut-on écrire le code suivant ? <br><div style=\"padding-left:40px;\"><br><code>for(int k = 0; k < list.length ; k++) {</code><br><code style=\"padding-left:40px;\">[instructions]</code><br><code>}</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -880,7 +998,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le code suivant ? <br><br> <div style=\"padding-left:20px;\"><code>System.out.println(\"Hello World\");</code></div>",
+		"texte": "Que fait le code suivant ? <br><div style=\"padding-left:40px;\"><br><code>System.out.println(\"Hello World\");</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -916,7 +1034,7 @@
 		]
 	},
 	{
-		"texte": "Peut-on déclarer directement des variables comme ceci ? <br><br><div style=\"padding-left:20px;\"><code>int i, j, k;</code></div>",
+		"texte": "Peut-on déclarer directement des variables comme ceci ? <br><div style=\"padding-left:40px;\"><br><code>int i, j, k;</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1214,7 +1332,7 @@
 		]
 	},
 	{
-		"texte": "Quelle est le type de k lors de l'opération suivante ? <br><br><div style=\"padding-left:20px;\"> <code>int i = 4, long j = 5;</code><br><br><code> int k = i * j;</code></div>",
+		"texte": "Quelle est le type de k lors de l'opération suivante ? <br><div style=\"padding-left:40px;\"><br><code>int i = 4, long j = 5;</code><br><code> int k = i * j;</code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1222,7 +1340,7 @@
 				"isTrue": false
 			},
 			{
-				"texte": "long ",
+				"texte": "<code>long</code> ",
 				"isTrue": true
 			},
 			{
@@ -1286,7 +1404,7 @@
 		]
 	},
 	{
-		"texte": "Quand est-ce que cette condition est vérifiée ?  <br><div style=\"padding-left:20px;\"><code>if( i % 2 == 0 ) { ... } </code> ",
+		"texte": "Quand est-ce que cette condition est vérifiée ?  <br><div style=\"padding-left:40px;\"><br><code>if( i % 2 == 0 ) { ... } </code></div>",
 		"topic": "Java",
 		"reponses": [
 			{
@@ -1350,6 +1468,24 @@
 		]
 	},
 	{
+		"texte": "Que fait <code>mvn clean</code> ?",
+		"topic": "Maven",
+		"reponses": [
+			{
+				"texte": "Elle effecture un build léger ",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle fait du nettoyage dans les dépendances inutilisées ",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle efface tous les fichiers générés par Maven ",
+				"isTrue": true
+			}
+		]
+	},
+	{
 		"texte": "Quelle est l'utilité de Maven ?",
 		"topic": "Maven",
 		"reponses": [
@@ -1390,7 +1526,7 @@
 		"topic": "Maven",
 		"reponses": [
 			{
-				"texte": "Il exécute les actions implémentées selon un framework de test déclaré dans le pom.xml ",
+				"texte": "Il exécute les actions implémentées selon un framework de test déclaré dans le <code>pom.xml</code> ",
 				"isTrue": true
 			},
 			{
@@ -1882,7 +2018,7 @@
 		]
 	},
 	{
-		"texte": "Que fait le code suivant au dessus d'une méthode ? <br><br><div style=\"padding-left:20px;\"><code>@After(\"execution(* maMethode(..))\")</code><div>",
+		"texte": "Que fait le code suivant au dessus d'une méthode ? <br><div style=\"padding-left:40px;\"><br><code>@After(\"execution(* maMethode(..))\")</code></div>",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
@@ -2096,25 +2232,7 @@
 		]
 	},
 	{
-		"texte": "Que signifie PL/SQL ?",
-		"topic": "Frameworks de Java JEE",
-		"reponses": [
-			{
-				"texte": "Procedure Language / Structured Query Language ",
-				"isTrue": true
-			},
-			{
-				"texte": "Programming Language / Structured Query Language ",
-				"isTrue": false
-			},
-			{
-				"texte": "Professionnal Language / Structured Query Language ",
-				"isTrue": false
-			}
-		]
-	},
-	{
-		"texte": "Dans quel framework rencontre-t-on les annotations @Given, @When, @And, @Then ?",
+		"texte": "Dans quel framework rencontre-t-on les annotations <code>@Given</code>, <code>@When</code>, <code>@And</code>, <code>@Then</code> ?",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
@@ -2182,7 +2300,7 @@
 		]
 	},
 	{
-		"texte": "À quoi correspond lannotation suivante ? <br><br><div style=\"padding-left:20px;\">javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY)</div>",
+		"texte": "À quoi correspond lannotation suivante ? <br><div style=\"padding-left:40px;\"><br><code>javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY)</code></div>",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
 			{
@@ -2245,6 +2363,136 @@
 			},
 			{
 				"texte": "EclipseLink ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que signifie PL/SQL ?",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "Procedure Language / Structured Query Language ",
+				"isTrue": true
+			},
+			{
+				"texte": "Programming Language / Structured Query Language ",
+				"isTrue": false
+			},
+			{
+				"texte": "Professionnal Language / Structured Query Language ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Comment efface-t-on les données une table ?",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "<code>DROP TABLE [table];</code> ",
+				"isTrue": false
+			},
+			{
+				"texte": "<code>TRUNCATE TABLE [table];</code> ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Comment efface-t-on une table ?",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "<code>DROP TABLE [table];</code> ",
+				"isTrue": true
+			},
+			{
+				"texte": "<code>TRUNCATE TABLE [table];</code> ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Comment affiche-t-on un titre de colonneau résultat d'une requête ?",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "<code>SELECT colonne1 AS NOM_COLONNE_1, colonne2 AS NOM_COLONNE_2...</code> ",
+				"isTrue": true
+			},
+			{
+				"texte": "<code>SELECT colonne1 ALIAS NOM_COLONNE_1, colonne2 ALIAS NOM_COLONNE_2...</code> ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce qu'une <code>NATURAL JOIN</code> ?",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "Une jointure sur un champ commun à deux tables sans restriction ",
+				"isTrue": true
+			},
+			{
+				"texte": "Une jointure sur un champ commun à deux tables à condition d'avoir une correspondance exacte sur le champ ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est-ce qu'une <code>CROSS JOIN</code> ?",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "Une jointure retournant le produit cartésien de deux tables ",
+				"isTrue": false
+			},
+			{
+				"texte": "Une jointure sur un champ commun à deux tables à condition d'avoir une correspondance exacte sur le champ ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que fait la requête suivante ? <br><div style=\"padding-left:40px;\"><br><code>SELECT * FROM table1</code><br><code>UNION</code><br><code>SELECT * FROM table2</code></div>",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "Elle permet de mettre bout-à-bout le résultat de deux requêtes différentes, à condition que les deux tables aient le même nombre de colonnes, qu'elles soient de même type et dans le même ordre ",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle permet de mettre bout-à-bout le résultat de deux requêtes différentes sans doublons, à condition que les deux tables aient le même nombre de colonnes, qu'elles soient de même type et dans le même ordre ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que fait la requête suivante ? <br><div style=\"padding-left:40px;\"><br><code>SELECT * FROM table1</code><br><code>UNION ALL</code><br><code>SELECT * FROM table2</code></div>",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "Elle permet de mettre bout-à-bout le résultat de deux requêtes différentes, à condition que les deux tables aient le même nombre de colonnes, qu'elles soient de même type et dans le même ordre ",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle permet de mettre bout-à-bout le résultat de deux requêtes différentes sans doublons, à condition que les deux tables aient le même nombre de colonnes, qu'elles soient de même type et dans le même ordre ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la différence entre <code>RIGHT JOIN</code> et <code>RIGHT OUTER JOIN</code> ? ",
+		"topic": "SQL",
+		"reponses": [
+			{
+				"texte": "<code>RIGHT JOIN</code> récupère aussi l'intersection des deux tables ",
+				"isTrue": false
+			},
+			{
+				"texte": "Aucune, les deux écritures sont équivalentes ",
 				"isTrue": true
 			}
 		]
@@ -2464,7 +2712,7 @@
 		"topic": "Algorithmie",
 		"reponses": [
 			{
-				"texte": "Le nombre conditions effectuées par un algorithme ",
+				"texte": "Le nombre conditions vérifiées par un algorithme ",
 				"isTrue": false
 			},
 			{
@@ -2474,7 +2722,7 @@
 		]
 	},
 	{
-		"texte": "Quelle est la complexité pour accéder à un élement n d'un tableau de taille k ?",
+		"texte": "Quelle est la complexité pour accéder à un élement k d'un tableau de taille n ?",
 		"topic": "Algorithmie",
 		"reponses": [
 			{
@@ -2488,7 +2736,7 @@
 		]
 	},
 	{
-		"texte": "Quelle est la complexité pour parcourir une liste de k éléments ?",
+		"texte": "Quelle est la complexité pour parcourir une liste de n éléments ?",
 		"topic": "Algorithmie",
 		"reponses": [
 			{
@@ -2497,6 +2745,324 @@
 			},
 			{
 				"texte": "Complexité linéaire : O(n) ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "À quoi peut bien servir cet algorithme ? <br><div style=\"padding-left:40px;\"><br><code>public static int methodeRecursive(int nombre) {</code><br><code style=\"padding-left:40px;\">int x = 0; </code><br><code style=\"padding-left:40px;\">if (nombre == 1) { </code><br><code style=\"padding-left:80px;\">x = 1; </code><br><code style=\"padding-left:80px;\">return x; </code><br><code style=\"padding-left:40px;\">} else { </code><br><code style=\"padding-left:80px;\">x = nombre * methodeRecursive(nombre - 1); </code><br><code style=\"padding-left:80px;\">return x; </code><br><code style=\"padding-left:40px;\">}</code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "À calculer la suite de Fibonacci ",
+				"isTrue": false
+			},
+			{
+				"texte": "À calculer le nombre d'or ",
+				"isTrue": false
+			},
+			{
+				"texte": "À calculer une factorielle ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "À quoi peut bien servir cet algorithme ? <br><div style=\"padding-left:40px;\"><br><code>public static int methodeRecursive(int n)  {</code><br><code style=\"padding-left:40px;\">if(n == 0) </code><br><code style=\"padding-left:80px;\">return 0; </code><br><code style=\"padding-left:40px;\">else if(n == 1) </code><br><code style=\"padding-left:80px;\">return 1;</code><br><code style=\"padding-left:40px;\">else</code><br><code style=\"padding-left:80px;\">return methodeRecursive(n - 1) + methodeRecursive(n - 2);</code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "À calculer la suite de Fibonacci ",
+				"isTrue": true
+			},
+			{
+				"texte": "À calculer de puissance ",
+				"isTrue": false
+			},
+			{
+				"texte": "À calculer une factorielle ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "À quoi peut bien servir cet algorithme ? <br><div style=\"padding-left:40px;\"><br><code>public static double getXXX(int nombre) {</code><br><code style=\"padding-left:40px;\">double X0 = 1; </code><br><code style=\"padding-left:40px;\">double Xn = (X0 + nombre / X0) / 2; </code><br><code style=\"padding-left:40px;\">double Xn_Plus_1 = 0; </code><br><code style=\"padding-left:40px;\">for (int i = 0; i < 10; i++) { </code><br><code style=\"padding-left:80px;\">Xn_Plus_1 = (Xn + nombre / Xn) / 2; </code><br><code style=\"padding-left:80px;\">Xn = Xn_Plus_1; </code><br><code style=\"padding-left:40px;\">}</code><br><code style=\"padding-left:40px;\">return Xn_Plus_1;</code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "À calculer la suite de Fibonacci ",
+				"isTrue": true
+			},
+			{
+				"texte": "À calculer une racine carrée par la méthode de Newron ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "À quoi peut bien servir cet algorithme ? <br><div style=\"padding-left:40px;\"><br><code>public static int methodeRecursive(int n, int m) {</code><br><code style=\"padding-left:40px;\">if (m == 0) </code><br><code style=\"padding-left:80px;\">return 1; </code><br><code style=\"padding-left:40px;\">return n * methodeRecursive(n, m - 1); </code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "À calculer la suite de Fibonacci ",
+				"isTrue": false
+			},
+			{
+				"texte": "À calculer une puissance ",
+				"isTrue": true
+			},
+			{
+				"texte": "À calculer une factorielle ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "De quel type d'algorithme de tri s'agit-il ? <br><div style=\"padding-left:40px;\"><br><code>public static int[] getOrderedIntegers(int[] integers) {</code><br><code style=\"padding-left:40px;\">boolean trie = false; </code><br><code style=\"padding-left:40px;\">int tmp; </code><br><code style=\"padding-left:40px;\">while (!trie) {</code><br><code style=\"padding-left:80px;\">trie = true; </code><br><code style=\"padding-left:80px;\">for (int i = 0; i < integers.length - 1; i++) { </code><br><code style=\"padding-left:120px;\">if (integers[i] > integers[i + 1]) {</code><br><code style=\"padding-left:160px;\">tmp = integers[i + 1];</code><br><code style=\"padding-left:160px;\">integers[i + 1] = integers[i];</code><br><code style=\"padding-left:160px;\">integers[i] = tmp;</code><br><code style=\"padding-left:160px;\">trie = false;</code><br><code style=\"padding-left:120px;\">}</code><br><code style=\"padding-left:80px;\">} </code><br><code style=\"padding-left:40px;\">}</code><br><code style=\"padding-left:40px;\">return integers;</code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le tri par bulles ",
+				"isTrue": true
+			},
+			{
+				"texte": "Le tri par sélection ",
+				"isTrue": false
+			},
+			{
+				"texte": "Le tri par insertion ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "De quel type d'algorithme de tri s'agit-il ? <br><div style=\"padding-left:40px;\"><br><code>public static int[] getOrderedIntegers(int[] integers) {</code><br><code style=\"padding-left:40px;\">int key ; </code><br><code style=\"padding-left:40px;\">for (int i = 1; i < integers.length ; i++) { </code><br><code style=\"padding-left:80px;\">key = integers[i]; </code><br><code style=\"padding-left:80px;\">for (int j = i ; j > 0 ; j--) { </code><br><code style=\"padding-left:120px;\">if(key < integers[j -1]) {</code><br><code style=\"padding-left:160px;\">integers[j] = integers[j - 1];</code><br><code style=\"padding-left:160px;\">integers[j - 1] = key;</code><br><code style=\"padding-left:120px;\">}</code><br><code style=\"padding-left:80px;\">} </code><br><code style=\"padding-left:40px;\">}</code><br><code style=\"padding-left:40px;\">return integers;</code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le tri par bulles ",
+				"isTrue": false
+			},
+			{
+				"texte": "Le tri par fusion ",
+				"isTrue": false
+			},
+			{
+				"texte": "Le tri par insertion ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "De quel type d'algorithme de tri s'agit-il ? <br><div style=\"padding-left:40px;\"><br><code>public static int[] getOrderedIntegers(int[] integers) {</code><br><code style=\"padding-left:40px;\">int i, j, min, tmp; </code><br><br><code style=\"padding-left:40px;\">for (i = 0 ; i < integers.length - 1 ; i++) { </code><br><code style=\"padding-left:80px;\">min = i; </code><br><br><code style=\"padding-left:80px;\">for (j = i + 1; j < integers.length; j++) { </code><br><code style=\"padding-left:120px;\">if (integers[j] < integers[min]) {</code><br><code style=\"padding-left:160px;\">min = j ;</code><br><code style=\"padding-left:120px;\">}</code><br><code style=\"padding-left:80px;\">} </code><br><br><code style=\"padding-left:80px;\">if (min != integers[i]) { </code><br><code style=\"padding-left:120px;\">tmp = integers[min];</code><br><code style=\"padding-left:120px;\">integers[min] = integers[i];</code><br><code style=\"padding-left:120px;\">integers[i] = tmp;</code><br><code style=\"padding-left:80px;\">} </code><br><code style=\"padding-left:40px;\">}</code><br><code style=\"padding-left:40px;\">return integers;</code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le tri par bulles ",
+				"isTrue": false
+			},
+			{
+				"texte": "Le tri par fusion ",
+				"isTrue": false
+			},
+			{
+				"texte": "Le tri par sélection ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "À quoi peut bien servir cet algorithme ? <br><div style=\"padding-left:40px;\"><br><code>public static int getXXX(int n, int m) {</code><br><code style=\"padding-left:40px;\">int accumulator = 1; </code><br><code style=\"padding-left:40px;\">for (int i = 0; i < m; i++) { </code><br><code style=\"padding-left:80px;\">accumulator *= n; </code><br><code style=\"padding-left:40px;\">}</code><br><code style=\"padding-left:40px;\">return accumulator;</code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "À calculer la suite de Fibonacci ",
+				"isTrue": false
+			},
+			{
+				"texte": "À calculer une puissance ",
+				"isTrue": true
+			},
+			{
+				"texte": "À calculer une factorielle ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel fût le premier algorithme moderne ? ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le calcul de la racine carrée par Newton ",
+				"isTrue": false
+			},
+			{
+				"texte": "Le calcul du PGCD par Euclide ",
+				"isTrue": true
+			},
+			{
+				"texte": "La pascaline en 1 642 ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "D'où provient le mot algorithmie ? ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "D'Al Khuwarizmi, un mathématicien perse du XIème siècle ",
+				"isTrue": true
+			},
+			{
+				"texte": "Du grec algos (singulier) et rythmos (cadence) ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est ce qu'une équation diphantienne ? ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Une équation polynomiale à une ou plusieurs inconnues  dont les solutions sont cherchées parmi les nombres entiers ",
+				"isTrue": true
+			},
+			{
+				"texte": "Une équation différentielle du second dégré ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'est ce que la calculabilité d'un algorithme ? ",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le temps moyen de résolutio d'un algorithme sans se soucier du support ",
+				"isTrue": false
+			},
+			{
+				"texte": "La capacité à résoudre un algorithme sans prendre en compte le temps d'exécution ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que permet de déterminer cet algorithme ? <br><div style=\"padding-left:40px;\"><br><code>public static boolean isXXX(int n) {</code><br><code style=\"padding-left:40px;\">boolean isXXX = true; </code><br><code style=\"padding-left:40px;\">if (n < 0) { </code><br><code style=\"padding-left:80px;\">isXXX = false; </code><br><code style=\"padding-left:40px;\">} else if (n != 0 && n != 1) {</code><br><code style=\"padding-left:80px;\">for (int i = 2; i <= n / 2; i++) { </code><br><code style=\"padding-left:120px;\">if (n != i && n % i == 0) { </code><br><code style=\"padding-left:160px;\">isXXX = false; </code><br><code style=\"padding-left:160px;\">break; </code><br><code style=\"padding-left:120px;\">} </code><br><code style=\"padding-left:80px;\">} </code><br><code style=\"padding-left:40px;\">} </code><br><code style=\"padding-left:40px;\">return isXXX;</code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Si un nombre est pair ",
+				"isTrue": false
+			},
+			{
+				"texte": "Si un nombre est premier ",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Que permet de déterminer cet algorithme ? <br><div style=\"padding-left:40px;\"><br><code>public static boolean isXXX(int n) {</code><br><code style=\"padding-left:40px;\">boolean isXXX = true; </code><br><br><code style=\"padding-left:40px;\">if (n % 2 == 0) { </code><br><code style=\"padding-left:80px;\">isXXX = false; </code><br><code style=\"padding-left:40px;\">}</code><br><code style=\"padding-left:40px;\">return isXXX;</code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Si un nombre est pair ",
+				"isTrue": false
+			},
+			{
+				"texte": "Si un nombre est impair ",
+				"isTrue": true
+			},
+			{
+				"texte": "Si un nombre est premier ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la complexité moyenne d'un algorithme de tri par insertion ?",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Complexité linéaire : O(n) ",
+				"isTrue": false
+			},
+			{
+				"texte": "Complexité quadratique : O(n^2) ",
+				"isTrue": true
+			},
+			{
+				"texte": "Complexité cubique : O(n^3) ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la complexité dans le meilleur cas d'un algorithme de tri par insertion ?",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Complexité linéaire : O(n) ",
+				"isTrue": true
+			},
+			{
+				"texte": "Complexité quadratique : O(n^2) ",
+				"isTrue": false
+			},
+			{
+				"texte": "Complexité cubique : O(n^3) ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que calcule cet algorithme ? <br><div style=\"padding-left:40px;\"><br><code>public static int getXXX(int m, int n) {</code><br><br><code style=\"padding-left:40px;\">while(m != n) { </code><br><code style=\"padding-left:80px;\">if(m > n) { </code><br><code style=\"padding-left:120px;\">m = m - n; </code><br><code style=\"padding-left:80px;\">} else { </code><br><code style=\"padding-left:120px;\">n = n - m;</code><br><code style=\"padding-left:80px;\">} </code><br><code style=\"padding-left:40px;\">} </code><br><code>return m; </code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le PGCM ",
+				"isTrue": true
+			},
+			{
+				"texte": "Le PGCD ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que calcule cet algorithme ? <br><div style=\"padding-left:40px;\"><br><code>public static int getXXX(int m, int n) {</code><br><br><code style=\"padding-left:40px;\">if(m == n) { </code><br><code style=\"padding-left:80px;\">return m; </code><br><code style=\"padding-left:40px;\">} else { </code><br><code style=\"padding-left:80px;\">if (m > n) { </code><br><code style=\"padding-left:120px;\">return getXXX(m - n, n);</code><br><code style=\"padding-left:80px;\">} else { </code><br><code style=\"padding-left:120px;\">return getXXX(m, n - m);</code><br><code style=\"padding-left:80px;\">} </code><br><code style=\"padding-left:40px;\">} </code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le PGCM ",
+				"isTrue": true
+			},
+			{
+				"texte": "Le PGCD ",
+				"isTrue": false
+			},
+			{
+				"texte": "Si un nombre est premier ",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que retourne cet algorithme récursif ? <br><div style=\"padding-left:40px;\"><br><code>public static void main(String[] args) {</code><br><br><code style=\"padding-left:40px;\">public static boolean isXXX(int k, int p) {</code><br><br><code style=\"padding-left:40px;\">if (p == 1) {</code><br><code style=\"padding-left:80px;\">return true;</code><br><code style=\"padding-left:40px;\">} else {</code><br><code style=\"padding-left:80px;\">if (k % p == 0) {</code><br><code style=\"padding-left:120px;\">return false; </code><br><code style=\"padding-left:80px;\">} else {</code><br><code style=\"padding-left:120px;\">return isXXX(k, p - 1); </code><br><code style=\"padding-left:80px;\">}</code><br><code style=\"padding-left:40px;\">}</code><br><code>}</code></div>",
+		"topic": "Algorithmie",
+		"reponses": [
+			{
+				"texte": "Le PGCM ",
+				"isTrue": false
+			},
+			{
+				"texte": "Le PGCD ",
+				"isTrue": false
+			},
+			{
+				"texte": "Si un nombre est premier ",
 				"isTrue": true
 			}
 		]

@@ -179,7 +179,7 @@ public class QuestionsWithCodeGenerator {
 			
 		} else if(tag.equals("<javaReturn>")) {
 			
-			sb.append("<br><code>");
+			sb.append("<br><code style=\"padding-left:80px;\">");
 			sb.append(javaCode);
 			sb.append("</code>");
 			
