@@ -176,6 +176,42 @@
 		]
 	},
 	{
+		"texte": "Que signifie réellement Deque ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Deserialized Queue",
+				"isTrue": false
+			},
+			{
+				"texte": "Desynchronized Queue",
+				"isTrue": false
+			},
+						{
+				"texte": "Double-Ended Queue",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "De quel interface hérite l'interface Collection ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Iterable",
+				"isTrue": true
+			},
+			{
+				"texte": "Serializable",
+				"isTrue": false
+			},
+						{
+				"texte": "List",
+				"isTrue": false
+			}
+		]
+	},
+	{
 		"texte": "Quel est le principal avantage de l'interface Set par rapport à l'interface List ?",
 		"topic": "Java",
 		"reponses": [
@@ -238,7 +274,7 @@
 				"isTrue": false
 			},
 			{
-				"texte": "Elle est synchronisée et permet ditérer sur un Enum",
+				"texte": "Elle est synchronisée et permet d'itérer sur un Enum",
 				"isTrue": true
 			},
 			{
@@ -247,7 +283,24 @@
 			}
 		]
 	},
-	
+	{
+		"texte": "Quel est l'avantage de la class Stack par rapport à la classe Vector dont elle hérite ?",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "Elle est plus rapide parce que non-synchronisée",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle contient des méthodes supplémentaires pouvant effectuer du LIFO (Last In First Out)",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle a plus de capacité",
+				"isTrue": false
+			}
+		]
+	},
 	{
 		"texte": "Quelle est la classe mère de toutes les classes ?",
 		"topic": "Java",
@@ -844,7 +897,7 @@
 		"topic": "Java",
 		"reponses": [
 			{
-				"texte": "Elle compare les <code>hashcode()</code> de a et de b et renvoie <code>true</code> s'ils sont équivalents",
+				"texte": "Elle compare les <code>hashcode()</code> de <code>a</code> et <code>b</code> et renvoie <code>true</code> s'ils sont équivalents",
 				"isTrue": true
 			},
 			{
@@ -1607,7 +1660,7 @@
 				"isTrue": true
 			},
 			{
-				"texte": "Uniquement récolter les dépendances déclarées dynamiquement",
+				"texte": "Gérer les dépendances d'un projet dynamiquement",
 				"isTrue": false
 			}
 		]
@@ -1791,6 +1844,24 @@
 		]
 	},
 	{
+		"texte": "Comment rapatrie-t-on un dépôt Git distant sur sa propre machine ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "git init",
+				"isTrue": false
+			},
+			{
+				"texte": "git remote",
+				"isTrue": false
+			},
+			{
+				"texte": "git clone",
+				"isTrue": true
+			}
+		]
+	},
+	{
 		"texte": "Qu'effectue la commande git commit ?",
 		"topic": "Git",
 		"reponses": [
@@ -1822,6 +1893,24 @@
 			},
 			{
 				"texte": "--utf-8",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la différence entre git pull et git fetch ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "git pull effectue les commandes git fetch et git merge",
+				"isTrue": true
+			},
+			{
+				"texte": "git pull récupère un commit local tandis que git fetch récupère les modifications d'un dépôt distant",
+				"isTrue": false
+			},
+			{
+				"texte": "git fetch récupère un commit local tandis que git pull récupère les modifications d'un dépôt distant",
 				"isTrue": false
 			}
 		]
@@ -2549,6 +2638,10 @@
 			},
 			{
 				"texte": "Une jointure sur un champ commun à deux tables à condition d'avoir une correspondance exacte sur le champ",
+				"isTrue": false
+			},
+			{
+				"texte": "Une jointure retournant le produit cartésien de deux tables",
 				"isTrue": false
 			}
 		]

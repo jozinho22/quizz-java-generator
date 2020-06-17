@@ -3,6 +3,7 @@ package com.douineau.test;
 public class TestQuestion {
 	
 	public static void main(String[] args) {
+		
 		String s = "HelloWorld";
 		
 		if(s.contains("World")) {
