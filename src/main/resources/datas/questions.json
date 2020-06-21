@@ -1794,7 +1794,7 @@
 		]
 	},
 	{
-		"texte": "À quoi sert la commande git cherry-pick <commit-hash> ?",
+		"texte": "À quoi sert la commande <code>git cherry-pick <commit-hash></code> ?",
 		"topic": "Git",
 		"reponses": [
 			{
@@ -1880,7 +1880,7 @@
 		]
 	},
 	{
-		"texte": "Que signifie -u dans la commande git push -u origin master ?",
+		"texte": "Que signifie <code>-u</code> dans la commande <code>git push -u origin master</code> ?",
 		"topic": "Git",
 		"reponses": [
 			{
@@ -1972,6 +1972,124 @@
 			{
 				"texte": "Cela va initialiser un dépôt Git dans le dossier où vous pointez",
 				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle commande vous permet d'observer les modifications effectuées sur des fichiers encore non commités ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "git checkout",
+				"isTrue": false
+			},
+			{
+				"texte": "git status",
+				"isTrue": false
+			},
+			{
+				"texte": "git diff",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quelle commande vous permet d'observer les fichiers ajoutés, modifiés ou supprimés avant un <code>commit</code> ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "git checkout",
+				"isTrue": false
+			},
+			{
+				"texte": "git status",
+				"isTrue": true
+			},
+			{
+				"texte": "git diff",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'effectue la commande <code>git reset --soft</code> ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "Elle modifie uniquement le pointeur HEAD",
+				"isTrue": true
+			},
+			{
+				"texte": "Elle modifie le pointeur HEAD et l'index",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle modifie l'index et le working tree",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'effectue la commande <code>git reset --hard</code> ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "Elle modifie l'index et le working tree",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle modifie le pointeur HEAD et l'index",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle modifie le pointeur HEAD, l'index et le working tree",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quelle est l'option par défaut de git reset ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "--soft",
+				"isTrue": false
+			},
+			{
+				"texte": "--mixed",
+				"isTrue": true
+			},
+			{
+				"texte": "--keep",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Qu'effectue la commande git stash ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "Elle affecte un tag à un commit",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle enregistre des modifications qui ne doivent pas être commités tout de suite",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Qu'effectue la commande gitk ?",
+		"topic": "Git",
+		"reponses": [
+			{
+				"texte": "Elle récupère le <code><commit-hash></code> d'un commit",
+				"isTrue": false
+			},
+			{
+				"texte": "Elle ouvre l'interface graphique du dépôt local",
+				"isTrue": true
 			}
 		]
 	},
@@ -2601,7 +2719,7 @@
 		]
 	},
 	{
-		"texte": "Comment efface-t-on une table ?",
+		"texte": "Comment supprime-t-on une table ?",
 		"topic": "SQL",
 		"reponses": [
 			{
@@ -2615,7 +2733,7 @@
 		]
 	},
 	{
-		"texte": "Comment affiche-t-on un titre de colonneau résultat d'une requête ?",
+		"texte": "Comment affiche-t-on un titre de colonne au résultat d'une requête ?",
 		"topic": "SQL",
 		"reponses": [
 			{
@@ -2771,16 +2889,16 @@
 		"topic": "Divers",
 		"reponses": [
 			{
-				"texte": "Custom Serialized Server",
+				"texte": "Custom Serialized Sheets",
 				"isTrue": false
 			},
 			{
-				"texte": "Custom Style Service",
-				"isTrue": false
+				"texte": "Cascading Style Sheets",
+				"isTrue": true
 			},
 			{
 				"texte": "Customed Style Sheets",
-				"isTrue": true
+				"isTrue": false
 			}
 		]
 	},
