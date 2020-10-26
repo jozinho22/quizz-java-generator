@@ -212,6 +212,24 @@
 		]
 	},
 	{
+		"texte": "Quelle exception doit-on implémenter avec un <code>try</code>/<code>catch</code> ou une déclaration dans la signature de méthode pour que ce bout de code fonctionne ? <java>FileReader reader = new FileReader();</java><java>File jsonFile = reader.getFile(\"myFile.json\");</java>",
+		"topic": "Java",
+		"reponses": [
+			{
+				"texte": "java.io.IOException",
+				"isTrue": true
+			},
+			{
+				"texte": "java.io.FileNotFoundException",
+				"isTrue": false
+			},
+						{
+				"texte": "javax.json.JsonException",
+				"isTrue": false
+			}
+		]
+	},
+	{
 		"texte": "Quel est le principal avantage de l'interface Set par rapport à l'interface List ?",
 		"topic": "Java",
 		"reponses": [
@@ -583,7 +601,7 @@
 		"topic": "Java",
 		"reponses": [
 			{
-				"texte": "Plain Old Java Object",
+				"texte": "<none>Plain Old Java Object",
 				"isTrue": true
 			},
 			{
@@ -1884,15 +1902,15 @@
 		"topic": "Git",
 		"reponses": [
 			{
-				"texte": "--unique",
+				"texte": "<code>--unique</code>",
 				"isTrue": false
 			},
 			{
-				"texte": "--set-upstream",
+				"texte": "<code>--set-upstream</code>",
 				"isTrue": true
 			},
 			{
-				"texte": "--utf-8",
+				"texte": "<code>--utf-8</code>",
 				"isTrue": false
 			}
 		]
@@ -2052,15 +2070,15 @@
 		"topic": "Git",
 		"reponses": [
 			{
-				"texte": "--soft",
+				"texte": "<code>--soft</code>",
 				"isTrue": false
 			},
 			{
-				"texte": "--mixed",
+				"texte": "<code>--mixed</code>",
 				"isTrue": true
 			},
 			{
-				"texte": "--keep",
+				"texte": "<code>--keep</code>",
 				"isTrue": false
 			}
 		]

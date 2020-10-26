@@ -1,6 +1,7 @@
 package com.douineau.main;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -44,7 +45,7 @@ public class QuestionsWithCodeGenerator {
 			if (q.getTexte().contains("<java>")) {
 				addJavaStyleQuestionText(q);
 			}
-			if (!q.getTexte().contains("<code>")) {
+			if (!q.getTexte().contains("<code>") && !q.getTexte().contains("<none>")) {
 				addItemsToQuestionText(codes, q);
 			}
 
@@ -77,6 +78,15 @@ public class QuestionsWithCodeGenerator {
 
 			// Displaying JSON String
 			System.out.println(jsonStr);
+			
+			File file = new File("src/main/resources/datas/questionswithcodes.json");
+			String absolutePath = file.getAbsolutePath();
+			
+			System.out.println(absolutePath);
+			
+			FileWriter writer=new FileWriter(absolutePath);
+			writer.write(jsonStr);  // écrire une ligne dans le fichier resultat.txt
+			writer.close(); 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

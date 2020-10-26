@@ -1,18 +1,19 @@
 package com.douineau.test;
 
+import java.io.File;
+import java.io.IOException;
+
+import com.douineau.utils.FileReader;
+
 public class TestQuestion {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		String s = "HelloWorld";
-		
-		if(s.contains("World")) {
-			s.replace("World", "Land");
-		}
-		
-		System.out.println(s);
-		
+		FileReader reader = new FileReader();
+		File jsonFile = reader.getFile("datas/myFile.json");
 	}
+	
+
 
 //	public static int[] getXXX(int[] integers) {
 //
