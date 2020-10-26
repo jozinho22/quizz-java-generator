@@ -3,6 +3,7 @@ package com.douineau.main;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -87,6 +88,10 @@ public class QuestionsWithCodeGenerator {
 			FileWriter writer=new FileWriter(absolutePath);
 			writer.write(jsonStr);  // écrire une ligne dans le fichier resultat.txt
 			writer.close(); 
+			
+			File destination = new File("../quizz-java/src/main/resources/datas/questionswithcodes.json");
+			Files.copy(file.toPath(), destination.toPath());
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
