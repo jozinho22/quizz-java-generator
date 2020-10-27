@@ -46,8 +46,13 @@ public class QuestionsWithCodeGenerator {
 			if (q.getTexte().contains("<java>")) {
 				addJavaStyleQuestionText(q);
 			}
-			if (!q.getTexte().contains("<code>") && !q.getTexte().contains("<none>")) {
-				addItemsToQuestionText(codes, q);
+			if (!q.getTexte().contains("<code>")) {
+				if(!q.getTexte().contains("<none>")) {
+					addItemsToQuestionText(codes, q);
+				} else {
+					deleteNoneTag(q);
+				}
+				
 			}
 
 			if (q.getTopic().equals("")) {
@@ -60,7 +65,12 @@ public class QuestionsWithCodeGenerator {
 				addBlanksToResponseText(r);
 
 				if (!r.getTexte().contains("<code>")) {
-					addItemsToResponseText(codes, r);
+					if(!r.getTexte().contains("<none>")) {
+						addItemsToResponseText(codes, r);
+					} else {
+						deleteNoneTag(r);
+					}
+					
 				}
 
 				booleans.add(r.getIsTrue());
@@ -203,6 +213,10 @@ public class QuestionsWithCodeGenerator {
 			
 			sb.append("<br>");
 			
+		} else if(tag.equals("<none>")) {
+			
+			sb.append("");
+			
 		}
 		
 		return sb.toString();
@@ -219,6 +233,16 @@ public class QuestionsWithCodeGenerator {
 		}
 	}
 
+	private static void deleteNoneTag(Question q) {
+		String replace = q.getTexte().replace("<none>", "");
+		q.setTexte(replace);
+	}
+	
+	private static void deleteNoneTag(Reponse r) {
+		String replace = r.getTexte().replace("<none>", "");
+		r.setTexte(replace);
+	}
+	
 	private static void addBlanksToResponseText(Reponse r) {
 
 		String s = r.getTexte();
