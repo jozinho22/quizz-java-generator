@@ -2839,7 +2839,7 @@
 		]
 	},
 	{
-		"texte": "Qu'est-ce que Stack Over Flow ?",
+		"texte": "Qu'est-ce que <none>Stack Over Flow ?",
 		"topic": "Divers",
 		"reponses": [
 			{
@@ -2971,15 +2971,15 @@
 		"topic": "Divers",
 		"reponses": [
 			{
-				"texte": "Object Relational Mapping",
+				"texte": "<none>Object Relational Mapping",
 				"isTrue": true
 			},
 			{
-				"texte": "Object Related Mapping",
+				"texte": "<none>Object Related Mapping",
 				"isTrue": false
 			},
 			{
-				"texte": "Object Representational Model",
+				"texte": "<none>Object Representational Model",
 				"isTrue": false
 			}
 		]

@@ -90,6 +90,7 @@ public class QuestionsWithCodeGenerator {
 			writer.close(); 
 			
 			File destination = new File("../quizz-java/src/main/resources/datas/questionswithcodes.json");
+			Files.delete(destination.toPath());
 			Files.copy(file.toPath(), destination.toPath());
 			
 		} catch (IOException e) {
