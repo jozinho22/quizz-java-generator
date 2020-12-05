@@ -2,7 +2,7 @@ package com.douineau.utils;
 
 public enum TopicEnum {
 
-	JAVA("Java"), GIT("Git"), MAVEN("Maven"), DESIGN_PATTERNS("Design Patterns"), FRAMEWORKS("Frameworks de Java JEE"), SQL("SQL"), DIVERS("Divers"), ALGO("Algorithmie");
+	JAVA("Java"), SPRING("Spring"), GIT("Git"), MAVEN("Maven"), DESIGN_PATTERNS("Design Patterns"), FRAMEWORKS("Frameworks de Java JEE"), SQL("SQL"), DIVERS("Divers"), ALGO("Algorithmie");
 	
 	private String topic;
 	
@@ -13,4 +13,5 @@ public enum TopicEnum {
 	TopicEnum(String topic) {
 		this.topic = topic;
 	}
+		
 }

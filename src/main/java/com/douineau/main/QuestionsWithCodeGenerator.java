@@ -298,46 +298,13 @@ public class QuestionsWithCodeGenerator {
 	}
 
 	private static void printCountByTopic(List<Question> questions) {
-		System.out.println("count Java : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.JAVA.getTopic()))
-				.count());
 		
-		System.out.println("count Git : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.GIT.getTopic()))
-				.count());
-		
-		System.out.println("count Maven : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.GIT.getTopic()))
-				.count());
-		
-		System.out.println("count Design Patterns : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.DESIGN_PATTERNS.getTopic()))
-				.count());
-		
-		System.out.println("count Frameworks de Java JEE : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.FRAMEWORKS.getTopic()))
-				.count());
-		
-		System.out.println("count SQL : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.SQL.getTopic()))
-				.count());
-		
-		System.out.println("count Divers : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.DIVERS.getTopic()))
-				.count());
-		
-		System.out.println("count Algorithmie : " + 
-				questions.stream()
-				.filter(q -> q.getTopic().equals(TopicEnum.ALGO.getTopic()))
-				.count());
-		
+		for(TopicEnum topic : TopicEnum.values()) {
+			System.out.println("count " + topic + " : " + 
+					questions.stream()
+					.filter(q -> q.getTopic().equals(topic.getTopic()))
+					.count());
+		}
 
 	}
 

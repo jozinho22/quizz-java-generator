@@ -1010,24 +1010,7 @@
 			}
 		]
 	},
-	{
-		"texte": "Quelle est la différence entre @org.springframework.context.annotation.Bean et @org.springframework.stereotype.Component ?",
-		"topic": "Java",
-		"reponses": [
-			{
-				"texte": "@Bean est une déclaration explicite tandis que @Component est une déclaration implicite",
-				"isTrue": true
-			},
-			{
-				"texte": "@Component est une déclaration explicite tandis que @Bean est une déclaration implicite",
-				"isTrue": false
-			},
-			{
-				"texte": "@Bean est @Deprecated depuis Java 1.8",
-				"isTrue": false
-			}
-		]
-	},
+	
 	{
 		"texte": "Que pourrait signifier l'acronyme JAVA ?",
 		"topic": "Java",
@@ -1625,6 +1608,178 @@
 			},
 			{
 				"texte": "Ça dépend",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie l'annotation <code>@org.springframework.stereotype.Service</code> ?",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "Que la classe sera un Singleton dédié à des traitements métiers",
+				"isTrue": true
+			},
+			{
+				"texte": "Que la classe héritera de la classe Service de Spring",
+				"isTrue": false
+			},
+			{
+				"texte": "Que la classe sera dédiée à des traitements métiers",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie l'annotation <code>@org.springframework.beans.factory.annotation.Configurable</code> ?",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "Que la classe sera une classe de configuration scannée par Spring",
+				"isTrue": false
+			},
+			{
+				"texte": "Que la classe va pouvoir accepter l'injection de beans gérés par Spring",
+				"isTrue": true
+			},
+			{
+				"texte": "Que la classe va adapter son espace émoire à l'éxécution",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que signifie l'annotation <code>@org.springframework.context.annotation.Configuration</code> ?",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "Que la classe sera une classe de configuration scannée par Spring",
+				"isTrue": true
+			},
+			{
+				"texte": "Que la classe va pouvoir accepter l'injection de beans gérés par Spring",
+				"isTrue": false
+			},
+			{
+				"texte": "Que la classe va être scannée par Spring en tant que bean",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quel est l'équivalent de l'annotation <code>@org.springframework.boot.autoconfigure.SpringBootApplication</code> ?",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "@Configuration @EnableAspectJAutoProxy @ComponentScan",
+				"isTrue": false
+			},
+			{
+				"texte": "@Configurable @EnableAutoConfiguration @ComponentScan",
+				"isTrue": false
+			},
+			{
+				"texte": "@Configuration @EnableAutoConfiguration @ComponentScan",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Quelle autre annotation peut remplacer l'annotation <code>@org.springframework.stereotype.Service</code> ?",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "@org.springframework.stereotype.Repository",
+				"isTrue": false
+			},
+			{
+				"texte": "@org.springframework.stereotype.Component",
+				"isTrue": true
+			},
+			{
+				"texte": "@org.springframework.stereotype.Controller",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Quelle est la différence entre <code>@org.springframework.context.annotation.Bean</code> et <code>@org.springframework.stereotype.Component</code> ?",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "@Bean est une déclaration explicite tandis que @Component est une déclaration implicite",
+				"isTrue": true
+			},
+			{
+				"texte": "@Component est une déclaration explicite tandis que @Bean est une déclaration implicite",
+				"isTrue": false
+			},
+			{
+				"texte": "@Bean est @Deprecated depuis Java 1.8",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que fait le code suivant au dessus d'une méthode ? <java>@After(\"execution(* maMethode(..))\")</java>",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "La méthode sera exécutée à chaque fois avant que maMethode() ne soit appelée",
+				"isTrue": false
+			},
+			{
+				"texte": "La méthode sera exécutée à chaque fois après que maMethode() ne soit appelée",
+				"isTrue": true
+			},
+			{
+				"texte": "La méthode sera exécutée après avoir récupérer le retour de maMethode()",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Que fait le code suivant au dessus d'une méthode ? <java>@After(\"execution(* maMethode(..))\")</java>",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "La méthode sera exécutée à chaque fois avant que maMethode() ne soit appelée",
+				"isTrue": false
+			},
+			{
+				"texte": "La méthode sera exécutée à chaque fois après que maMethode() ne soit appelée",
+				"isTrue": true
+			},
+			{
+				"texte": "La méthode sera exécutée après avoir récupérer le retour de maMethode()",
+				"isTrue": false
+			}
+		]
+	},
+	{
+		"texte": "Lequel de ces deux types de container sont de type <code>Lazy</>",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "ApplicationContext",
+				"isTrue": false
+			},
+			{
+				"texte": "BeanFactory",
+				"isTrue": true
+			}
+		]
+	},
+	{
+		"texte": "Lequel de ces deux types de container sont de type <code>EAGER</>",
+		"topic": "Spring",
+		"reponses": [
+			{
+				"texte": "ApplicationContext",
+				"isTrue": true
+			},
+			{
+				"texte": "BeanFactory",
 				"isTrue": false
 			}
 		]
@@ -2316,61 +2471,6 @@
 		]
 	},
 	{
-		"texte": "Que signifie l'annotation @org.springframework.stereotype.Service ?",
-		"topic": "Frameworks de Java JEE",
-		"reponses": [
-			{
-				"texte": "Que la classe sera un Singleton dédié à des traitements métiers",
-				"isTrue": true
-			},
-			{
-				"texte": "Que la classe héritera de la classe Service de Spring",
-				"isTrue": false
-			},
-			{
-				"texte": "Que la classe sera dédiée à des traitements métiers",
-				"isTrue": false
-			}
-		]
-	},
-	{
-		"texte": "Quelle autre annotation peut remplacer l'annotation @org.springframework.stereotype.Service ?",
-		"topic": "Frameworks de Java JEE",
-		"reponses": [
-			{
-				"texte": "@org.springframework.stereotype.Repository",
-				"isTrue": false
-			},
-			{
-				"texte": "@org.springframework.stereotype.Component",
-				"isTrue": true
-			},
-			{
-				"texte": "@org.springframework.stereotype.Controller",
-				"isTrue": false
-			}
-		]
-	},
-	{
-		"texte": "Que fait le code suivant au dessus d'une méthode ? <java>@After(\"execution(* maMethode(..))\")</java>",
-		"topic": "Frameworks de Java JEE",
-		"reponses": [
-			{
-				"texte": "La méthode sera exécutée à chaque fois avant que maMethode() ne soit appelée",
-				"isTrue": false
-			},
-			{
-				"texte": "La méthode sera exécutée à chaque fois après que maMethode() ne soit appelée",
-				"isTrue": true
-			},
-			{
-				"texte": "La méthode sera exécutée après avoir récupérer le retour de maMethode()",
-				"isTrue": false
-			}
-		]
-	},
-	
-	{
 		"texte": "Qu'est-ce que Cucumber ?",
 		"topic": "Frameworks de Java JEE",
 		"reponses": [
@@ -2589,7 +2689,7 @@
 	},
 	{
 		"texte": "Qu'est-ce qu'une relation @javax.persistence.OneToMany ?",
-		"topic": "Frameworks de Java JEE",
+		"topic": "JPA",
 		"reponses": [
 			{
 				"texte": "Un ensemble d'objets pointant vers un objet unique",
@@ -2602,8 +2702,22 @@
 		]
 	},
 	{
+		"texte": "Qu'est-ce qu'une relation @javax.persistence.ManyToOne ?",
+		"topic": "JPA",
+		"reponses": [
+			{
+				"texte": "Un ensemble d'objets pointant vers un objet unique",
+				"isTrue": true
+			},
+			{
+				"texte": "Un objet pointant vers un ensemble d'objets",
+				"isTrue": false
+			}
+		]
+	},
+	{
 		"texte": "À quoi correspond la ligne suivante dans le fichier de configuration persistence.xml <code>hibernate.hbm2ddl.auto</code> ?",
-		"topic": "Frameworks de Java JEE",
+		"topic": "JPA",
 		"reponses": [
 			{
 				"texte": "À la manière dont Hibernate va exécuter le programme (update, drop-create)",
@@ -2621,7 +2735,7 @@
 	},
 	{
 		"texte": "Que signifie l'annotation @javax.persistence.Transient mise sur un champ ?",
-		"topic": "Frameworks de Java JEE",
+		"topic": "JPA",
 		"reponses": [
 			{
 				"texte": "Que le champ est transitif",
@@ -2639,7 +2753,7 @@
 	},
 	{
 		"texte": "À quoi correspond lannotation suivante ? <java>javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY)</java>",
-		"topic": "Frameworks de Java JEE",
+		"topic": "JPA",
 		"reponses": [
 			{
 				"texte": "Elle référence un objet grâce à son hashcode()",
