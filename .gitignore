@@ -2,4 +2,5 @@
 .project
 .settings
 target/
-src/main/resources/questions/datas.json
+
+src/main/resources/datas/
