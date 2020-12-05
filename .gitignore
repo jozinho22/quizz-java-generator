@@ -3,4 +3,4 @@
 .settings
 target/
 
-src/main/resources/datas/
+src/main/resources/datas/questions.json
