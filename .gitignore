@@ -4,4 +4,5 @@
 target/
 
 src/main/resources/datas/questions.json
-src/main/resources/datas/questionswithcode.json
+src/main/resources/datas/questionswithcodes.json
+src/main/resources/db.properties

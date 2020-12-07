@@ -100,7 +100,7 @@ public class QuestionsWithCodeGenerator {
 			writer.close(); 
 			
 			File destination = new File("../quizz-java/src/main/resources/datas/questionswithcodes.json");
-			Files.delete(destination.toPath());
+			Files.deleteIfExists(destination.toPath());
 			Files.copy(file.toPath(), destination.toPath());
 			
 		} catch (IOException e) {
@@ -302,7 +302,7 @@ public class QuestionsWithCodeGenerator {
 		for(TopicEnum topic : TopicEnum.values()) {
 			System.out.println("count " + topic + " : " + 
 					questions.stream()
-					.filter(q -> q.getTopic().equals(topic.getTopic()))
+					.filter(q -> q.getTopic().equals(topic.name()))
 					.count());
 		}
 
