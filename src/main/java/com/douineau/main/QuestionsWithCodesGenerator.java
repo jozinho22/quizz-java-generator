@@ -43,6 +43,7 @@ public class QuestionsWithCodesGenerator {
 
 		for (Question q : questions) {
 
+			// Questions contenant du code java avec une ou plusieurs balises (<java>, <java1>...)
 			if (q.getTexte().contains("<java>")) {
 				addJavaStyleQuestionText(q);
 			}
@@ -116,6 +117,7 @@ public class QuestionsWithCodesGenerator {
 	}
 
 	private static String getEndRepere(String s) {		
+
 		return s.replace("<", "</");
 	}
 
