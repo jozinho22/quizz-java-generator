@@ -18,7 +18,7 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class QuestionsWithCodeGenerator {
+public class QuestionsWithCodesGenerator {
 
 	public static void main(String[] args) throws IOException, ReponsesException, QuestionException {
 
@@ -96,12 +96,16 @@ public class QuestionsWithCodeGenerator {
 			System.out.println(absolutePath);
 			
 			FileWriter writer=new FileWriter(absolutePath);
-			writer.write(jsonStr);  // écrire une ligne dans le fichier resultat.txt
+			writer.write(jsonStr);
 			writer.close(); 
 			
-			File destination = new File("../quizz-java/src/main/resources/datas/questionswithcodes.json");
-			Files.deleteIfExists(destination.toPath());
-			Files.copy(file.toPath(), destination.toPath());
+			File quizzJavaDatas = new File("../quizz-java/src/main/resources/datas/questionswithcodes.json");
+			Files.deleteIfExists(quizzJavaDatas.toPath());
+			Files.copy(file.toPath(), quizzJavaDatas.toPath());
+
+			File quizzJavaSpringBootReactDatas = new File("../quizz-java-springboot-react/src/main/resources/datas/questionswithcodes.json");
+			Files.deleteIfExists(quizzJavaSpringBootReactDatas.toPath());
+			Files.copy(file.toPath(), quizzJavaSpringBootReactDatas.toPath());
 			
 		} catch (IOException e) {
 			e.printStackTrace();

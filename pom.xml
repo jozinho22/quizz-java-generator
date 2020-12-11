@@ -38,10 +38,10 @@
 		
 	</dependencies>
 	<build>
-		<finalName>ROOT</finalName>
 		<!-- <sourceDirectory>src</sourceDirectory> -->
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
@@ -50,11 +50,19 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.2.1</version>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>3.1.2</version>
 				<configuration>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-				</configuration>
+			        <archive>
+			            <manifest>
+			                <mainClass>com.douineau.main.QuestionsWithCodesGenerator</mainClass>     
+			            </manifest>
+			            <manifestEntries>
+			                <Created-By>Youssef Ibn Saïd</Created-By>
+			            </manifestEntries>
+			        </archive>
+    			</configuration>
 			</plugin>
 		</plugins>
 	</build>

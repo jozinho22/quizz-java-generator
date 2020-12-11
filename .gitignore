@@ -3,6 +3,11 @@
 .settings
 target/
 
-src/main/resources/datas/questions.json
-src/main/resources/datas/questionswithcodes.json
+src/main/resources/datas/
 src/main/resources/db.properties
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
