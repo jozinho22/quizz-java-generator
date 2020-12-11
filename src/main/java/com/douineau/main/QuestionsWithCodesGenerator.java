@@ -92,13 +92,13 @@ public class QuestionsWithCodesGenerator {
 			
 			File file = new File("src/main/resources/datas/questionswithcodes.json");
 			String absolutePath = file.getAbsolutePath();
-			
+
 			System.out.println(absolutePath);
-			
+
 			FileWriter writer=new FileWriter(absolutePath);
 			writer.write(jsonStr);
-			writer.close(); 
-			
+			writer.close();
+
 			File quizzJavaDatas = new File("../quizz-java/src/main/resources/datas/questionswithcodes.json");
 			Files.deleteIfExists(quizzJavaDatas.toPath());
 			Files.copy(file.toPath(), quizzJavaDatas.toPath());
@@ -106,6 +106,8 @@ public class QuestionsWithCodesGenerator {
 			File quizzJavaSpringBootReactDatas = new File("../quizz-java-springboot-react/src/main/resources/datas/questionswithcodes.json");
 			Files.deleteIfExists(quizzJavaSpringBootReactDatas.toPath());
 			Files.copy(file.toPath(), quizzJavaSpringBootReactDatas.toPath());
+
+			Files.deleteIfExists(file.toPath());
 			
 		} catch (IOException e) {
 			e.printStackTrace();
