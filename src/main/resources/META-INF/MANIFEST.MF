@@ -1,1 +1,0 @@
-Main-Class: com.douineau.main.QuestionsWithCodeGenerator

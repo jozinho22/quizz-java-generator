@@ -1,23 +1,20 @@
-package com.douineau.main;
+package com.douineau.qjgenerator.main;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Date;
-import java.util.List;
-
-import com.douineau.dao.DaoUtil;
-import com.douineau.entity.Question;
-import com.douineau.entity.Reponse;
-import com.douineau.utils.FileReader;
+import com.douineau.qjgenerator.model.Question;
+import com.douineau.qjgenerator.utils.ResourcesFileReader;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
 public class QuestionsInsertor {
 
 	public static void main(String[] args) throws IOException {
-		
-		FileReader reader = new FileReader();
+
+		ResourcesFileReader reader = new ResourcesFileReader();
 		File jsonFile = reader.getFile("datas/questionswithcodes.json");
 		System.out.println(jsonFile);
 
@@ -32,15 +29,15 @@ public class QuestionsInsertor {
 //		DaoUtil.truncateTable("reponse");
 //		DaoUtil.truncateTable("question");
 		
-		for(Question question : questions) {
-			question.setCreatedAt(new Date());
-			DaoUtil.insertObject(question);
-			List<Reponse> reponses = question.getReponses();
-			for(Reponse reponse : reponses) {
-				reponse.setQuestion(question);
-				DaoUtil.insertObject(reponse);
-			}
-		}
+//		for(Question question : questions) {
+//			question.setCreatedAt(new Date());
+//			DaoUtil.insertObject(question);
+//			List<Reponse> reponses = question.getReponses();
+//			for(Reponse reponse : reponses) {
+//				reponse.setQuestion(question);
+//				DaoUtil.insertObject(reponse);
+//			}
+//		}
 		
 	}
 

@@ -1,6 +1,6 @@
-package com.douineau.exception;
+package com.douineau.qjgenerator.exception;
 
-import com.douineau.entity.Question;
+import com.douineau.qjgenerator.model.Question;
 
 public class QuestionException extends Exception {
 

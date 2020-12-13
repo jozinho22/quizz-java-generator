@@ -1,12 +1,12 @@
-package com.douineau.main;
+package com.douineau.qjgenerator.main;
+
+import com.douineau.qjgenerator.model.Question;
+import com.douineau.qjgenerator.model.Reponse;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.douineau.entity.Question;
-import com.douineau.entity.Reponse;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JsonFileGenerator {
 

@@ -1,59 +1,33 @@
-package com.douineau.entity;
+package com.douineau.qjgenerator.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 @Entity
-public class Question implements Serializable {
+public class Question extends AbstractEntity implements Serializable {
 
-	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 5641309062449375141L;
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@JsonIgnore
-	private Long id;
+
+	@Column(length = 1200)
 	private String texte;
 	private String topic;
 	
-	@OneToMany(mappedBy = "question", fetch = FetchType.EAGER)
+	@OneToMany(fetch = FetchType.EAGER)
+	@JoinColumn(name = "question_id")
 	private List<Reponse> reponses;
-	
-	@Column(name = "created_at")
-	@Temporal(TemporalType.TIMESTAMP)
-	@JsonIgnore
-	private Date createdAt;
-	
 	
 	public Question() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	public Long getId() {
-		return id;
-	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
-	
 	public String getTexte() {
 		return texte;
 	}
@@ -78,18 +52,14 @@ public class Question implements Serializable {
 		this.reponses = reponses;
 	}
 
-	public Date getCreatedAt() {
-		return createdAt;
-	}
-
-	public void setCreatedAt(Date createdAt) {
-		this.createdAt = createdAt;
-	}
-
 	@Override
 	public String toString() {
-		return "Question [id=" + id + ", texte=" + texte + ", topic=" + topic + ", reponses=" + reponses
-				+ ", createdAt=" + createdAt + "]";
+		return "Question{" +
+				"id=" + id +
+				", texte='" + texte + '\'' +
+				", topic='" + topic + '\'' +
+				", reponses=" + reponses +
+				'}';
 	}
 
 	@Override
@@ -137,6 +107,5 @@ public class Question implements Serializable {
 		
 		return true;
 	}
-
 
 }

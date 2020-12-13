@@ -1,10 +1,9 @@
-package com.douineau.utils;
+package com.douineau.qjgenerator.utils;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class FileReader {
+public class ResourcesFileReader {
 
 	public File getFile(String path) throws IOException {
 

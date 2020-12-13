@@ -1,10 +1,9 @@
 package com.douineau.utils;
 
-import java.io.IOException;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import java.io.IOException;
 
 public class PersistenceUtil {
 

@@ -1,39 +1,43 @@
-package com.douineau.main;
+package com.douineau.qjgenerator.main;
+
+import com.douineau.qjgenerator.dao.QuestionDao;
+import com.douineau.qjgenerator.exception.QuestionException;
+import com.douineau.qjgenerator.exception.ReponsesException;
+import com.douineau.qjgenerator.model.Question;
+import com.douineau.qjgenerator.model.Reponse;
+import com.douineau.qjgenerator.utils.ResourcesFileReader;
+import com.douineau.qjgenerator.utils.TopicEnum;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.douineau.entity.Question;
-import com.douineau.entity.Reponse;
-import com.douineau.exception.QuestionException;
-import com.douineau.exception.ReponsesException;
-import com.douineau.utils.FileReader;
-import com.douineau.utils.TopicEnum;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
+@Component
 public class QuestionsWithCodesGenerator {
 
-	public static void main(String[] args) throws IOException, ReponsesException, QuestionException {
+	@Autowired
+	private static QuestionDao dao;
 
+	public static void process() throws IOException, QuestionException, ReponsesException {
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.configure(JsonParser.Feature.ALLOW_BACKSLASH_ESCAPING_ANY_CHARACTER, true);
 
 		// codes
-		FileReader reader2 = new FileReader();
+		ResourcesFileReader reader2 = new ResourcesFileReader();
 		File jsonFile2 = reader2.getFile("datas/codes.json");
 
 		List<String> codes = mapper.reader().forType(new TypeReference<List<String>>() {
 		}).readValue(jsonFile2);
 
 		// datas
-		FileReader reader = new FileReader();
+		ResourcesFileReader reader = new ResourcesFileReader();
 		File jsonFile = reader.getFile("datas/questions.json");
 
 		List<Question> questions = mapper.reader().forType(new TypeReference<List<Question>>() {
@@ -53,7 +57,7 @@ public class QuestionsWithCodesGenerator {
 				} else {
 					deleteNoneTag(q);
 				}
-				
+
 			}
 
 			if (q.getTopic().equals("")) {
@@ -71,7 +75,7 @@ public class QuestionsWithCodesGenerator {
 					} else {
 						deleteNoneTag(r);
 					}
-					
+
 				}
 
 				booleans.add(r.getIsTrue());
@@ -81,39 +85,39 @@ public class QuestionsWithCodesGenerator {
 			checkNbReponses(q, booleans);
 
 		}
-		
+
 		printCountByTopic(questions);
 
-		try {
-			// get Oraganisation object as a json string
-			String jsonStr = mapper.writeValueAsString(questions);
-
-			// Displaying JSON String
-			System.out.println(jsonStr);
-			
-			File file = new File("src/main/resources/datas/questionswithcodes.json");
-			String absolutePath = file.getAbsolutePath();
-
-			System.out.println(absolutePath);
-
-			FileWriter writer=new FileWriter(absolutePath);
-			writer.write(jsonStr);
-			writer.close();
-
-			File quizzJavaDatas = new File("../quizz-java/src/main/resources/datas/questionswithcodes.json");
-			Files.deleteIfExists(quizzJavaDatas.toPath());
-			Files.copy(file.toPath(), quizzJavaDatas.toPath());
-
-			File quizzJavaSpringBootReactDatas = new File("../quizz-java-springboot-react/src/main/resources/datas/questionswithcodes.json");
-			Files.deleteIfExists(quizzJavaSpringBootReactDatas.toPath());
-			Files.copy(file.toPath(), quizzJavaSpringBootReactDatas.toPath());
-
-			Files.deleteIfExists(file.toPath());
-			
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
+		dao.saveAll(questions);
+//		try {
+//			// get Oraganisation object as a json string
+//			String jsonStr = mapper.writeValueAsString(questions);
+//
+//			// Displaying JSON String
+//			System.out.println(jsonStr);
+//
+//			File file = new File("src/main/resources/datas/questionswithcodes.json");
+//			String absolutePath = file.getAbsolutePath();
+//
+//			System.out.println(absolutePath);
+//
+//			FileWriter writer=new FileWriter(absolutePath);
+//			writer.write(jsonStr);
+//			writer.close();
+//
+//			File quizzJavaDatas = new File("../quizz-java/src/main/resources/datas/questionswithcodes.json");
+//			Files.deleteIfExists(quizzJavaDatas.toPath());
+//			Files.copy(file.toPath(), quizzJavaDatas.toPath());
+//
+//			File quizzJavaSpringBootReactDatas = new File("../quizz-java-springboot-react/src/main/resources/datas/questionswithcodes.json");
+//			Files.deleteIfExists(quizzJavaSpringBootReactDatas.toPath());
+//			Files.copy(file.toPath(), quizzJavaSpringBootReactDatas.toPath());
+//
+//			Files.deleteIfExists(file.toPath());
+//
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 
 	private static String getEndRepere(String s) {		
