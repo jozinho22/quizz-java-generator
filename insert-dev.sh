@@ -1,0 +1,1 @@
+mvn spring-boot:run -Dspring-boot.run.profiles=dev -Dspring-boot.run.arguments="insert"

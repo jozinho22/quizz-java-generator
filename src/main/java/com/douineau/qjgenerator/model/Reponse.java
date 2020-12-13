@@ -21,7 +21,6 @@ public class Reponse extends AbstractEntity implements Serializable {
 
 	public Reponse() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getTexte() {

@@ -14,8 +14,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.boot.context.event.ApplicationStartedEvent;
+import org.springframework.boot.context.event.SpringApplicationEvent;
+import org.springframework.context.ApplicationEvent;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.EventListener;
+import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,7 +27,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-@Configuration
+@Service
 public class QuestionsInsertEvent {
 	
 	@Autowired
@@ -37,7 +41,6 @@ public class QuestionsInsertEvent {
 	@Value("${spring.datasource.url}")
 	private String datasourceUrl;
 	
-	@EventListener(ApplicationReadyEvent.class)
 	public void insert() {
 
 		System.out.println("@EventListener(ApplicationReadyEvent.class)");

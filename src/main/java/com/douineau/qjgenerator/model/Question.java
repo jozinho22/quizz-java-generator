@@ -25,7 +25,6 @@ public class Question extends AbstractEntity implements Serializable {
 	
 	public Question() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getTexte() {
@@ -60,52 +59,6 @@ public class Question extends AbstractEntity implements Serializable {
 				", topic='" + topic + '\'' +
 				", reponses=" + reponses +
 				'}';
-	}
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result + ((reponses == null) ? 0 : reponses.hashCode());
-		result = prime * result + ((texte == null) ? 0 : texte.hashCode());
-		result = prime * result + ((topic == null) ? 0 : topic.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		
-		Question other = (Question) obj;
-		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
-			return false;
-		if (reponses == null) {
-			if (other.reponses != null)
-				return false;
-		} else if (!reponses.equals(other.reponses))
-			return false;
-		if (texte == null) {
-			if (other.texte != null)
-				return false;
-		} else if (!texte.equals(other.texte))
-			return false;
-		if (topic == null) {
-			if (other.topic != null)
-				return false;
-		} else if (!topic.equals(other.topic))
-			return false;
-		
-		return true;
 	}
 
 }
