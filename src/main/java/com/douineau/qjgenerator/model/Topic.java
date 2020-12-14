@@ -14,6 +14,13 @@ public class Topic extends AbstractEntity implements Serializable {
         super();
     }
 
+    public Topic(Integer id, String topicKey, String name, boolean chosen) {
+        super.id = id;
+        this.topicKey = topicKey;
+        this.name = name;
+        this.chosen = chosen;
+    }
+
     public String getTopicKey() {
         return topicKey;
     }
