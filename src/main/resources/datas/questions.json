@@ -1,7 +1,7 @@
 [
 	{
 		"texte": "Quel sont les trois grands principes de la POO ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "L'encapsulation, l'héritage et le polymorphisme",
@@ -19,7 +19,7 @@
 	},
 	{
 		"texte": "En quoi consiste la compilation du code ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Au fait de compresser toutes les classes afin de réduire la taille du projet",
@@ -37,7 +37,7 @@
 	},
 	{
 		"texte": "Quel est le gros apport de Java 8 ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Les classes anonymes et les streams",
@@ -55,7 +55,7 @@
 	},
 	{
 		"texte": "Qu'est-ce qu'une expression lambda ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Une expression quelconque",
@@ -73,7 +73,7 @@
 	},
 	{
 		"texte": "Comment nomme-t-on une expression de ce type <java>MonInterface maMethode = x -> x * x;</java> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Une référence de méthode",
@@ -91,7 +91,7 @@
 	},
 	{
 		"texte": "Qu'est-ce qu'une interface fonctionnelle ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Une interface ne comportant qu'une seule méthode abstraite",
@@ -109,7 +109,7 @@
 	},
 	{
 		"texte": "Quelle est la condition pour lancer un thread ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Implémenter l'interface Runnable",
@@ -127,7 +127,7 @@
 	},
 	{
 		"texte": "Comment nomme-t-on l'expression suivante <code>System.out::println</code> dans le code suivant ? <java>list.forEach(System.out::println);</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Une référence de méthode",
@@ -145,7 +145,7 @@
 	},
 	{
 		"texte": "À quoi sert la méthode <code>list.stream.map(x -> x + x)</code> d'un stream ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Elle va trier les éléments selon le résultat de <code>x + x</code>",
@@ -159,7 +159,7 @@
 	},
 	{
 		"texte": "Quel interface implémente la classe ArrayList ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "List",
@@ -177,7 +177,7 @@
 	},
 	{
 		"texte": "Que signifie réellement Deque ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Deserialized Queue",
@@ -195,7 +195,7 @@
 	},
 	{
 		"texte": "De quelle interface hérite l'interface Collection ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Iterable",
@@ -213,7 +213,7 @@
 	},
 	{
 		"texte": "Quelle exception doit-on implémenter avec un <code>try</code>/<code>catch</code> ou une déclaration dans la signature de méthode pour que ce bout de code fonctionne ? <java>FileReader reader = new FileReader();</java><java>File jsonFile = reader.getFile(\"myFile.json\");</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "java.io.IOException",
@@ -231,7 +231,7 @@
 	},
 	{
 		"texte": "À quoi correspond ce bout de code ?<java>List<BigDecimal> list = personnes</java><java1>.stream()</java1><java1>.map(p -> new BigDecimal(p.getPoids() / (Math.pow(p.getTaille(), 2))))</java1><java1>.collect(Collectors.toList())</java1><java1>;</java1><java>return list;</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "À un calcul de ROI",
@@ -245,7 +245,7 @@
 	},
 	{
 		"texte": "Quel est le principal avantage de l'interface Set par rapport à l'interface List ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Elle permet daccepter des doublons",
@@ -263,7 +263,7 @@
 	},
 	{
 		"texte": "Que va retourner ce bout de code ?<java>int i = Arrays</java><java1>.stream(integers)</java1><java1>.reduce(0, (a, b) -> a > b ? a : b);</java1><java>return i;</java></java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Un minimum",
@@ -281,7 +281,7 @@
 	},
 	{
 	"texte": "Que va retourner ce bout de code ?<java>int i = Arrays</java><java1>.stream(integers)</java1><java1>.reduce(0, (a, b) -> a < b ? a : b);</java1><java>return i;</java></java>",
-	"topic": "JAVA",
+	"topicKey": "JAVA",
 	"reponses": [
 		{
 			"texte": "Un minimum",
@@ -299,7 +299,7 @@
 	},
 	{
 		"texte": "Quelles interfaces implémente la classe LinkedList ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "List et Set",
@@ -317,7 +317,7 @@
 	},
 	{
 		"texte": "Que retourne ce bout de code ?<java>List<Personne> result = personnes</java><java1>.stream()</java1><java1>.sorted(Comparator.comparing(Personne::getAge).reversed())</java1><java1>.collect(Collectors.toList());</java1><java>return result;</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Un tri croissant selon l'âge des personnes présentes",
@@ -331,7 +331,7 @@
 	},
 	{
 		"texte": "Que retourne ce bout de code ?<java>List<Personne> result = personnes</java><java1>.stream()</java1><java1>.sorted(Comparator.comparing(Personne::getAge))</java1><java1>.collect(Collectors.toList());</java1><java>return result;</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Un tri croissant selon l'âge des personnes présentes",
@@ -345,7 +345,7 @@
 	},
 	{
 		"texte": "Quelle est une des utilités de la classe Integer par rapport à un int primitif ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "C'est Thread-safe",
@@ -363,7 +363,7 @@
 	},
 	{
 		"texte": "Comment appelle-ton ceci ?<java>return personnes</java><java1>.stream()</java1><java1>.collect(Collectors.groupingBy(Personne::getGenre));</java1>\n",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Un tri",
@@ -381,7 +381,7 @@
 	},
 	{
 		"texte": "Quel sont les avantages à utiliser la classe Vector plutôt que la classe List ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Elle est plus rapide",
@@ -399,7 +399,7 @@
 	},
 	{
 		"texte": "Quel est l'avantage de la class Stack par rapport à la classe Vector dont elle hérite ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Elle est plus rapide parce que non-synchronisée",
@@ -417,7 +417,7 @@
 	},
 	{
 		"texte": "Quelle est la classe mère de toutes les classes ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Class",
@@ -435,7 +435,7 @@
 	},
 	{
 		"texte": "Quelle est la principe d'une Map ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Elle référence un objet grâce à son hashcode()",
@@ -453,7 +453,7 @@
 	},
 	{
 		"texte": "Quelle est la différence entre un JDK et une JRE ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Un JDK est un kit de développement et une JRE est une plate-forme d'exécution",
@@ -472,7 +472,7 @@
 	,
 	{
 		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <java>Felin c = new Chat();</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Oui",
@@ -490,7 +490,7 @@
 	},
 	{
 		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <java>Chat c = new Felin();</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Oui",
@@ -508,7 +508,7 @@
 	},
 	{
 		"texte": "La classe <code>Chat</code> héritant de la classe <code>Felin</code>, peut-on écrire le code suivant ? <java>Chat c = (Chat) new Felin();</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Oui",
@@ -526,7 +526,7 @@
 	},
 	{
 		"texte": "Peut-on utiliser une variable de type interface ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Non",
@@ -544,7 +544,7 @@
 	},
 	{
 		"texte": "À quoi sert l'interface Serializable ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Elle met à disposition un framework permettant de serialiser/désérialiser avec un fichier *.json en entrée",
@@ -558,7 +558,7 @@
 	},
 	{
 		"texte": "Quelles sont les deux nouveautés de Java 8 utilisées dans ce code ? <java>List<Personne> listFiltree = personnes</java><java1>.stream()</java1><java1>.filter(Personne::isOver70kg)</java1><java1>.collect(Collectors.toList());</java1><javaReturn>return listFiltree;</javaReturn>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Un stream et un lambda",
@@ -576,7 +576,7 @@
 	},
 	{
 		"texte": "Quelles sont les deux nouveautés de Java 8 utilisées dans ce code ? <java>List<Personne> listFiltree = personnes</java><java1>.stream()</java1><java1>.filter(p -> p.getAge() > 30)</java1><java1>.collect(Collectors.toList());</java1><javaReturn>return listFiltree;</javaReturn>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Un stream et un lambda",
@@ -594,7 +594,7 @@
 	},
 	{
 		"texte": "À quoi sert la méthode <code>java.util.stream.Stream.map(Function<? super T,? extends R> mapper)</code> ? ",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "À mapper une liste avec une autre liste",
@@ -612,7 +612,7 @@
 	},
 	{
 		"texte": "Que doit-on ajouter à une classe implémentant l'interface Serializable ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Rien",
@@ -626,7 +626,7 @@
 	},
 	{
 		"texte": "Que se passe-t-il lorsqu'on oublie de mentionner les mots-clefs public et abstract dans lé déclaration des méthodes d'une interface ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Il y aura une erreur de compilation",
@@ -644,7 +644,7 @@
 	},
 	{
 		"texte": "Quel est le contrat passé entre une interface et une classe qui l'implémente ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Elle doit obligatoirement redéfinir les méthodes de l'interface",
@@ -662,7 +662,7 @@
 	},
 	{
 		"texte": "I est une interface implémentée par les classes A et B, peut-on écrire le code suivant ? <java>I[] tab;</code><code>tab = new I[2];</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Oui",
@@ -676,7 +676,7 @@
 	},
 	{
 		"texte": "Peut-on définir des méthodes dans une interface ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Oui",
@@ -694,7 +694,7 @@
 	},
 	{
 		"texte": "Que signifie Pojo ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "<none>Plain Old Java Object",
@@ -712,7 +712,7 @@
 	},
 	{
 		"texte": "Quel est la définition d'une classe abstraite ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Une classe qui contient au moins une méthode abstraite",
@@ -730,7 +730,7 @@
 	},
 	{
 		"texte": "Quelle est la définition d'une interface ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Une classe qui masque d'autres classes filles",
@@ -744,7 +744,7 @@
 	},
 	{
 		"texte": "Que signifie les mots-clefs final static appliqués à un attribut d'une classe ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Que l'attribut ne peut pas être instancié",
@@ -762,7 +762,7 @@
 	},
 	{
 		"texte": "Que signifie le mot-clef static appliqué à une méthode d'une classe ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Que la méthode pourra être appelée sans instancier la classe",
@@ -776,7 +776,7 @@
 	},
 	{
 		"texte": "Que se passe-t-il au niveau mémoire avec le code suivant ? <java>String s = \"Hello\"; </java> <java> String s2 = \"World\";</java><java> String s3 = s1 + s1;</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Un nouvel objet sera créée avec une référence à la chaîne de caractère \"HelloWorld\"",
@@ -790,7 +790,7 @@
 	},
 	{
 		"texte": "Peut-on modifier une chaîne de caractère ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Oui",
@@ -808,7 +808,7 @@
 	},
 	{
 		"texte": "Que renvoie l'expression suivante ? <java> String s = \"Hello\"; </java> <java> String s2 = \"Hello\";</java> <javaReturn>return (s1 == s2);</javaReturn>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "true",
@@ -822,7 +822,7 @@
 	},
 	{
 		"texte": "Que renvoie l'expression suivante ? <java> String s = \"Hello\"; </java> <java> String s2 = \"Hello\";</java> <javaReturn> return (s1.equals(s2)); </javaReturn>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "true",
@@ -836,7 +836,7 @@
 	},
 	{
 		"texte": "Quelle sera la valeur affichée dans la console ? <java>String s = \"HelloWorld\";</java><java>s.substring(0, 5);</java> <javaCR></javaCR> <java>System.out.println(s);</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "HelloWorld",
@@ -850,7 +850,7 @@
 	},
 	{
 		"texte": "Quelle sera la valeur affichée dans la console ? <java>int[] arr = {5, 8, 9, 13, 2};</java> <java>arr = Arrays.copyOfRange(arr, 2, arr.length); </java> <java>System.out.println(arr);</java> ",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "I@[hashcode]",
@@ -868,7 +868,7 @@
 	},
 	{
 		"texte": "Quelle sera la valeur affichée dans la console ? <java>int[] arr = {24, 9, 6, 14, 143, 13};</java> <java>arr = Arrays.copyOfRange(arr, 5, arr.length); </java> <java>for(int k : arr) {</java> <java1>System.out.print(k);</java1><java>}</java> ",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "14313",
@@ -886,7 +886,7 @@
 	},
 	{
 		"texte": "Quelle sera la valeur affichée dans la console ? <java>int[] arr = {45, 7, 4, 15, 12, 147, 8};</java> <java>Arrays.copyOfRange(arr, 6, arr.length); </java> <java>for(int k : arr) {</java> <java1>System.out.print(k);</java1><java>}</java> ",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "457415121478",
@@ -904,7 +904,7 @@
 	},
 	{
 		"texte": "Quelle sera la valeur affichée dans la console ? <java>String s = \"HelloWorld\";</java><javaCR></javaCR><java>if(s.contains(\"World\")) {</java> <java1>s.replace(\"World\", \"Land\");</java1><java>}</java> <javaCR></javaCR><java>System.out.println(s);</java> ",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "HelloWorld",
@@ -922,7 +922,7 @@
 	},
 	{
 		"texte": "Quelle sera la valeur affichée dans la console ? <java>String s = \"HelloWorld\";</java><java>s.indexOf(\"World\");</java> <javaCR></javaCR> <java>System.out.println(s);</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "HelloWorld",
@@ -936,7 +936,7 @@
 	},
 	{
 		"texte": "Quelle sera la valeur affichée dans la console ? <java>int k = 12;</java><java>int l = 22;</java><java>float j = k * l;</java><javaCR></javaCR><java>System.out.println(j);</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "264",
@@ -954,7 +954,7 @@
 	},
 	{
 		"texte": "Quelle sera la valeur affichée dans la console ? <java>float k = 13;</java><java>float l = 25;</java><java>int j = k * l;</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "325",
@@ -972,7 +972,7 @@
 	},
 	{
 		"texte": "Quelle sera la valeur affichée dans la console ? <java>int[] integers = new int[5];</java> <javaCR></javaCR> <java>for(int k = 0 ; k < integers.length ; k++) {</java><java1>System.out.print(k);</java1><java>}</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "01234",
@@ -990,7 +990,7 @@
 	},
 	{
 		"texte": "Quelle sera la valeur affichée dans la console ? <java>int[] integers = new int[3];</java> <java>integers[0] = 1; integers [1] = 3; integers [2] = 5; </java><javaCR></javaCR> <java>for(int k = 0 ; k < integers.length; k++) {</java><java1>System.out.print(integers[k+1]);</java1><java>}</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "012",
@@ -1008,7 +1008,7 @@
 	},
 	{
 		"texte": "Que fait le méthode <code>a.equals(b)</code> pour <code>a</code> et <code>b</code> non nuls ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Elle compare les <code>hashcode()</code> de <code>a</code> et <code>b</code> et renvoie <code>true</code> s'ils sont équivalents",
@@ -1022,7 +1022,7 @@
 	},
 	{
 		"texte": "Que signifie le mot-clef private pour un attribut de classe ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Que l'attribut ne sera visible que depuis les classes du même package",
@@ -1040,7 +1040,7 @@
 	},
 	{
 		"texte": "Que signifie l'encapsulation ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Que les attributs et méthodes sont contenues dans des classes, eux-mêmes dans des packages",
@@ -1058,7 +1058,7 @@
 	},
 	{
 		"texte": "Quel est léquivalent de lannotation <code>@javax.inject.Named</code> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "<code>@org.springframework.stereotype.Component</code>",
@@ -1076,7 +1076,7 @@
 	},
 	{
 		"texte": "Qu'affiche le code suivant ? <java>String s = \"HelloWorld\"; </java> <java> s.replace(s, \"HelloLand\"); </java> <java>System.out.println(s);</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "HelloWorld",
@@ -1094,7 +1094,7 @@
 	},
 	{
 		"texte": "Qu'a pour but le code suivant ? <java>public static void main(String args[]) {...}</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Ne pas avoir à se soucier du retour de la méthode",
@@ -1112,7 +1112,7 @@
 	},
 	{
 		"texte": "Quelle est la différence entre StringBuffer et StringBuilder ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "StringBuffer est synchronisée donc plus lente",
@@ -1127,7 +1127,7 @@
 	
 	{
 		"texte": "Que pourrait signifier l'acronyme JAVA ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Just Another Virtual Acknowledgement",
@@ -1145,7 +1145,7 @@
 	},
 	{
 		"texte": "Que signifie JSR ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Java System Requests",
@@ -1163,7 +1163,7 @@
 	},
 	{
 		"texte": "Que fait le mot-clef break dans la boucle suivante ? <java>for(int k = 0; k < 10 ; k++) { </java> <java1> if([conditions]) { </java1> <java2> [instructions];</java2> <java2>break;</java2> <java1>}</java1><java>}</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Il annule l'instruction faite à l'élément k",
@@ -1181,7 +1181,7 @@
 	},
 	{
 		"texte": "Que fait le mot-clef continue dans la boucle suivante ? <java>for(int k = 0; k < 10 ; k++) {</java><java1> if([conditions]) {</java1> <java2>[instructions];</java2> <java2> continue;</java2><java1>}</java1> <java>}</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Il annule l'instruction faite à l'élément k et passe à l'élément (k + 1) ",
@@ -1199,7 +1199,7 @@
 	},
 	{
 		"texte": "Ces deux boucles sont elles équivalentes ? <java>int[] tab = new int[3];</java> <javaCR></javaCR> <java>for(int k = 0; k < tab.length ; k++) {</java> <java1> System.out.println(tab[k];</java1><java>}</java> <javaCR></javaCR> <java> for(int i : tab) {</java> <java1> System.out.println(i);</java1><java>}</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Il annule l'instruction faite à l'élément k et passe à l'élément (k + 1) ",
@@ -1217,7 +1217,7 @@
 	},
 	{
 		"texte": "Quelle sera le résultat de la variable <code>m</code> à la fin de ce programme ? <java>int k;</java> <java> int l = 5;</java><javaCR></javaCR> <java>if(l > 0) { </java> <java1>int m = k * l;</java1> <java>}</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Une erreur de compilation va se produire",
@@ -1231,7 +1231,7 @@
 	},
 	{
 		"texte": "De quelle manière se transmet l'information en Java",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Par valeur",
@@ -1245,7 +1245,7 @@
 	},
 	{
 		"texte": "Peut-on écrire le code suivant ? <java>for(int k = 0; k < list.length ; k++) {</java> <java1>[instructions]</java1><java>}</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Oui",
@@ -1259,7 +1259,7 @@
 	},
 	{
 		"texte": "Que signifie <code>class Lion extends Felin</code> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Que la classe <code>Lion</code> va devoir implémenter les méthodes que la classe <code>Felin</code> n'a pas implémenté",
@@ -1277,7 +1277,7 @@
 	},
 	{
 		"texte": "Que fait le code suivant ? <java>System.out.println(\"Hello World\");</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Il va logger \"Hello World\" dans un fichier de logs",
@@ -1295,7 +1295,7 @@
 	},
 	{
 		"texte": "Quelle est la différence entre <code>throws</code> et <code>throw</code> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "<code>throws</code> se place en déclaration de méthode tandis que <code>throw</code> lève une exception ponctuelle",
@@ -1313,7 +1313,7 @@
 	},
 	{
 		"texte": "Peut-on déclarer directement des variables comme ceci ? <java>int i, j, k;</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Oui",
@@ -1331,7 +1331,7 @@
 	},
 	{
 		"texte": "Quelle est la valeur de Byte.<i>MIN_VALUE</i> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "-128",
@@ -1349,7 +1349,7 @@
 	},
 	{
 		"texte": "Quelle est la valeur de Byte.<i>MAX_VALUE</i> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "127",
@@ -1367,7 +1367,7 @@
 	},
 	{
 		"texte": "Quelle est la valeur de Short.<i>MIN_VALUE</i> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "-128",
@@ -1385,7 +1385,7 @@
 	},
 	{
 		"texte": "Quelle est la valeur de Short.<i>MAX_VALUE</i> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "127",
@@ -1403,7 +1403,7 @@
 	},
 	{
 		"texte": "Que signifie l'annotation @Override sur une méthode ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Que la méthode est une méthode surchargée",
@@ -1417,7 +1417,7 @@
 	},
 	{
 		"texte": "Quelle est l'avantage du polymorphisme ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Il permet de transformer les objets en d'autres objets",
@@ -1431,7 +1431,7 @@
 	},
 	{
 		"texte": "Qu'affiche la méthode <code>toString(Object o)</code> si l'on oublie de la rédéfinir ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Elle affiche le type de l'objet ainsi qu'un nombre aléatoire",
@@ -1449,7 +1449,7 @@
 	},
 	{
 		"texte": "Qu'est-ce qu'une méthode finale ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Une classe qui ne sera instanciée qu'une seule fois",
@@ -1467,7 +1467,7 @@
 	},
 	{
 		"texte": "Quelle est la valeur de Integer.<i>MIN_VALUE</i> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "-128",
@@ -1485,7 +1485,7 @@
 	},
 	{
 		"texte": "Quelle est la valeur de Integer.<i>MAX_VALUE</i> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "127",
@@ -1503,7 +1503,7 @@
 	},
 	{
 		"texte": "Quelle est la valeur de Long.<i>MIN_VALUE</i> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "-32 768",
@@ -1520,7 +1520,7 @@
 		]
 	},{
 		"texte": "Quelle est la valeur de Integer.<i>MAX_VALUE</i> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "127",
@@ -1538,7 +1538,7 @@
 	},
 	{
 		"texte": "Quelle est la valeur de Float.<i>MIN_VALUE</i> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "-9 223 372 036 854 775 808",
@@ -1556,7 +1556,7 @@
 	},
 	{
 		"texte": "Quelle est la valeur de Float.<i>MAX_VALUE</i> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "9 223 372 036 854 775 807",
@@ -1574,7 +1574,7 @@
 	},
 	{
 		"texte": "Quelle est la valeur de Double.<i>MIN_VALUE</i> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "-9 223 372 036 854 775 808",
@@ -1592,7 +1592,7 @@
 	},
 	{
 		"texte": "Quelle est la valeur de Double.<i>MAX_VALUE</i> ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "9 223 372 036 854 775 807",
@@ -1610,7 +1610,7 @@
 	},
 	{
 		"texte": "Quelle est le type de k lors de l'opération suivante ? <java>int i = 4, long j = 5;</java><java> int k = i * j;</java>",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "int",
@@ -1628,7 +1628,7 @@
 	},
 	{
 		"texte": "Quelle syntaxe utilisée pour afficher des données Java dans une page HTML avec la JSTL ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "${object.attribute}",
@@ -1646,7 +1646,7 @@
 	},
 	{
 		"texte": "Que signifie le mot-clef protected pour un attribut de classe ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Que l'attribut ne sera visible que depuis les classes qui héritent de la classe",
@@ -1664,7 +1664,7 @@
 	},
 	{
 		"texte": "Que signifie le code public static void devant une méthode",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "La méthode peut être appelée depuis n'importe quelle classe, seulement avec une instance de la classe et sans retour",
@@ -1682,7 +1682,7 @@
 	},
 	{
 		"texte": "Quand est-ce que cette condition est vérifiée ?  <java>if( i % 2 == 0 ) { ... } </java> ",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Si i est divisible par 2",
@@ -1696,7 +1696,7 @@
 	},
 	{
 		"texte": "Que signifie le mot-clef default dans la signature d'une méthode d'une interface ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "C'est un mot-clef facultatif",
@@ -1710,7 +1710,7 @@
 	},
 	{
 		"texte": "Peut-on redéclarer une méthode implémentée par défaut dans une interface dans la classe qui l'implémente ?",
-		"topic": "JAVA",
+		"topicKey": "JAVA",
 		"reponses": [
 			{
 				"texte": "Oui",
@@ -1728,7 +1728,7 @@
 	},
 	{
 		"texte": "Que signifie l'annotation <code>@org.springframework.stereotype.Service</code> ?",
-		"topic": "SPRING",
+		"topicKey": "SPRING",
 		"reponses": [
 			{
 				"texte": "Que la classe sera un Singleton géré par Spring dédié à des services",
@@ -1746,7 +1746,7 @@
 	},
 	{
 		"texte": "Que signifie l'annotation <code>@org.springframework.beans.factory.annotation.Configurable</code> ?",
-		"topic": "SPRING",
+		"topicKey": "SPRING",
 		"reponses": [
 			{
 				"texte": "Que la classe sera une classe de configuration scannée par Spring",
@@ -1764,7 +1764,7 @@
 	},
 	{
 		"texte": "Que signifie l'annotation <code>@org.springframework.context.annotation.Configuration</code> ?",
-		"topic": "SPRING",
+		"topicKey": "SPRING",
 		"reponses": [
 			{
 				"texte": "Que la classe sera une classe de configuration scannée par Spring",
@@ -1782,7 +1782,7 @@
 	},
 	{
 		"texte": "Quel est l'équivalent de l'annotation <code>@org.springframework.boot.autoconfigure.SpringBootApplication</code> ?",
-		"topic": "SPRING",
+		"topicKey": "SPRING",
 		"reponses": [
 			{
 				"texte": "<code>@Configuration @EnableAspectJAutoProxy @ComponentScan</code>",
@@ -1800,7 +1800,7 @@
 	},
 	{
 		"texte": "Quelle est la différence entre <code>@org.springframework.context.annotation.Bean</code> et <code>@org.springframework.stereotype.Component</code> ?",
-		"topic": "SPRING",
+		"topicKey": "SPRING",
 		"reponses": [
 			{
 				"texte": "<code>@Bean</code> est une déclaration explicite tandis que <code>@Component</code> est une déclaration implicite",
@@ -1818,7 +1818,7 @@
 	},
 	{
 		"texte": "Quelle annotation devrait-on rencontrer au dessus des méthodes dans une classe annotée <code>@org.springframework.context.annotation.Configuration</code> ?",
-		"topic": "SPRING",
+		"topicKey": "SPRING",
 		"reponses": [
 			{
 				"texte": "<code>@Bean</code>",
@@ -1836,7 +1836,7 @@
 	},
 	{
 		"texte": "Que fait le code suivant au dessus d'une méthode ? <java>@After(\"execution(* maMethode(..))\")</java>",
-		"topic": "SPRING",
+		"topicKey": "SPRING",
 		"reponses": [
 			{
 				"texte": "La méthode sera exécutée à chaque fois avant que <code>maMethode()</code> ne soit appelée",
@@ -1854,7 +1854,7 @@
 	},
 	{
 		"texte": "Lequel de ces deux types de container est de type <code>Lazy</code>",
-		"topic": "SPRING",
+		"topicKey": "SPRING",
 		"reponses": [
 			{
 				"texte": "<code>ApplicationContext</code> ",
@@ -1868,7 +1868,7 @@
 	},
 	{
 		"texte": "Lequel de ces deux types de container sont de type <code>Eager</code>",
-		"topic": "SPRING",
+		"topicKey": "SPRING",
 		"reponses": [
 			{
 				"texte": "<code>ApplicationContext</code>",
@@ -1882,7 +1882,7 @@
 	},
 	{
 		"texte": "D'où provient le nom Maven ?",
-		"topic": "MAVEN",
+		"topicKey": "MAVEN",
 		"reponses": [
 			{
 				"texte": "Du latin qui signifie \"moteur\"",
@@ -1900,7 +1900,7 @@
 	},
 	{
 		"texte": "Quelle est l'implémentation officielle de JPA ?",
-		"topic": "JPA",
+		"topicKey": "JPA",
 		"reponses": [
 			{
 				"texte": "Hibernate",
@@ -1914,7 +1914,7 @@
 	},
 	{
 		"texte": "Qu'est-ce qu'une relation @javax.persistence.OneToMany ?",
-		"topic": "JPA",
+		"topicKey": "JPA",
 		"reponses": [
 			{
 				"texte": "Un ensemble d'objets pointant vers un objet unique",
@@ -1928,7 +1928,7 @@
 	},
 	{
 		"texte": "Qu'est-ce qu'une relation @javax.persistence.ManyToOne ?",
-		"topic": "JPA",
+		"topicKey": "JPA",
 		"reponses": [
 			{
 				"texte": "Un ensemble d'objets pointant vers un objet unique",
@@ -1942,7 +1942,7 @@
 	},
 	{
 		"texte": "À quoi correspond la ligne suivante dans le fichier de configuration persistence.xml <code>hibernate.hbm2ddl.auto</code> ?",
-		"topic": "JPA",
+		"topicKey": "JPA",
 		"reponses": [
 			{
 				"texte": "À la manière dont Hibernate va exécuter le programme (update, drop-create)",
@@ -1960,7 +1960,7 @@
 	},
 	{
 		"texte": "Que signifie l'annotation @javax.persistence.Transient mise sur un champ ?",
-		"topic": "JPA",
+		"topicKey": "JPA",
 		"reponses": [
 			{
 				"texte": "Que le champ est transitif",
@@ -1978,7 +1978,7 @@
 	},
 	{
 		"texte": "Que signifie JPA ?",
-		"topic": "JPA",
+		"topicKey": "JPA",
 		"reponses": [
 			{
 				"texte": "Java Programming API",
@@ -1997,7 +1997,7 @@
 	
 	{
 		"texte": "À quoi correspond lannotation suivante ? <java>javax.persistence.@GeneratedValue(strategy = GenerationType.IDENTITY)</java>",
-		"topic": "JPA",
+		"topicKey": "JPA",
 		"reponses": [
 			{
 				"texte": "Elle référence un objet grâce à son hashcode()",
@@ -2015,7 +2015,7 @@
 	},
 	{
 		"texte": "Que fait mvn clean ?",
-		"topic": "MAVEN",
+		"topicKey": "MAVEN",
 		"reponses": [
 			{
 				"texte": "Elle effecture un build léger",
@@ -2033,7 +2033,7 @@
 	},
 	{
 		"texte": "Quelle est l'utilité de Maven ?",
-		"topic": "MAVEN",
+		"topicKey": "MAVEN",
 		"reponses": [
 			{
 				"texte": "Partager du code avec d'autres développeurs",
@@ -2051,7 +2051,7 @@
 	},
 	{
 		"texte": "Que fait la commande mvn validate ?",
-		"topic": "MAVEN",
+		"topicKey": "MAVEN",
 		"reponses": [
 			{
 				"texte": "Vérifier si toutes les librairies nécessaires sont bien présentes",
@@ -2069,7 +2069,7 @@
 	},
 	{
 		"texte": "Que fait la commande mvn test ?",
-		"topic": "MAVEN",
+		"topicKey": "MAVEN",
 		"reponses": [
 			{
 				"texte": "Il exécute les actions implémentées selon un framework de test déclaré dans le pom.xml",
@@ -2083,7 +2083,7 @@
 	},
 	{
 		"texte": "Que fait la commande mvn package ?",
-		"topic": "MAVEN",
+		"topicKey": "MAVEN",
 		"reponses": [
 			{
 				"texte": "Il construit les différents package déclarés dans le projet",
@@ -2097,7 +2097,7 @@
 	},
 	{
 		"texte": "Que fait la commande mvn install ?",
-		"topic": "MAVEN",
+		"topicKey": "MAVEN",
 		"reponses": [
 			{
 				"texte": "Il installe le projet dans le dépôt Maven local, dans l'idée d'être utilisé en tant que librairie pour d'autres projets",
@@ -2111,7 +2111,7 @@
 	},
 	{
 		"texte": "Que sont les commandes auto-générées par Maven lors de la commande mvn install ?",
-		"topic": "MAVEN",
+		"topicKey": "MAVEN",
 		"reponses": [
 			{
 				"texte": "mvn validate - mvn compile - mvn test - mvn package - mvn verify - mvn install",
@@ -2129,7 +2129,7 @@
 	},
 	{
 		"texte": "Que sont les commandes auto-générées par Maven lors de la commande mvn package ?",
-		"topic": "MAVEN",
+		"topicKey": "MAVEN",
 		"reponses": [
 			{
 				"texte": "mvn compile - mvn test - mvn package",
@@ -2147,7 +2147,7 @@
 	},
 	{
 		"texte": "Qu'est-ce l'index staging ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Le hash correspondant à un commit",
@@ -2165,7 +2165,7 @@
 	},
 	{
 		"texte": "Que fait <code>git checkout -b mabranche</code> ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Cela permet de créer une nouvelle branche et pointer dessus",
@@ -2179,7 +2179,7 @@
 	},
 	{
 		"texte": "Que fait <code>git rm [fichier] --cached ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Cela va supprimer le fichier de l'index",
@@ -2197,7 +2197,7 @@
 	},
 	{
 		"texte": "À quoi sert la commande <code>git cherry-pick <commit-hash></code> ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "À choisir un commit et de le placer à la place du commit actuel",
@@ -2211,7 +2211,7 @@
 	},
 	{
 		"texte": "Quel est la différence entre les commandes git rebase et git merge ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "git rebase place le commit souhaité au niveau du commit actuel, tandis que git merge va créer un nouveau commit pour la fusion des deux branches",
@@ -2229,7 +2229,7 @@
 	},
 	{
 		"texte": "Comment démarre-t-on un dépôt Git en local ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "git init",
@@ -2247,7 +2247,7 @@
 	},
 	{
 		"texte": "Comment rapatrie-t-on un dépôt Git distant sur sa propre machine ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "git init",
@@ -2265,7 +2265,7 @@
 	},
 	{
 		"texte": "Qu'effectue la commande git commit ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Elle déplace les fichiers présents dans l'index et les place dans un nouveau noeud appelé commit",
@@ -2283,7 +2283,7 @@
 	},
 	{
 		"texte": "Que signifie <code>-u</code> dans la commande <code>git push -u origin master</code> ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "<code>--unique</code>",
@@ -2301,7 +2301,7 @@
 	},
 	{
 		"texte": "Quelle est la différence entre git pull et git fetch ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "git pull effectue les commandes git fetch et git merge",
@@ -2319,7 +2319,7 @@
 	},
 	{
 		"texte": "Que se passe-t-il si vous créez un nouveau dépôt Git en remote avec un commit, et que vous créez son équivalent local et que vous effectuez la commande git push après avoir commité ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Git va vous informer que les deux commits nont pas de commits en commun",
@@ -2337,7 +2337,7 @@
 	},
 	{
 		"texte": "Qu'est-ce que GitHub ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Le site officiel de téléchargement de Git",
@@ -2351,7 +2351,7 @@
 	},
 	{
 		"texte": "Que fait la commande <code>git add remote origin git@github.com/mon-depot.git</code> ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Cela va récupérer un dépôt distant pour créer un dépôt en local",
@@ -2365,7 +2365,7 @@
 	},
 	{
 		"texte": "Que fait la commande <code>git add .</code> ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Cela va ajouter à l'index de votre dépôt tous les fichiers contenus dans le dossier où vous pointez",
@@ -2379,7 +2379,7 @@
 	},
 	{
 		"texte": "Quelle commande vous permet d'observer les modifications effectuées sur des fichiers encore non commités ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "git checkout",
@@ -2397,7 +2397,7 @@
 	},
 	{
 		"texte": "Quelle commande vous permet d'observer les fichiers ajoutés, modifiés ou supprimés avant un <code>commit</code> ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "git checkout",
@@ -2415,7 +2415,7 @@
 	},
 	{
 		"texte": "Qu'effectue la commande <code>git reset --soft</code> ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Elle modifie uniquement le pointeur HEAD",
@@ -2433,7 +2433,7 @@
 	},
 	{
 		"texte": "Qu'effectue la commande <code>git reset --hard</code> ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Elle modifie l'index et le working tree",
@@ -2451,7 +2451,7 @@
 	},
 	{
 		"texte": "Quelle est l'option par défaut de git reset ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "<code>--soft</code>",
@@ -2469,7 +2469,7 @@
 	},
 	{
 		"texte": "Qu'effectue la commande git stash ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Elle affecte un tag à un commit",
@@ -2483,7 +2483,7 @@
 	},
 	{
 		"texte": "Qu'effectue la commande gitk ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Elle récupère le <code><commit-hash></code> d'un commit",
@@ -2497,7 +2497,7 @@
 	},
 	{
 		"texte": "Que fait la commande <code>git clone git@github.com/mon-depot.git</code> ?",
-		"topic": "GIT",
+		"topicKey": "GIT",
 		"reponses": [
 			{
 				"texte": "Cela va rapatrier un dépôt distant vers un dépôt local qui sera créé à l'emplacement où vous pointez",
@@ -2511,7 +2511,7 @@
 	},
 	{
 		"texte": "Quel est le principe du Memento ?",
-		"topic": "DESIGN_PATTERNS",
+		"topicKey": "DESIGN_PATTERNS",
 		"reponses": [
 			{
 				"texte": "Il est utilisé pour restaurer l'état d'un objet à un moment donné",
@@ -2529,7 +2529,7 @@
 	},
 	{
 		"texte": "Quels sont les trois grands types de Design Patterns ?",
-		"topic": "DESIGN_PATTERNS",
+		"topicKey": "DESIGN_PATTERNS",
 		"reponses": [
 			{
 				"texte": "Les patterns de construction, de structure et de comportement",
@@ -2547,7 +2547,7 @@
 	},
 	{
 		"texte": "Quel est le principe de la Factory ?",
-		"topic": "DESIGN_PATTERNS",
+		"topicKey": "DESIGN_PATTERNS",
 		"reponses": [
 			{
 				"texte": "Elle va nous permettre de dissocier la création des objets concrets de leur utilisation",
@@ -2565,7 +2565,7 @@
 	},
 	{
 		"texte": "Quel sont les trois grands types de l'Abstract Factory ?",
-		"topic": "DESIGN_PATTERNS",
+		"topicKey": "DESIGN_PATTERNS",
 		"reponses": [
 			{
 				"texte": "Elle va nous permettre de dissocier la création des objets concrets de leur utilisation",
@@ -2583,7 +2583,7 @@
 	},
 	{
 		"texte": "Quel est le principe de l'Observer ?",
-		"topic": "DESIGN_PATTERNS",
+		"topicKey": "DESIGN_PATTERNS",
 		"reponses": [
 			{
 				"texte": "Il est utilisé pour logger avec AspectJ",
@@ -2601,7 +2601,7 @@
 	},
 	{
 		"texte": "Quel est le principe du Singleton ?",
-		"topic": "DESIGN_PATTERNS",
+		"topicKey": "DESIGN_PATTERNS",
 		"reponses": [
 			{
 				"texte": "Il ne sera instancié qu'une seule fois durant l'éxécution",
@@ -2619,7 +2619,7 @@
 	},
 	{
 		"texte": "Quel est le principe du Prototype ?",
-		"topic": "DESIGN_PATTERNS",
+		"topicKey": "DESIGN_PATTERNS",
 		"reponses": [
 			{
 				"texte": "Il est utilisée pour concevoir un objet",
@@ -2637,7 +2637,7 @@
 	},
 	{
 		"texte": "Quel est le principe de la Facade ?",
-		"topic": "DESIGN_PATTERNS",
+		"topicKey": "DESIGN_PATTERNS",
 		"reponses": [
 			{
 				"texte": "Simuler l'existence d'un objet pour effectuer des tests sur une fonctionnalité",
@@ -2655,7 +2655,7 @@
 	},
 	{
 		"texte": "Quel est le principe de la Strategy ?",
-		"topic": "DESIGN_PATTERNS",
+		"topicKey": "DESIGN_PATTERNS",
 		"reponses": [
 			{
 				"texte": "Mettre en place une stratégie pour économiser de la mémoire",
@@ -2669,7 +2669,7 @@
 	},
 	{
 		"texte": "Quel est le principe du Composite ?",
-		"topic": "DESIGN_PATTERNS",
+		"topicKey": "DESIGN_PATTERNS",
 		"reponses": [
 			{
 				"texte": "Il permet de concevoir une structure arborescente et d'effectuer des actions dessus comme s'il s'agissait d'un seul objet",
@@ -2683,7 +2683,7 @@
 	},
 	{
 		"texte": "Quel est le principe de l'Adapter ?",
-		"topic": "DESIGN_PATTERNS",
+		"topicKey": "DESIGN_PATTERNS",
 		"reponses": [
 			{
 				"texte": "Il permet de modifier le comportement d'un sous système sans modifier structurellement le système en place",
@@ -2701,7 +2701,7 @@
 	},
 	{
 		"texte": "Qu'est-ce que Cucumber ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "Un framework de parsing pour XML",
@@ -2719,7 +2719,7 @@
 	},
 	{
 		"texte": "Qu'est-ce que Junit ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "Un framework de tests",
@@ -2737,7 +2737,7 @@
 	},
 	{
 		"texte": "Qu'est-ce que Lombok Project ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "Un framework de Web Services",
@@ -2751,7 +2751,7 @@
 	},
 	{
 		"texte": "Qu'est-ce que Jax-RS ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "Un framework de Web Services",
@@ -2765,7 +2765,7 @@
 	},
 	{
 		"texte": "Qu'est-ce que Restlet ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "Un framework de Web Services",
@@ -2780,7 +2780,7 @@
 	
 	{
 		"texte": "Qu'est-ce que Servlet ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "Une classe Java qui va intercepter les méthodes POST, GET ou PUT",
@@ -2795,7 +2795,7 @@
 	
 	{
 		"texte": "Qu'est-ce que Jackson ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "Un framework pour parser des fichiers XML",
@@ -2813,7 +2813,7 @@
 	},
 	{
 		"texte": "Qu'est-ce que SAXParser ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "Un framework pour parser des fichiers JSON",
@@ -2831,7 +2831,7 @@
 	},
 	{
 		"texte": "Que signifie JSP ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "Java Server Programming",
@@ -2849,7 +2849,7 @@
 	},
 	{
 		"texte": "Quelles sont les deux manières d'appeler la méthode GET d'une servlet depuis du code HTML ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "Via tag contenant un attribut <code>onclick=\"servletName\"</code>",
@@ -2863,7 +2863,7 @@
 	},
 	{
 		"texte": "Que signifie JSF ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "Java Server Forms",
@@ -2881,7 +2881,7 @@
 	},
 	{
 		"texte": "Dans quel framework rencontre-t-on les annotations <code>@Given</code>, <code>@When</code>, <code>@And</code>, <code>@Then</code> ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "JUnit",
@@ -2900,7 +2900,7 @@
 	
 	{
 		"texte": "Quel est léquivalent de l'annotation <code>@javax.inject.Inject</code> ?",
-		"topic": "FRAMEWORKS",
+		"topicKey": "FRAMEWORKS",
 		"reponses": [
 			{
 				"texte": "<code>@org.springframework.stereotype.Component<code>",
@@ -2919,7 +2919,7 @@
 	
 	{
 		"texte": "Que signifie PL/SQL ?",
-		"topic": "SQL",
+		"topicKey": "SQL",
 		"reponses": [
 			{
 				"texte": "Procedure Language / Structured Query Language",
@@ -2937,7 +2937,7 @@
 	},
 	{
 		"texte": "Comment efface-t-on les données une table ?",
-		"topic": "SQL",
+		"topicKey": "SQL",
 		"reponses": [
 			{
 				"texte": "<code>DROP TABLE [table];</code>",
@@ -2951,7 +2951,7 @@
 	},
 	{
 		"texte": "Comment supprime-t-on une table ?",
-		"topic": "SQL",
+		"topicKey": "SQL",
 		"reponses": [
 			{
 				"texte": "<code>DROP TABLE [table];</code>",
@@ -2965,7 +2965,7 @@
 	},
 	{
 		"texte": "Comment affiche-t-on un titre de colonne au résultat d'une requête ?",
-		"topic": "SQL",
+		"topicKey": "SQL",
 		"reponses": [
 			{
 				"texte": "<code>SELECT colonne1 AS NOM_COLONNE_1, colonne2 AS NOM_COLONNE_2...</code>",
@@ -2979,7 +2979,7 @@
 	},
 	{
 		"texte": "Qu'est-ce qu'une <code>NATURAL JOIN</code> ?",
-		"topic": "SQL",
+		"topicKey": "SQL",
 		"reponses": [
 			{
 				"texte": "Une jointure sur un champ commun à deux tables sans restriction",
@@ -2997,7 +2997,7 @@
 	},
 	{
 		"texte": "Qu'est-ce qu'une <code>CROSS JOIN</code> ?",
-		"topic": "SQL",
+		"topicKey": "SQL",
 		"reponses": [
 			{
 				"texte": "Une jointure retournant le produit cartésien de deux tables",
@@ -3011,7 +3011,7 @@
 	},
 	{
 		"texte": "Que fait la requête suivante ? <java>SELECT * FROM table1</java><java>UNION</java><java>SELECT * FROM table2</java>",
-		"topic": "SQL",
+		"topicKey": "SQL",
 		"reponses": [
 			{
 				"texte": "Elle permet de mettre bout-à-bout le résultat de deux requêtes différentes, à condition que les deux tables aient le même nombre de colonnes, qu'elles soient de même type et dans le même ordre",
@@ -3025,7 +3025,7 @@
 	},
 	{
 		"texte": "Que fait la requête suivante ? <java>SELECT * FROM table1</java><java>UNION ALL</java><java>SELECT * FROM table2</java>",
-		"topic": "SQL",
+		"topicKey": "SQL",
 		"reponses": [
 			{
 				"texte": "Elle permet de mettre bout-à-bout le résultat de deux requêtes différentes, à condition que les deux tables aient le même nombre de colonnes, qu'elles soient de même type et dans le même ordre",
@@ -3039,7 +3039,7 @@
 	},
 	{
 		"texte": "Quelle est la différence entre <code>RIGHT JOIN</code> et <code>RIGHT OUTER JOIN</code> ? ",
-		"topic": "SQL",
+		"topicKey": "SQL",
 		"reponses": [
 			{
 				"texte": "<code>RIGHT JOIN</code> récupère aussi l'intersection des deux tables",
@@ -3053,7 +3053,7 @@
 	},
 	{
 		"texte": "Qu'est-ce que <none>Stack Over Flow ?",
-		"topic": "DIVERS",
+		"topicKey": "DIVERS",
 		"reponses": [
 			{
 				"texte": "La pile d'appel d'un programme Java",
@@ -3067,7 +3067,7 @@
 	},
 	{
 		"texte": "Que signifie REST ?",
-		"topic": "DIVERS",
+		"topicKey": "DIVERS",
 		"reponses": [
 			{
 				"texte": "Representational Stateful Transfert",
@@ -3081,7 +3081,7 @@
 	},
 	{
 		"texte": "Qu'est que Gradle ?",
-		"topic": "DIVERS",
+		"topicKey": "DIVERS",
 		"reponses": [
 			{
 				"texte": "Un équivalent de Maven",
@@ -3099,7 +3099,7 @@
 	},
 	{
 		"texte": "À quoi servent les fichiers CSS ?",
-		"topic": "DIVERS",
+		"topicKey": "DIVERS",
 		"reponses": [
 			{
 				"texte": "À faire tourner du code javascript",
@@ -3117,7 +3117,7 @@
 	},
 	{
 		"texte": "Que signifie CSS ?",
-		"topic": "DIVERS",
+		"topicKey": "DIVERS",
 		"reponses": [
 			{
 				"texte": "Custom Serialized Sheets",
@@ -3135,7 +3135,7 @@
 	},
 	{
 		"texte": "Qu'est-ce qu'Heroku ?",
-		"topic": "DIVERS",
+		"topicKey": "DIVERS",
 		"reponses": [
 			{
 				"texte": "Une version d'Eclipse",
@@ -3153,7 +3153,7 @@
 	},
 	{
 		"texte": "Que signifie l'extension *.war ?",
-		"topic": "DIVERS",
+		"topicKey": "DIVERS",
 		"reponses": [
 			{
 				"texte": "Web Archive",
@@ -3167,7 +3167,7 @@
 	},
 	{
 		"texte": "Qu'est-ce que Tomcat ?",
-		"topic": "DIVERS",
+		"topicKey": "DIVERS",
 		"reponses": [
 			{
 				"texte": "Un framework de bases de données",
@@ -3181,7 +3181,7 @@
 	},
 	{
 		"texte": "Que signifie ORM ?",
-		"topic": "DIVERS",
+		"topicKey": "DIVERS",
 		"reponses": [
 			{
 				"texte": "<none>Object Relational Mapping",
@@ -3199,7 +3199,7 @@
 	},
 	{
 		"texte": "Quel est le moyen le plus simple et le plus connu d'effectuer un tri sur liste de petite taille ?",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Le tri par fusion",
@@ -3217,7 +3217,7 @@
 	},
 	{
 		"texte": "Qu'est-ce qu'une méthode récursive ?",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Une méthode avec un retour",
@@ -3231,7 +3231,7 @@
 	},
 	{
 		"texte": "Que signifie qu'une méthode est symétrique pour deux objets <code>a</code> et <code>b</code> ?",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Que les retours de <code>a.methode(a)</code> et de <code>a.methode(a)</code> sont équivalents",
@@ -3245,7 +3245,7 @@
 	},
 	{
 		"texte": "Quelles sont les qualités de la méthode <code>equals(Object b)</code> appelée depuis un objet <code>a</code> ?",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Elle est réflexive, transitive et consistante",
@@ -3263,7 +3263,7 @@
 	},
 	{
 		"texte": "Qu'appelle t-on par complexité d'un algorithme ?",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Le nombre conditions vérifiées par un algorithme",
@@ -3277,7 +3277,7 @@
 	},
 	{
 		"texte": "Quelle est la complexité pour accéder à un élement k d'un tableau de taille n ?",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Complexité constante : O(1)",
@@ -3291,7 +3291,7 @@
 	},
 	{
 		"texte": "Quelle est la complexité pour parcourir une liste de n éléments ?",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Complexité constante : O(1)",
@@ -3305,7 +3305,7 @@
 	},
 	{
 		"texte": "À quoi peut bien servir cet algorithme ? <java>public static int methodeRecursive(int nombre) {</java> <java1>int x = 0; </java1><java1>if (nombre == 1) { </java1><java2>x = 1; </java2><java2>return x; </java2><java1>} else { </java1><java2>x = nombre * methodeRecursive(nombre - 1); </java2><java2>return x; </java2><java1>}</java1> <java>}</java> ",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "À calculer la suite de Fibonacci",
@@ -3323,7 +3323,7 @@
 	},
 	{
 		"texte": "À quoi peut bien servir cet algorithme ? <java>public static int getXXX(int n)  {</java> <java1>if(n == 0) </java1><java2>return 1; </java2><java1>else if(n == 1) </java1><java2>return 1;</java2><java1>else</java1> <java2>return getXXX(n - 1) + getXXX(n - 2);</java2><java>}</java> ",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "À calculer la suite de Fibonacci",
@@ -3341,7 +3341,7 @@
 	},
 	{
 		"texte": "À quoi peut bien servir cet algorithme ? <java>public static double getXXX(int nombre) {</java> <java1>double X0 = 1; </java1><java1>double Xn = (X0 + nombre / X0) / 2; </java1><java1>double Xn_Plus_1 = 0; </java1><java1>for (int i = 0; i < 10; i++) { </java1><java2>Xn_Plus_1 = (Xn + nombre / Xn) / 2; </java2><java2>Xn = Xn_Plus_1; </java2><java1>}</java1><java1>return Xn_Plus_1;</java1><java>}</java> ",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "À calculer la suite de Fibonacci",
@@ -3355,7 +3355,7 @@
 	},
 	{
 		"texte": "À quoi peut bien servir cet algorithme ? <java>public static int methodeRecursive(int n, int m) {</java><java1>if (m == 0) </java1><java2>return 1; </java2><java1>return n * methodeRecursive(n, m - 1); </java1><java>}</java> ",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "À calculer la suite de Fibonacci",
@@ -3373,7 +3373,7 @@
 	},
 	{
 		"texte": "De quel type d'algorithme de tri s'agit-il ? <java>public static int[] getOrderedIntegers(int[] integers) {</java> <java1>boolean trie = false; </java1><java1>int tmp; </java1><java1>while (!trie) {</java1><java2>trie = true; </java2><java2>for (int i = 0; i < integers.length - 1; i++) { </java2><java3>if (integers[i] > integers[i + 1]) {</java3><java4>tmp = integers[i + 1];</java4><java4>integers[i + 1] = integers[i];</java4><java4>integers[i] = tmp;</java4><java4>trie = false;</java4><java3>}</java3><java2>} </java2><java1>}</java1><java1>return integers;</java1><java>}</java>",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Le tri par bulles",
@@ -3391,7 +3391,7 @@
 	},
 	{
 		"texte": "De quel type d'algorithme de tri s'agit-il ? <java>public static int[] getOrderedIntegers(int[] integers) {</java> <java1>int key ; </java1><java1>for (int i = 1; i < integers.length ; i++) { </java1><java2>key = integers[i]; </java2><java2>for (int j = i ; j > 0 ; j--) { </java2><java3>if(key < integers[j -1]) {</java3><java4>integers[j] = integers[j - 1];</java4><java4>integers[j - 1] = key;</java4><java3>}</java3><java2>} </java2><java1>}</java1><java1>return integers;</java1><java>}</java>",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Le tri par bulles",
@@ -3409,7 +3409,7 @@
 	},
 	{
 		"texte": "De quel type d'algorithme de tri s'agit-il ? <java>public static int[] getOrderedIntegers(int[] integers) {</java> <java1>int i, j, min, tmp; </java1><javaCR></javaCR><java1>for (i = 0 ; i < integers.length - 1 ; i++) { </java1><java2>min = i; </java2><javaCR></javaCR><java2>for (j = i + 1; j < integers.length; j++) { </java2><java3>if (integers[j] < integers[min]) {</java3><java4>min = j ;</java4><java3>}</java3><java2>} </java2><javaCR></javaCR><java2>if (min != integers[i]) { </java2><java3>tmp = integers[min];</java3><java3>integers[min] = integers[i];</java3><java3>integers[i] = tmp;</java3><java2>} </java2><java1>}</java1><java1>return integers;</java1><java>}</java>",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Le tri par bulles",
@@ -3427,7 +3427,7 @@
 	},
 	{
 		"texte": "À quoi peut bien servir cet algorithme ? <java>public static int getXXX(int n, int m) {</java> <java1>int accumulator = 1; </java1><java1>for (int i = 0; i < m; i++) { </java1><java2>accumulator *= n; </java2><java1>}</java1><java1>return accumulator;</java1><java>}</java> ",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "À calculer la suite de Fibonacci",
@@ -3445,7 +3445,7 @@
 	},
 	{
 		"texte": "Quel fût le premier algorithme moderne ? ",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Le calcul de la racine carrée par Newton",
@@ -3463,7 +3463,7 @@
 	},
 	{
 		"texte": "D'où provient le mot algorithmie ? ",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "D'Al Khuwarizmi, un mathématicien perse du XIème siècle",
@@ -3477,7 +3477,7 @@
 	},
 	{
 		"texte": "Qu'est ce qu'une équation diphantienne ? ",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Une équation polynomiale à une ou plusieurs inconnues  dont les solutions sont cherchées parmi les nombres entiers",
@@ -3491,7 +3491,7 @@
 	},
 	{
 		"texte": "Qu'est ce que la calculabilité d'un algorithme ? ",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Le temps moyen de résolutio d'un algorithme sans se soucier du support",
@@ -3505,7 +3505,7 @@
 	},
 	{
 		"texte": "Que permet de déterminer cet algorithme ? <java>public static boolean isXXX(int n) {</java><java1>boolean isXXX = true; </java1><java1>if (n < 0) { </java1><java2>isXXX = false; </java2><java1>} else if (n != 0 && n != 1) {</java1><java2>for (int i = 2; i <= n / 2; i++) { </java2><java3>if (n != i && n % i == 0) { </java3><java4>isXXX = false; </java4><java4>break; </java4><java3>} </java3><java2>} </java2><java1>} </java1><java1>return isXXX;</java1><java>}</java>",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Si un nombre est pair",
@@ -3519,7 +3519,7 @@
 	},
 	{
 		"texte": "Que permet de déterminer cet algorithme ? <java>public static boolean isXXX(int n) {</java> <java1>boolean isXXX = true; </java1><javaCR></javaCR><java1>if (n % 2 == 0) { </java1><java2>isXXX = false; </java2><java1>}</java1><java1>return isXXX;</java1><java>}</java>",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Si un nombre est pair",
@@ -3537,7 +3537,7 @@
 	},
 	{
 		"texte": "Quelle est la complexité moyenne d'un algorithme de tri par insertion ?",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Complexité linéaire : O(n)",
@@ -3555,7 +3555,7 @@
 	},
 	{
 		"texte": "Quelle est la complexité dans le meilleur cas d'un algorithme de tri par insertion ?",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Complexité linéaire : O(n)",
@@ -3573,7 +3573,7 @@
 	},
 	{
 		"texte": "Que calcule cet algorithme ? <java>public static int getXXX(int m, int n) {</java> <javaCR></javaCR><java1>while(m != n) { </java1><java2>if(m > n) { </java2><java3>m = m - n; </java3><java2>} else { </java2><java3>n = n - m;</java3><java2>} </java2><java1>} </java1><javaReturn>return m; </javaReturn><java>}</java> ",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Le PGCM",
@@ -3587,7 +3587,7 @@
 	},
 	{
 		"texte": "Que calcule cet algorithme ? <java>public static int getXXX(int m, int n) {</java> <javaCR></javaCR><java1>if(m == n) { </java1><java2>return m; </java2><java1>} else { </java1><java2>if (m > n) { </java2><java3>return getXXX(m - n, n);</java3><java2>} else { </java2><java3>return getXXX(m, n - m);</java3><java2>} </java2><java1>} </java1><java>}</java> ",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "Le PGCM",
@@ -3605,7 +3605,7 @@
 	},
 	{
 		"texte": "Que retourne cet algorithme récursif ? <java>public static void main(String[] args) {</java> <javaCR></javaCR> <java1>int k = 7;</java1> <java1>int p = k / 2;</java1> <java1>boolean isXXX = isXXX(k, p);</java1> <javaCR></javaCR> <java1>public static boolean isXXX(int k, int p) {</java1> <javaCR></javaCR><java1>if (p == 1) {</java1> <java2>return true;</java2><java1>} else {</java1> <java2>if (k % p == 0) {</java2><java3>return false; </java3><java2>} else {</java2><java3>return isXXX(k, p - 1); </java3><java2>}</java2><java1>}</java1><java>}</java>",
-		"topic": "ALGO",
+		"topicKey": "ALGO",
 		"reponses": [
 			{
 				"texte": "true",

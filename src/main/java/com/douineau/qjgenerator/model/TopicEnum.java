@@ -1,4 +1,4 @@
-package com.douineau.qjgenerator.utils;
+package com.douineau.qjgenerator.model;
 
 public enum TopicEnum {
 

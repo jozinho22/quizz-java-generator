@@ -15,12 +15,10 @@ public class QuestionException extends Exception {
 
 	public QuestionException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
-		// TODO Auto-generated constructor stub
 	}
 
 	public QuestionException(String message, Throwable cause) {
 		super(message, cause);
-		// TODO Auto-generated constructor stub
 	}
 
 	public QuestionException(String message) {
@@ -29,7 +27,6 @@ public class QuestionException extends Exception {
 
 	public QuestionException(Throwable cause) {
 		super(cause);
-		// TODO Auto-generated constructor stub
 	}
 	
 	

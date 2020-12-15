@@ -2,38 +2,39 @@ package com.douineau.qjgenerator.dao.insert;
 
 import com.douineau.qjgenerator.dao.QuestionDao;
 import com.douineau.qjgenerator.dao.ReponseDao;
+import com.douineau.qjgenerator.dao.TopicDao;
 import com.douineau.qjgenerator.exception.QuestionException;
 import com.douineau.qjgenerator.exception.ReponsesException;
 import com.douineau.qjgenerator.model.Question;
 import com.douineau.qjgenerator.model.Reponse;
+import com.douineau.qjgenerator.model.Topic;
 import com.douineau.qjgenerator.utils.ResourcesFileReader;
-import com.douineau.qjgenerator.utils.TopicEnum;
+import com.douineau.qjgenerator.model.TopicEnum;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.boot.context.event.ApplicationStartedEvent;
-import org.springframework.boot.context.event.SpringApplicationEvent;
-import org.springframework.context.ApplicationEvent;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 
 @Service
-public class QuestionsInsertEvent {
+public class InsertEvent {
 	
 	@Autowired
 	private QuestionDao qDao;
 	@Autowired
 	private ReponseDao rDao;
+	@Autowired
+	private TopicDao tDao;
 
 	@Value("${spring.profiles.active}")
 	private String activeProfile;
@@ -86,7 +87,7 @@ public class QuestionsInsertEvent {
 
 			}
 
-			if (q.getTopic().equals("")) {
+			if (q.getTopicKey().equals("")) {
 				throw new QuestionException(q);
 			}
 
@@ -114,8 +115,13 @@ public class QuestionsInsertEvent {
 
 		printCountByTopic(questions);
 
-		questions.forEach(q -> rDao.saveAll(q.getReponses()));
+		AtomicInteger i = new AtomicInteger(0);
+		List<Topic> topics = Arrays.stream(TopicEnum.values())
+				.map(topicEnum -> new Topic(i.incrementAndGet() , topicEnum.name(), topicEnum.getName(), true))
+				.collect(Collectors.toList());
 
+		tDao.saveAll(topics);
+		questions.forEach(q -> rDao.saveAll(q.getReponses()));
 		qDao.saveAll(questions);
 //		try {
 //			// get Oraganisation object as a json string
@@ -342,7 +348,7 @@ public class QuestionsInsertEvent {
 		for(TopicEnum topic : TopicEnum.values()) {
 			System.out.println("count " + topic + " : " +
 					questions.stream()
-							.filter(q -> q.getTopic().equals(topic.name()))
+							.filter(q -> q.getTopicKey().equals(topic.name()))
 							.count());
 		}
 

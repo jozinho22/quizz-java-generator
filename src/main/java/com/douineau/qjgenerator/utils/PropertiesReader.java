@@ -1,4 +1,4 @@
-package com.douineau.utils;
+package com.douineau.qjgenerator.utils;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

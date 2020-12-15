@@ -15,12 +15,10 @@ public class ReponsesException extends Exception {
 
 	public ReponsesException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
-		// TODO Auto-generated constructor stub
 	}
 
 	public ReponsesException(String message, Throwable cause) {
 		super(message, cause);
-		// TODO Auto-generated constructor stub
 	}
 
 	public ReponsesException(String message) {
@@ -29,7 +27,6 @@ public class ReponsesException extends Exception {
 
 	public ReponsesException(Throwable cause) {
 		super(cause);
-		// TODO Auto-generated constructor stub
 	}
 	
 	

@@ -1,6 +1,6 @@
 package com.douineau.qjgenerator;
 
-import com.douineau.qjgenerator.dao.insert.QuestionsInsertEvent;
+import com.douineau.qjgenerator.dao.insert.InsertEvent;
 import com.douineau.qjgenerator.main.QuestionsWithCodesGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class QJGeneratorApplication implements CommandLineRunner {
 
 	@Autowired
-	private QuestionsInsertEvent insertEvent;
+	private InsertEvent insertEvent;
 
 	public static void main(String[] args) {
 		SpringApplication.run(QJGeneratorApplication.class, args);

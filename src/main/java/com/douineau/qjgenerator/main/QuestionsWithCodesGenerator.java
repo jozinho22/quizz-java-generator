@@ -6,7 +6,7 @@ import com.douineau.qjgenerator.exception.ReponsesException;
 import com.douineau.qjgenerator.model.Question;
 import com.douineau.qjgenerator.model.Reponse;
 import com.douineau.qjgenerator.utils.ResourcesFileReader;
-import com.douineau.qjgenerator.utils.TopicEnum;
+import com.douineau.qjgenerator.model.TopicEnum;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -60,7 +60,7 @@ public class QuestionsWithCodesGenerator {
 
 			}
 
-			if (q.getTopic().equals("")) {
+			if (q.getTopicKey().equals("")) {
 				throw new QuestionException(q);
 			}
 
@@ -314,7 +314,7 @@ public class QuestionsWithCodesGenerator {
 		for(TopicEnum topic : TopicEnum.values()) {
 			System.out.println("count " + topic + " : " + 
 					questions.stream()
-					.filter(q -> q.getTopic().equals(topic.name()))
+					.filter(q -> q.getTopicKey().equals(topic.name()))
 					.count());
 		}
 
