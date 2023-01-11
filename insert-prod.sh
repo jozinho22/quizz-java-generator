@@ -1,1 +1,0 @@
-mvn spring-boot:run -Dspring-boot.run.profiles=prod -Dspring-boot.run.arguments="insert"

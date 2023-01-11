@@ -3,7 +3,7 @@ package com.douineau.qjgenerator.main;
 import com.douineau.qjgenerator.exception.QuestionException;
 import com.douineau.qjgenerator.exception.ReponsesException;
 import com.douineau.qjgenerator.model.Question;
-import com.douineau.qjgenerator.model.Reponse;
+import com.douineau.qjgenerator.model.Answer;
 import com.douineau.qjgenerator.model.Topic;
 import com.douineau.qjgenerator.utils.ResourcesFileReader;
 import com.douineau.qjgenerator.model.TopicEnum;
@@ -60,11 +60,11 @@ public class QuestionsWithCodesGenerator {
 		for (Question q : questions) {
 			q.setId(idQ);
 			// Questions contenant du code java avec une ou plusieurs balises (<java>, <java1>...)
-			if (q.getTexte().contains("<java>")) {
+			if (q.getText().contains("<java>")) {
 				addJavaStyleQuestionText(q);
 			}
-			if (!q.getTexte().contains("<code>")) {
-				if(!q.getTexte().contains("<none>")) {
+			if (!q.getText().contains("<code>")) {
+				if(!q.getText().contains("<none>")) {
 					addItemsToQuestionText(codes, q);
 				} else {
 					deleteNoneTag(q);
@@ -78,12 +78,12 @@ public class QuestionsWithCodesGenerator {
 
 			List<Boolean> booleans = new ArrayList<Boolean>();
 			int idR = 0;
-			for (Reponse r : q.getReponses()) {
+			for (Answer r : q.getAnswers()) {
 				r.setId(idR);
 				addBlanksToResponseText(r);
 
-				if (!r.getTexte().contains("<code>")) {
-					if(!r.getTexte().contains("<none>")) {
+				if (!r.getText().contains("<code>")) {
+					if(!r.getText().contains("<none>")) {
 						addItemsToResponseText(codes, r);
 					} else {
 						deleteNoneTag(r);
@@ -91,7 +91,7 @@ public class QuestionsWithCodesGenerator {
 
 				}
 
-				booleans.add(r.getIsTrue());
+				booleans.add(r.getGoodAnswer());
 				idR++;
 			}
 
@@ -152,9 +152,9 @@ public class QuestionsWithCodesGenerator {
 	
 	private static void addJavaStyleQuestionText(Question q) {
 //		System.out.println(q.getTexte());
-		int debutCode = q.getTexte().indexOf("<java>");
-		String debutQuestion = q.getTexte().substring(0, debutCode);
-		String codeQuestion =  q.getTexte().substring(debutCode);
+		int debutCode = q.getText().indexOf("<java>");
+		String debutQuestion = q.getText().substring(0, debutCode);
+		String codeQuestion =  q.getText().substring(debutCode);
 
 		List<String> javaCodes = getJavaCodes(codeQuestion, debutCode);
 
@@ -171,7 +171,7 @@ public class QuestionsWithCodesGenerator {
 //		System.out.println("newJavaCode - " + newJavaCode);
 		String newQuestion = debutQuestion + newJavaCode;
 		
-		q.setTexte(newQuestion);
+		q.setText(newQuestion);
 		
 	}
 	
@@ -258,38 +258,38 @@ public class QuestionsWithCodesGenerator {
 		return sb.toString();
 	}
 
-	private static void addItemsToResponseText(List<String> items, Reponse r) {
+	private static void addItemsToResponseText(List<String> items, Answer r) {
 
 		for (String s : items) {
-			if (r.getTexte().contains(s + " ")) {
+			if (r.getText().contains(s + " ")) {
 				String after = "<code>" + s + "</code>";
-				String replace = r.getTexte().replace(s, after);
-				r.setTexte(replace);
+				String replace = r.getText().replace(s, after);
+				r.setText(replace);
 			}
 		}
 	}
 
 	private static void deleteNoneTag(Question q) {
-		String replace = q.getTexte().replace("<none>", "");
-		q.setTexte(replace);
+		String replace = q.getText().replace("<none>", "");
+		q.setText(replace);
 	}
 	
-	private static void deleteNoneTag(Reponse r) {
-		String replace = r.getTexte().replace("<none>", "");
-		r.setTexte(replace);
+	private static void deleteNoneTag(Answer r) {
+		String replace = r.getText().replace("<none>", "");
+		r.setText(replace);
 	}
 	
-	private static void addBlanksToResponseText(Reponse r) {
+	private static void addBlanksToResponseText(Answer r) {
 
-		String s = r.getTexte();
+		String s = r.getText();
 		String sNew = s + " ";
-		r.setTexte(sNew);
+		r.setText(sNew);
 
 	}
 	
 	private static void checkNbReponses(Question q, List<Boolean> booleans) throws ReponsesException {
 		boolean ok = false;
-		int nb = q.getReponses().size();
+		int nb = q.getAnswers().size();
 		int k = 0;
 
 		if (nb == 2) {
@@ -324,10 +324,10 @@ public class QuestionsWithCodesGenerator {
 	private static void addItemsToQuestionText(List<String> items, Question q) {
 
 		for (String s : items) {
-			if (q.getTexte().contains(s + " ")) {
+			if (q.getText().contains(s + " ")) {
 				String after = "<code>" + s + "</code>";
-				String replace = q.getTexte().replace(s, after);
-				q.setTexte(replace);
+				String replace = q.getText().replace(s, after);
+				q.setText(replace);
 			}
 
 		}

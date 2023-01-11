@@ -2,6 +2,7 @@ package com.douineau.qjgenerator.model;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Objects;
 
 public class Question extends AbstractEntity implements Serializable {
 
@@ -10,21 +11,21 @@ public class Question extends AbstractEntity implements Serializable {
 	 */
 	private static final long serialVersionUID = 5641309062449375141L;
 
-	private String texte;
+	private String text;
 	private String topicKey;
 
-	private List<Reponse> reponses;
+	private List<Answer> answers;
 
 	public Question() {
 		super();
 	}
 
-	public String getTexte() {
-		return texte;
+	public String getText() {
+		return text;
 	}
 
-	public void setTexte(String texte) {
-		this.texte = texte;
+	public void setText(String text) {
+		this.text = text;
 	}
 
 	public String getTopicKey() {
@@ -35,22 +36,11 @@ public class Question extends AbstractEntity implements Serializable {
 		this.topicKey = topicKey;
 	}
 
-	public List<Reponse> getReponses() {
-		return reponses;
+	public List<Answer> getAnswers() {
+		return answers;
 	}
 
-	public void setReponses(List<Reponse> reponses) {
-		this.reponses = reponses;
+	public void setAnswers(List<Answer> answers) {
+		this.answers = answers;
 	}
-
-	@Override
-	public String toString() {
-		return "Question{" +
-				"id=" + id +
-				", texte='" + texte + '\'' +
-				", topicKey='" + topicKey + '\'' +
-				", reponses=" + reponses +
-				'}';
-	}
-
 }
