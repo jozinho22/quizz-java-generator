@@ -1,7 +1,7 @@
 package com.douineau.qjgenerator.main;
 
 import com.douineau.qjgenerator.model.Question;
-import com.douineau.qjgenerator.model.Reponse;
+import com.douineau.qjgenerator.model.Answer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -18,12 +18,12 @@ public class JsonFileGenerator {
 
 			Question question = new Question();
 
-			List<Reponse> reponses = new ArrayList<Reponse>();
+			List<Answer> answers = new ArrayList<Answer>();
 			for (int k = 0; k < 3; k++) {
-				Reponse reponse = new Reponse();
-				reponses.add(reponse);
+				Answer answer = new Answer();
+				answers.add(answer);
 			}
-			question.setReponses(reponses);
+			question.setAnswers(answers);
 			questions.add(question);
 		}
 
