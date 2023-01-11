@@ -4,6 +4,7 @@ import com.douineau.qjgenerator.exception.QuestionException;
 import com.douineau.qjgenerator.exception.ReponsesException;
 import com.douineau.qjgenerator.model.Question;
 import com.douineau.qjgenerator.model.Reponse;
+import com.douineau.qjgenerator.model.Topic;
 import com.douineau.qjgenerator.utils.ResourcesFileReader;
 import com.douineau.qjgenerator.model.TopicEnum;
 import com.fasterxml.jackson.core.JsonParser;
@@ -14,6 +15,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -22,19 +24,32 @@ import java.util.List;
 public class QuestionsWithCodesGenerator {
 
 	public static void process() throws IOException, QuestionException, ReponsesException {
+
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.configure(JsonParser.Feature.ALLOW_BACKSLASH_ESCAPING_ANY_CHARACTER, true);
 
+		// topics
+		int i = 0;
+		List<Topic> topics = new ArrayList<>();
+		for(TopicEnum t : TopicEnum.values()) {
+			Topic topic = new Topic();
+			topic.setId(i);
+			topic.setName(t.getName());
+			topic.setTopicKey(t.toString());
+			topics.add(topic);
+			i++;
+		}
+
 		// codes
-		ResourcesFileReader reader2 = new ResourcesFileReader();
-		File jsonFile2 = reader2.getFile("datas/codes.json");
+		ResourcesFileReader codesReader = new ResourcesFileReader();
+		File jsonFile2 = codesReader.getFile("datas/codes.json");
 
 		List<String> codes = mapper.reader().forType(new TypeReference<List<String>>() {
 		}).readValue(jsonFile2);
 
-		// datas
-		ResourcesFileReader reader = new ResourcesFileReader();
-		File jsonFile = reader.getFile("datas/questions.json");
+		// questions
+		ResourcesFileReader questionsReader = new ResourcesFileReader();
+		File jsonFile = questionsReader.getFile("datas/questions.json");
 
 		List<Question> questions = mapper.reader().forType(new TypeReference<List<Question>>() {
 		}).readValue(jsonFile);
@@ -87,28 +102,39 @@ public class QuestionsWithCodesGenerator {
 		printCountByTopic(questions);
 
 		try {
-			// get Oraganisation object as a json string
-			String jsonStr = mapper.writeValueAsString(questions);
+
+			String jsonTopics = mapper.writeValueAsString(topics);
+
+			File tFile = new File("src/main/resources/datas/topics.json");
+			String tAbsPath = tFile.getAbsolutePath();
+			System.out.println(tAbsPath);
+
+			FileWriter tWriter = new FileWriter(tAbsPath);
+			tWriter.write(jsonTopics);
+			tWriter.close();
+
+			String jsonQuestions = mapper.writeValueAsString(questions);
+
+			File qFile = new File("src/main/resources/datas/questionswithcodes.json");
+			String qAbsPath = qFile.getAbsolutePath();
+			System.out.println(qAbsPath);
+
+			FileWriter qWriter = new FileWriter(qAbsPath);
+			qWriter.write(jsonQuestions);
+			qWriter.close();
 
 			// Displaying JSON String
-			System.out.println(jsonStr);
+			System.out.println(jsonQuestions);
+			System.out.println(jsonTopics);
 
-			File file = new File("src/main/resources/datas/questionswithcodes.json");
-			String absolutePath = file.getAbsolutePath();
+			// send it to the react project
+			File jsonTopicsFile = new File("../test-your-skills/src/resources/topics.json");
+			Files.deleteIfExists(jsonTopicsFile.toPath());
+			Files.copy(tFile.toPath(), jsonTopicsFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
 
-			System.out.println(absolutePath);
-
-			FileWriter writer=new FileWriter(absolutePath);
-			writer.write(jsonStr);
-			writer.close();
-
-/*			File quizzJavaDatas = new File("../quizz-java/src/main/resources/datas/questionswithcodes.json");
-			Files.deleteIfExists(quizzJavaDatas.toPath());
-			Files.copy(file.toPath(), quizzJavaDatas.toPath());*/
-
-			File quizzJavaSpringBootReactDatas = new File("../quizz-java-springboot-react/src/main/resources/questionswithcodes.json");
-			Files.deleteIfExists(quizzJavaSpringBootReactDatas.toPath());
-			Files.copy(file.toPath(), quizzJavaSpringBootReactDatas.toPath());
+			File questionsWithCodesFile = new File("../test-your-skills/src/resources/questionswithcodes.json");
+			Files.deleteIfExists(questionsWithCodesFile.toPath());
+			Files.copy(qFile.toPath(), questionsWithCodesFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
 
 			/*Files.deleteIfExists(file.toPath());*/
 
