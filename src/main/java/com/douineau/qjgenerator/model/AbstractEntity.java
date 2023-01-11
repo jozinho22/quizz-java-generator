@@ -2,26 +2,19 @@ package com.douineau.qjgenerator.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@MappedSuperclass
 public abstract class AbstractEntity {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
 	protected Integer id;
-	
-	@Transient
+
 	@JsonIgnore
 	protected LocalDateTime createdAt;
-	@Transient
 	@JsonIgnore
 	protected String createdBy;
-	@Transient
 	@JsonIgnore
 	protected LocalDateTime updatedAt;
-	@Transient
 	@JsonIgnore
 	protected String updatedBy;
 	

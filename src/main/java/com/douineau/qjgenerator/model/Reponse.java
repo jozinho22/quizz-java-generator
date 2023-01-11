@@ -2,11 +2,9 @@ package com.douineau.qjgenerator.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-@Entity
 public class Reponse extends AbstractEntity implements Serializable {
 
 	/**
@@ -16,8 +14,6 @@ public class Reponse extends AbstractEntity implements Serializable {
 
 	private String texte;
 	private Boolean isTrue;
-//	@ManyToOne
-//	private Question question;
 
 	public Reponse() {
 		super();

@@ -1,6 +1,5 @@
 package com.douineau.qjgenerator.main;
 
-import com.douineau.qjgenerator.dao.QuestionDao;
 import com.douineau.qjgenerator.exception.QuestionException;
 import com.douineau.qjgenerator.exception.ReponsesException;
 import com.douineau.qjgenerator.model.Question;
@@ -10,20 +9,17 @@ import com.douineau.qjgenerator.model.TopicEnum;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-@Component
-public class QuestionsWithCodesGenerator {
 
-	@Autowired
-	private static QuestionDao dao;
+public class QuestionsWithCodesGenerator {
 
 	public static void process() throws IOException, QuestionException, ReponsesException {
 		ObjectMapper mapper = new ObjectMapper();
@@ -88,36 +84,36 @@ public class QuestionsWithCodesGenerator {
 
 		printCountByTopic(questions);
 
-		dao.saveAll(questions);
-//		try {
-//			// get Oraganisation object as a json string
-//			String jsonStr = mapper.writeValueAsString(questions);
-//
-//			// Displaying JSON String
-//			System.out.println(jsonStr);
-//
-//			File file = new File("src/main/resources/datas/questionswithcodes.json");
-//			String absolutePath = file.getAbsolutePath();
-//
-//			System.out.println(absolutePath);
-//
-//			FileWriter writer=new FileWriter(absolutePath);
-//			writer.write(jsonStr);
-//			writer.close();
-//
-//			File quizzJavaDatas = new File("../quizz-java/src/main/resources/datas/questionswithcodes.json");
-//			Files.deleteIfExists(quizzJavaDatas.toPath());
-//			Files.copy(file.toPath(), quizzJavaDatas.toPath());
-//
-//			File quizzJavaSpringBootReactDatas = new File("../quizz-java-springboot-react/src/main/resources/datas/questionswithcodes.json");
-//			Files.deleteIfExists(quizzJavaSpringBootReactDatas.toPath());
-//			Files.copy(file.toPath(), quizzJavaSpringBootReactDatas.toPath());
-//
-//			Files.deleteIfExists(file.toPath());
-//
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
+		try {
+			// get Oraganisation object as a json string
+			String jsonStr = mapper.writeValueAsString(questions);
+
+			// Displaying JSON String
+			System.out.println(jsonStr);
+
+			File file = new File("src/main/resources/datas/questionswithcodes.json");
+			String absolutePath = file.getAbsolutePath();
+
+			System.out.println(absolutePath);
+
+			FileWriter writer=new FileWriter(absolutePath);
+			writer.write(jsonStr);
+			writer.close();
+
+/*			File quizzJavaDatas = new File("../quizz-java/src/main/resources/datas/questionswithcodes.json");
+			Files.deleteIfExists(quizzJavaDatas.toPath());
+			Files.copy(file.toPath(), quizzJavaDatas.toPath());*/
+
+			File quizzJavaSpringBootReactDatas = new File("../quizz-java-springboot-react/src/main/resources/questionswithcodes.json");
+			Files.deleteIfExists(quizzJavaSpringBootReactDatas.toPath());
+			Files.copy(file.toPath(), quizzJavaSpringBootReactDatas.toPath());
+
+			/*Files.deleteIfExists(file.toPath());*/
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	private static String getEndRepere(String s) {		

@@ -1,9 +1,7 @@
 package com.douineau.qjgenerator.model;
 
-import javax.persistence.Entity;
 import java.io.Serializable;
 
-@Entity
 public class Topic extends AbstractEntity implements Serializable {
 
     private String topicKey;

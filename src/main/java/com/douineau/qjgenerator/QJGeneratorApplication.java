@@ -1,29 +1,16 @@
 package com.douineau.qjgenerator;
 
-import com.douineau.qjgenerator.dao.insert.InsertEvent;
+import com.douineau.qjgenerator.exception.QuestionException;
+import com.douineau.qjgenerator.exception.ReponsesException;
 import com.douineau.qjgenerator.main.QuestionsWithCodesGenerator;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class QJGeneratorApplication implements CommandLineRunner {
+import java.io.IOException;
 
-	@Autowired
-	private InsertEvent insertEvent;
+public class QJGeneratorApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(QJGeneratorApplication.class, args);
+	public static void main(String[] args) throws QuestionException, ReponsesException, IOException {
+
+		QuestionsWithCodesGenerator.process();
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		for (String arg : args) {
-			System.out.println(arg);
-			if(arg.equals("insert")) {
-				insertEvent.insert();
-			}
-		}
-	}
 }
