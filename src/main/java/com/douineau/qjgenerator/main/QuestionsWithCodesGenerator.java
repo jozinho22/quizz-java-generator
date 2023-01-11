@@ -41,8 +41,9 @@ public class QuestionsWithCodesGenerator {
 
 		System.out.println("nbQuestions : " + questions.size());
 
+		int idQ = 0;
 		for (Question q : questions) {
-
+			q.setId(idQ);
 			// Questions contenant du code java avec une ou plusieurs balises (<java>, <java1>...)
 			if (q.getTexte().contains("<java>")) {
 				addJavaStyleQuestionText(q);
@@ -61,8 +62,9 @@ public class QuestionsWithCodesGenerator {
 			}
 
 			List<Boolean> booleans = new ArrayList<Boolean>();
+			int idR = 0;
 			for (Reponse r : q.getReponses()) {
-
+				r.setId(idR);
 				addBlanksToResponseText(r);
 
 				if (!r.getTexte().contains("<code>")) {
@@ -75,11 +77,11 @@ public class QuestionsWithCodesGenerator {
 				}
 
 				booleans.add(r.getIsTrue());
-
+				idR++;
 			}
 
 			checkNbReponses(q, booleans);
-
+			idQ++;
 		}
 
 		printCountByTopic(questions);

@@ -2916,7 +2916,24 @@
 			}
 		]
 	},
-	
+	{
+		"texte": "Quelle méthoed permet de retirer le dernier élément d'une liste ?",
+		"topicKey": "JAVASCRIPT",
+		"reponses": [
+			{
+				"texte": "<code>Array.prototype.pop()</code>",
+				"isTrue": true
+			},
+			{
+				"texte": "<code>Array.prototype.unshift()</code>",
+				"isTrue": false
+			},
+			{
+				"texte": "<code>Array.prototype.shift()</code>",
+				"isTrue": false
+			}
+		]
+	},
 	{
 		"texte": "Que signifie PL/SQL ?",
 		"topicKey": "SQL",
